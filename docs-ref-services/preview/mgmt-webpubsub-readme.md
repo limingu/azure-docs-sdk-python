@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-webpubsub, webpubsub
 author: msyyc
 ms.author: yuchaoyan
-ms.date: 11/02/2022
+ms.date: 02/27/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: webpubsub
