@@ -8,7 +8,7 @@ ms.topic: reference
 ms.devlang: python
 ms.service: communication
 ---
-# Azure Communication Email client library for Python - version 1.0.0a20230228003 
+# Azure Communication Email client library for Python - version 1.0.0a20230301001 
 
 
 This package contains a Python SDK for Azure Communication Services for Email.
