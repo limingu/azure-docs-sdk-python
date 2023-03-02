@@ -3,12 +3,12 @@ title: Azure Schema Registry client library for Python
 keywords: Azure, python, SDK, API, azure-schemaregistry, schemaregistry
 author: kashifkhan
 ms.author: kashifkhan
-ms.date: 01/12/2023
+ms.date: 03/02/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: schemaregistry
 ---
-# Azure Schema Registry client library for Python - version 1.3.0b1 
+# Azure Schema Registry client library for Python - version 1.3.0a20230302001 
 
 
 Azure Schema Registry is a schema repository service hosted by Azure Event Hubs, providing schema storage, versioning,
@@ -230,7 +230,7 @@ schema_registry_client = SchemaRegistryClient("your_fully_qualified_namespace", 
 
 Similarly, `logging_enable` can enable detailed logging for a single operation,
 even when it isn't enabled for the client:
-```py
+```python
 schema_registry_client.get_schema(schema_id, logging_enable=True)
 ```
 
@@ -258,16 +258,16 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 [pip]: https://pypi.org/project/pip/
 [pypi]: https://pypi.org/project/azure-schemaregistry
 [python]: https://www.python.org/downloads/
-[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/azure-schemaregistry_1.3.0b1/sdk/core/azure-core/README.md
+[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md
 [azure_sub]: https://azure.microsoft.com/free/
 [python_logging]: https://docs.python.org/3/library/logging.html
-[sr_samples]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry_1.3.0b1/sdk/schemaregistry/azure-schemaregistry/samples
+[sr_samples]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry/samples
 [api_reference]: /python/api/overview/azure/schemaregistry-readme
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry_1.3.0b1/sdk/schemaregistry/azure-schemaregistry
-[change_log]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry_1.3.0b1/sdk/schemaregistry/azure-schemaregistry/CHANGELOG.md
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry
+[change_log]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry/CHANGELOG.md
 [schemas]: /azure/event-hubs/schema-registry-overview#schemas
 [schema_groups]: /azure/event-hubs/schema-registry-overview#schema-groups
 [schemaregistry_service]: https://aka.ms/schemaregistry
-[token_credential_interface]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry_1.3.0b1/sdk/core/azure-core/azure/core/credentials.py
+[token_credential_interface]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/core/azure-core/azure/core/credentials.py
 [pypi_azure_identity]: https://pypi.org/project/azure-identity/
 [quickstart_guide]: /azure/event-hubs/create-schema-registry
