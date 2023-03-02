@@ -10,7 +10,7 @@ constructor:
   syntax: 'BMSPOQueryObject(*, backup_management_type: Optional[Union[str, _models.BackupManagementType]]
     = None, workload_type: Optional[Union[str, _models.WorkloadType]] = None, container_name:
     Optional[str] = None, status: Optional[str] = None, friendly_name: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Backup management type. Known values are: "Invalid",
 

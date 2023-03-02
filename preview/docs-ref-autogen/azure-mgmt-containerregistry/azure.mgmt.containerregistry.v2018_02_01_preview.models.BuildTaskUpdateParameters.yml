@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.containerregistry.v2018_02_01_preview.models.BuildTaskUpdateParameters
+name: BuildTaskUpdateParameters
+fullName: azure.mgmt.containerregistry.v2018_02_01_preview.models.BuildTaskUpdateParameters
+module: azure.mgmt.containerregistry.v2018_02_01_preview.models
+inheritances:
+- azure.mgmt.containerregistry._serialization.Model
+summary: The parameters for updating a build task.
+constructor:
+  syntax: 'BuildTaskUpdateParameters(*, tags: Optional[Dict[str, str]] = None, alias:
+    Optional[str] = None, status: Optional[Union[str, _models.BuildTaskStatus]] =
+    None, platform: Optional[_models.PlatformProperties] = None, timeout: Optional[int]
+    = None, source_repository: Optional[_models.SourceRepositoryUpdateParameters]
+    = None, **kwargs: Any)'
+variables:
+- description: The ARM resource tags.
+  name: tags
+  types:
+  - <xref:dict>[<xref:str>, <xref:str>]
+- description: The alternative updatable name for a build task.
+  name: alias
+  types:
+  - <xref:str>
+- description: 'The current status of build task. Known values are: "Disabled" and
+    "Enabled".'
+  name: status
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2018_02_01_preview.models.BuildTaskStatus>
+- description: The platform properties against which the build has to happen.
+  name: platform
+  types:
+  - <xref:azure.mgmt.containerregistry.v2018_02_01_preview.models.PlatformProperties>
+- description: Build timeout in seconds.
+  name: timeout
+  types:
+  - <xref:int>
+- description: The properties that describes the source(code) for the build task.
+  name: source_repository
+  types:
+  - <xref:azure.mgmt.containerregistry.v2018_02_01_preview.models.SourceRepositoryUpdateParameters>

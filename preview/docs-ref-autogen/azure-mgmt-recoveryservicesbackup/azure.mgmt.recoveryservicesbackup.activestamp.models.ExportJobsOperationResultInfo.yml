@@ -12,7 +12,7 @@ summary: 'This class is used to send blob details after exporting jobs.
 constructor:
   syntax: 'ExportJobsOperationResultInfo(*, blob_url: Optional[str] = None, blob_sas_key:
     Optional[str] = None, excel_file_blob_url: Optional[str] = None, excel_file_blob_sas_key:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

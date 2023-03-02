@@ -8,7 +8,7 @@ inheritances:
 summary: List of WorkloadItem resources.
 constructor:
   syntax: 'WorkloadItemResourceList(*, next_link: Optional[str] = None, value: Optional[List[_models.WorkloadItemResource]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'The uri to fetch the next page of resources. Call ListNext() fetches
     next page

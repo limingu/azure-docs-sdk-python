@@ -11,7 +11,8 @@ constructor:
     = None, storage_type: Optional[Union[str, _models.StorageType]] = None, storage_type_state:
     Optional[Union[str, _models.StorageTypeState]] = None, cross_region_restore_flag:
     Optional[bool] = None, dedup_state: Optional[Union[str, _models.DedupState]] =
-    None, xcool_state: Optional[Union[str, _models.XcoolState]] = None, **kwargs)'
+    None, xcool_state: Optional[Union[str, _models.XcoolState]] = None, **kwargs:
+    Any)'
 variables:
 - description: 'Storage type. Known values are: "Invalid", "GeoRedundant",
 

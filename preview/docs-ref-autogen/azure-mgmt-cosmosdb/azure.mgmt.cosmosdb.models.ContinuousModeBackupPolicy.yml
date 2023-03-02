@@ -11,8 +11,7 @@ summary: 'The object representing continuous mode backup policy.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ContinuousModeBackupPolicy(*, migration_state: Optional[_models.BackupPolicyMigrationState]
-    = None, continuous_mode_properties: Optional[_models.ContinuousModeProperties]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Describes the mode of backups. Required. Known values are: "Periodic"
     and
@@ -28,7 +27,3 @@ variables:
   name: migration_state
   types:
   - <xref:azure.mgmt.cosmosdb.models.BackupPolicyMigrationState>
-- description: Configuration values for continuous mode backup.
-  name: continuous_mode_properties
-  types:
-  - <xref:azure.mgmt.cosmosdb.models.ContinuousModeProperties>

@@ -15,7 +15,7 @@ summary: 'LoadTest details.
 constructor:
   syntax: 'LoadTestResource(*, location: str, tags: Optional[Dict[str, str]] = None,
     identity: Optional[_models.ManagedServiceIdentity] = None, description: Optional[str]
-    = None, encryption: Optional[_models.EncryptionProperties] = None, **kwargs)'
+    = None, encryption: Optional[_models.EncryptionProperties] = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

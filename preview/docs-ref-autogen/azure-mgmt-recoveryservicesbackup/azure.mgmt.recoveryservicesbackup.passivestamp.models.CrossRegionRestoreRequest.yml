@@ -8,7 +8,7 @@ inheritances:
 summary: CrossRegionRestoreRequest.
 constructor:
   syntax: 'CrossRegionRestoreRequest(*, cross_region_restore_access_details: Optional[_models.CrrAccessToken]
-    = None, restore_request: Optional[_models.RestoreRequest] = None, **kwargs)'
+    = None, restore_request: Optional[_models.RestoreRequest] = None, **kwargs: Any)'
 variables:
 - description: Access details for cross region restore.
   name: cross_region_restore_access_details

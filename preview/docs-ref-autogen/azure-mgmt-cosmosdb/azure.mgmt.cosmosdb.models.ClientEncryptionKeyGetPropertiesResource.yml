@@ -13,7 +13,7 @@ summary: 'ClientEncryptionKeyGetPropertiesResource.
 constructor:
   syntax: 'ClientEncryptionKeyGetPropertiesResource(*, id: Optional[str] = None, encryption_algorithm:
     Optional[str] = None, wrapped_data_encryption_key: Optional[bytes] = None, key_wrap_metadata:
-    Optional[_models.KeyWrapMetadata] = None, **kwargs)'
+    Optional[_models.KeyWrapMetadata] = None, **kwargs: Any)'
 variables:
 - description: A system generated property. A unique identifier.
   name: rid

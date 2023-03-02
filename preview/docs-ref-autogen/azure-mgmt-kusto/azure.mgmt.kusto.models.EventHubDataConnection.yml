@@ -19,7 +19,7 @@ constructor:
     _models.EventHubDataFormat]] = None, event_system_properties: Optional[List[str]]
     = None, compression: Union[str, _models.Compression] = ''None'', managed_identity_resource_id:
     Optional[str] = None, database_routing: Optional[Union[str, _models.DatabaseRouting]]
-    = None, retrieval_start_date: Optional[datetime.datetime] = None, **kwargs)'
+    = None, retrieval_start_date: Optional[datetime.datetime] = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

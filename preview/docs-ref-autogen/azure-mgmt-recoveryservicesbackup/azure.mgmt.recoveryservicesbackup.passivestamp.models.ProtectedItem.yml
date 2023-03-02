@@ -26,7 +26,7 @@ constructor:
     None, deferred_delete_time_in_utc: Optional[datetime.datetime] = None, is_scheduled_for_deferred_delete:
     Optional[bool] = None, deferred_delete_time_remaining: Optional[str] = None, is_deferred_delete_schedule_upcoming:
     Optional[bool] = None, is_rehydrate: Optional[bool] = None, resource_guard_operation_requests:
-    Optional[List[str]] = None, **kwargs)'
+    Optional[List[str]] = None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type

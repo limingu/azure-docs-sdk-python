@@ -11,7 +11,7 @@ constructor:
     _models.BackupManagementType]] = None, workload_item_type: Optional[Union[str,
     _models.WorkloadItemType]] = None, workload_type: Optional[Union[str, _models.WorkloadType]]
     = None, protection_status: Optional[Union[str, _models.ProtectionStatus]] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Backup management type. Known values are: "Invalid",
 

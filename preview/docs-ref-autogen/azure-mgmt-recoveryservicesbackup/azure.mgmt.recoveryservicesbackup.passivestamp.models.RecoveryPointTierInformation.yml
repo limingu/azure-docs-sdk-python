@@ -9,7 +9,7 @@ summary: Recovery point tier information.
 constructor:
   syntax: 'RecoveryPointTierInformation(*, type: Optional[Union[str, _models.RecoveryPointTierType]]
     = None, status: Optional[Union[str, _models.RecoveryPointTierStatus]] = None,
-    extended_info: Optional[Dict[str, str]] = None, **kwargs)'
+    extended_info: Optional[Dict[str, str]] = None, **kwargs: Any)'
 variables:
 - description: 'Recovery point tier type. Known values are: "Invalid", "InstantRP",
     "HardenedRP",

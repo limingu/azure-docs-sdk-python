@@ -8,7 +8,7 @@ inheritances:
 summary: Response for feature support requests for Azure IaasVm.
 constructor:
   syntax: 'AzureVMResourceFeatureSupportResponse(*, support_status: Optional[Union[str,
-    _models.SupportStatus]] = None, **kwargs)'
+    _models.SupportStatus]] = None, **kwargs: Any)'
 variables:
 - description: 'Support status of feature. Known values are: "Invalid", "Supported",
 

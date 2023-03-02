@@ -17,7 +17,7 @@ constructor:
     Optional[List[_models.RecoveryPointTierInformation]] = None, recovery_point_move_readiness_info:
     Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]] = None, extended_info:
     Optional[_models.AzureWorkloadSQLRecoveryPointExtendedInfo] = None, time_ranges:
-    Optional[List[_models.PointInTimeRange]] = None, **kwargs)'
+    Optional[List[_models.PointInTimeRange]] = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

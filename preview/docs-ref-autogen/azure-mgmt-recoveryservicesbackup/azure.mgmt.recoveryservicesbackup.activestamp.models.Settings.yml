@@ -8,7 +8,7 @@ inheritances:
 summary: Common settings field for backup management.
 constructor:
   syntax: 'Settings(*, time_zone: Optional[str] = None, issqlcompression: Optional[bool]
-    = None, is_compression: Optional[bool] = None, **kwargs)'
+    = None, is_compression: Optional[bool] = None, **kwargs: Any)'
 variables:
 - description: 'TimeZone optional input as string. For example: TimeZone = "Pacific
     Standard

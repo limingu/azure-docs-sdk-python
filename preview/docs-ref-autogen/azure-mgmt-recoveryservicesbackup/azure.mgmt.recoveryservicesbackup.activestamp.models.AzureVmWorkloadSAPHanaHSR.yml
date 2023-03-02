@@ -16,7 +16,8 @@ constructor:
     = None, parent_unique_name: Optional[str] = None, server_name: Optional[str] =
     None, is_auto_protectable: Optional[bool] = None, is_auto_protected: Optional[bool]
     = None, subinquireditemcount: Optional[int] = None, subprotectableitemcount: Optional[int]
-    = None, prebackupvalidation: Optional[_models.PreBackupValidation] = None, **kwargs)'
+    = None, prebackupvalidation: Optional[_models.PreBackupValidation] = None, **kwargs:
+    Any)'
 variables:
 - description: Type of backup management to backup an item.
   name: backup_management_type

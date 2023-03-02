@@ -13,7 +13,7 @@ constructor:
     Optional[Union[str, _models.EnhancedSecurityState]] = None, soft_delete_feature_state:
     Optional[Union[str, _models.SoftDeleteFeatureState]] = None, resource_guard_operation_requests:
     Optional[List[str]] = None, is_soft_delete_feature_state_editable: Optional[bool]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Storage type. Known values are: "Invalid", "GeoRedundant",
 

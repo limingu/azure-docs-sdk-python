@@ -9,7 +9,7 @@ summary: The response body returned for a request to Bot Service Management to c
   availability of a bot name.
 constructor:
   syntax: 'CheckNameAvailabilityResponseBody(*, valid: Optional[bool] = None, message:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, abs_code: Optional[str] = None, **kwargs)'
 variables:
 - description: indicates if the bot name is valid.
   name: valid
@@ -20,5 +20,9 @@ variables:
 
     available.'
   name: message
+  types:
+  - <xref:str>
+- description: response code from ABS.
+  name: abs_code
   types:
   - <xref:str>

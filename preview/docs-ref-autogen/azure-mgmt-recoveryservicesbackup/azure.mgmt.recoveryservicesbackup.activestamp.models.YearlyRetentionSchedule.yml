@@ -12,7 +12,7 @@ constructor:
     _models.MonthOfYear]]] = None, retention_schedule_daily: Optional[_models.DailyRetentionFormat]
     = None, retention_schedule_weekly: Optional[_models.WeeklyRetentionFormat] = None,
     retention_times: Optional[List[datetime.datetime]] = None, retention_duration:
-    Optional[_models.RetentionDuration] = None, **kwargs)'
+    Optional[_models.RetentionDuration] = None, **kwargs: Any)'
 variables:
 - description: 'Retention schedule format for yearly retention policy.
 

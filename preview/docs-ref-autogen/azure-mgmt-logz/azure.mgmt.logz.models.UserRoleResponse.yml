@@ -4,18 +4,17 @@ name: UserRoleResponse
 fullName: azure.mgmt.logz.models.UserRoleResponse
 module: azure.mgmt.logz.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.logz._serialization.Model
 summary: Response for checking user's role for Logz.io account.
 constructor:
-  syntax: 'UserRoleResponse(*, role: Optional[Union[str, azure.mgmt.logz.models._microsoft_logz_enums.UserRole]]
-    = None, **kwargs)'
-  parameters:
-  - name: role
-    description: 'User roles on configured in Logz.io account. Possible values include:
-      "None",
+  syntax: 'UserRoleResponse(*, role: Optional[Union[str, _models.UserRole]] = None,
+    **kwargs)'
+variables:
+- description: 'User roles on configured in Logz.io account. Known values are: "None",
+    "User", and
 
-      "User", "Admin".'
-    isRequired: true
-    types:
-    - <xref:str>
-    - <xref:microsoft_logz.models.UserRole>
+    "Admin".'
+  name: role
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.logz.models.UserRole>

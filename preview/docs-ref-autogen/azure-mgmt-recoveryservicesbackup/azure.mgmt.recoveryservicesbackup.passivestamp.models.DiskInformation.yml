@@ -8,7 +8,7 @@ inheritances:
 summary: Disk information.
 constructor:
   syntax: 'DiskInformation(*, lun: Optional[int] = None, name: Optional[str] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - name: lun
   types:

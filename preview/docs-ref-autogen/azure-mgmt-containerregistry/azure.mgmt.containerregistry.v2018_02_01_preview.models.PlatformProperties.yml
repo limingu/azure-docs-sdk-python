@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.containerregistry.v2018_02_01_preview.models.PlatformProperties
+name: PlatformProperties
+fullName: azure.mgmt.containerregistry.v2018_02_01_preview.models.PlatformProperties
+module: azure.mgmt.containerregistry.v2018_02_01_preview.models
+inheritances:
+- azure.mgmt.containerregistry._serialization.Model
+summary: 'The platform properties against which the build has to happen.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'PlatformProperties(*, os_type: Union[str, _models.OsType], cpu: Optional[int]
+    = None, **kwargs: Any)'
+variables:
+- description: 'The operating system type required for the build. Required. Known
+    values are:
+
+    "Windows" and "Linux".'
+  name: os_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2018_02_01_preview.models.OsType>
+- description: The CPU configuration in terms of number of cores required for the
+    build.
+  name: cpu
+  types:
+  - <xref:int>

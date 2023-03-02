@@ -4,7 +4,7 @@ name: LogsIngestionClient
 fullName: azure.monitor.ingestion.aio.LogsIngestionClient
 module: azure.monitor.ingestion.aio
 inheritances:
-- azure.monitor.ingestion.aio._client.MonitorIngestionClient
+- azure.monitor.ingestion.aio._client.LogsIngestionClient
 summary: Azure Monitor Data Collection Python Client.
 constructor:
   syntax: 'LogsIngestionClient(endpoint: str, credential: AsyncTokenCredential, **kwargs:

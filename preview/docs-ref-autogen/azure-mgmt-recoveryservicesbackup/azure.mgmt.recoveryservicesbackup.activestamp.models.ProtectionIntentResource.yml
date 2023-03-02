@@ -12,7 +12,7 @@ summary: 'Base class for backup ProtectionIntent.
 constructor:
   syntax: 'ProtectionIntentResource(*, location: Optional[str] = None, tags: Optional[Dict[str,
     str]] = None, e_tag: Optional[str] = None, properties: Optional[_models.ProtectionIntent]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Resource Id represents the complete path to the resource.
   name: id

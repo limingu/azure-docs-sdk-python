@@ -16,7 +16,7 @@ constructor:
     on_premise_recovery_point_count: Optional[int] = None, is_collocated: Optional[bool]
     = None, protection_group_name: Optional[str] = None, disk_storage_used_in_bytes:
     Optional[str] = None, total_disk_storage_size_in_bytes: Optional[str] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Attribute to provide information on various DBs.
   name: protectable_object_load_path

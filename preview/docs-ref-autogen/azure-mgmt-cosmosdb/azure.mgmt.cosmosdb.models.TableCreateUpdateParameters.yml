@@ -14,8 +14,8 @@ summary: 'Parameters to create and update Cosmos DB Table.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'TableCreateUpdateParameters(*, resource: _models.TableResource, location:
-    Optional[str] = None, tags: Optional[Dict[str, str]] = None, identity: Optional[_models.ManagedServiceIdentity]
-    = None, options: Optional[_models.CreateUpdateOptions] = None, **kwargs)'
+    Optional[str] = None, tags: Optional[Dict[str, str]] = None, options: Optional[_models.CreateUpdateOptions]
+    = None, **kwargs: Any)'
 variables:
 - description: The unique resource identifier of the ARM resource.
   name: id
@@ -52,10 +52,6 @@ variables:
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Identity for the resource.
-  name: identity
-  types:
-  - <xref:azure.mgmt.cosmosdb.models.ManagedServiceIdentity>
 - description: The standard JSON format of a Table. Required.
   name: resource
   types:

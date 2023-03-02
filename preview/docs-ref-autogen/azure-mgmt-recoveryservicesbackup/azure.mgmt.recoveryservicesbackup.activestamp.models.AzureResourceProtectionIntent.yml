@@ -14,7 +14,7 @@ constructor:
     _models.BackupManagementType]] = None, source_resource_id: Optional[str] = None,
     item_id: Optional[str] = None, policy_id: Optional[str] = None, protection_state:
     Optional[Union[str, _models.ProtectionStatus]] = None, friendly_name: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'backup protectionIntent type. Required. Known values are:
 

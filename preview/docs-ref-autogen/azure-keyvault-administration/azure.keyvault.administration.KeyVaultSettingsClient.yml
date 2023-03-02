@@ -7,8 +7,7 @@ inheritances:
 - azure.keyvault.administration._internal.client_base.KeyVaultClientBase
 summary: Provides methods to update, get, and list settings for an Azure Key Vault.
 constructor:
-  syntax: 'KeyVaultSettingsClient(vault_url: str, credential: TokenCredential, **kwargs:
-    Any)'
+  syntax: 'KeyVaultSettingsClient(vault_url: str, credential: TokenCredential, **kwargs)'
   parameters:
   - name: vault_url
     description: 'URL of the vault on which the client will operate. This is also

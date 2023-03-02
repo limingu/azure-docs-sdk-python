@@ -13,7 +13,7 @@ constructor:
   syntax: 'LongTermRetentionPolicy(*, daily_schedule: Optional[_models.DailyRetentionSchedule]
     = None, weekly_schedule: Optional[_models.WeeklyRetentionSchedule] = None, monthly_schedule:
     Optional[_models.MonthlyRetentionSchedule] = None, yearly_schedule: Optional[_models.YearlyRetentionSchedule]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the
 

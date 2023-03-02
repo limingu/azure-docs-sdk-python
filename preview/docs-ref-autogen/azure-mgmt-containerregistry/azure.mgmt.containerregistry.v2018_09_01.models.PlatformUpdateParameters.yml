@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.containerregistry.v2018_09_01.models.PlatformUpdateParameters
+name: PlatformUpdateParameters
+fullName: azure.mgmt.containerregistry.v2018_09_01.models.PlatformUpdateParameters
+module: azure.mgmt.containerregistry.v2018_09_01.models
+inheritances:
+- azure.mgmt.containerregistry._serialization.Model
+summary: The properties for updating the platform configuration.
+constructor:
+  syntax: 'PlatformUpdateParameters(*, os: Optional[Union[str, _models.OS]] = None,
+    architecture: Optional[Union[str, _models.Architecture]] = None, variant: Optional[Union[str,
+    _models.Variant]] = None, **kwargs: Any)'
+variables:
+- description: 'The operating system type required for the run. Known values are:
+    "Windows" and
+
+    "Linux".'
+  name: os
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2018_09_01.models.OS>
+- description: 'The OS architecture. Known values are: "amd64", "x86", and "arm".'
+  name: architecture
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2018_09_01.models.Architecture>
+- description: 'Variant of the CPU. Known values are: "v6", "v7", and "v8".'
+  name: variant
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2018_09_01.models.Variant>

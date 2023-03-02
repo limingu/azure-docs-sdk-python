@@ -17,7 +17,7 @@ constructor:
     = None, protected_item_count: Optional[int] = None, dpm_agent_version: Optional[str]
     = None, dpm_servers: Optional[List[str]] = None, upgrade_available: Optional[bool]
     = None, protection_status: Optional[str] = None, extended_info: Optional[_models.DPMContainerExtendedInfo]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Friendly name of the container.
   name: friendly_name

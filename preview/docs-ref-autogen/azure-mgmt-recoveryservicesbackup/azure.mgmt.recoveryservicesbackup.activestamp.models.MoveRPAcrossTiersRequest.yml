@@ -9,7 +9,7 @@ summary: MoveRPAcrossTiersRequest.
 constructor:
   syntax: 'MoveRPAcrossTiersRequest(*, object_type: Optional[str] = None, source_tier_type:
     Optional[Union[str, _models.RecoveryPointTierType]] = None, target_tier_type:
-    Optional[Union[str, _models.RecoveryPointTierType]] = None, **kwargs)'
+    Optional[Union[str, _models.RecoveryPointTierType]] = None, **kwargs: Any)'
 variables:
 - description: Gets the class type.
   name: object_type

@@ -21,7 +21,7 @@ constructor:
     Optional[Union[str, _models.BackupManagementType]] = None, operation: Optional[str]
     = None, status: Optional[str] = None, start_time: Optional[datetime.datetime]
     = None, end_time: Optional[datetime.datetime] = None, activity_id: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Friendly name of the entity on which the current job is executing.
   name: entity_friendly_name

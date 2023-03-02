@@ -8,7 +8,7 @@ inheritances:
 summary: List of resources page result.
 constructor:
   syntax: 'LoadTestResourcePageList(*, value: Optional[List[_models.LoadTestResource]]
-    = None, next_link: Optional[str] = None, **kwargs)'
+    = None, next_link: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: List of resources in current page.
   name: value

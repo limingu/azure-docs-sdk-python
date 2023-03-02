@@ -15,7 +15,7 @@ constructor:
     None, max_capacity: Optional[int] = None, capabilities: Optional[Dict[str, str]]
     = None, finetune_capabilities: Optional[Dict[str, str]] = None, deprecation: Optional[_models.ModelDeprecationInfo]
     = None, lifecycle_status: Optional[Union[str, _models.ModelLifecycleStatus]] =
-    None, **kwargs)'
+    None, **kwargs: Any)'
 variables:
 - description: Deployment model format.
   name: format

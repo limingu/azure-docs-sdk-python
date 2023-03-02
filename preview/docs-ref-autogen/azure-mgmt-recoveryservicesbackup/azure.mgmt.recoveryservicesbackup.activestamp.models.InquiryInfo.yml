@@ -9,7 +9,7 @@ summary: Details about inquired protectable items under a given container.
 constructor:
   syntax: 'InquiryInfo(*, status: Optional[str] = None, error_detail: Optional[_models.ErrorDetail]
     = None, inquiry_details: Optional[List[_models.WorkloadInquiryDetails]] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Inquiry Status for this container such as
 

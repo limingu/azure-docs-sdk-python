@@ -12,7 +12,8 @@ summary: 'Generic backup copy.
 constructor:
   syntax: 'GenericRecoveryPoint(*, friendly_name: Optional[str] = None, recovery_point_type:
     Optional[str] = None, recovery_point_time: Optional[datetime.datetime] = None,
-    recovery_point_additional_info: Optional[str] = None, **kwargs)'
+    recovery_point_additional_info: Optional[str] = None, recovery_point_properties:
+    Optional[_models.RecoveryPointProperties] = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 
@@ -36,3 +37,7 @@ variables:
   name: recovery_point_additional_info
   types:
   - <xref:str>
+- description: Properties of Recovery Point.
+  name: recovery_point_properties
+  types:
+  - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointProperties>

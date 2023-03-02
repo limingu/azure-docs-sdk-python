@@ -4,7 +4,7 @@ name: ConnectedClusterResourceId
 fullName: azure.mgmt.mobilenetwork.models.ConnectedClusterResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to an Azure Arc custom location resource.
 
 
@@ -12,7 +12,7 @@ summary: 'Reference to an Azure Arc custom location resource.
 constructor:
   syntax: 'ConnectedClusterResourceId(*, id: str, **kwargs)'
 variables:
-- description: Required. Azure Arc connected cluster resource ID.
+- description: Azure Arc connected cluster resource ID. Required.
   name: id
   types:
   - <xref:str>

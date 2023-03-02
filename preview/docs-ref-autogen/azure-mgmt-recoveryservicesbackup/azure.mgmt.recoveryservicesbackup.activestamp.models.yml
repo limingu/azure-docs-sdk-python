@@ -246,6 +246,7 @@ classes:
 - azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPoint
 - azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointDiskConfiguration
 - azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointMoveReadinessInfo
+- azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointProperties
 - azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointRehydrationInfo
 - azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointResource
 - azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointResourceList

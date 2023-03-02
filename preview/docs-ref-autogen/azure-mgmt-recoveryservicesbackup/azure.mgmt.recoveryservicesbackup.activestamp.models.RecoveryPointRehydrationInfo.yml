@@ -9,7 +9,7 @@ summary: RP Rehydration Info.
 constructor:
   syntax: 'RecoveryPointRehydrationInfo(*, rehydration_retention_duration: Optional[str]
     = None, rehydration_priority: Optional[Union[str, _models.RehydrationPriority]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'How long the rehydrated RP should be kept
 

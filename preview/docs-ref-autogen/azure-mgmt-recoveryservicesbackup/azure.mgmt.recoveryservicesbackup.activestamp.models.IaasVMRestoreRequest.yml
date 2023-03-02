@@ -27,7 +27,7 @@ constructor:
     = None, restore_disk_lun_list: Optional[List[int]] = None, restore_with_managed_disks:
     Optional[bool] = None, disk_encryption_set_id: Optional[str] = None, zones: Optional[List[str]]
     = None, identity_info: Optional[_models.IdentityInfo] = None, identity_based_restore_details:
-    Optional[_models.IdentityBasedRestoreDetails] = None, **kwargs)'
+    Optional[_models.IdentityBasedRestoreDetails] = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

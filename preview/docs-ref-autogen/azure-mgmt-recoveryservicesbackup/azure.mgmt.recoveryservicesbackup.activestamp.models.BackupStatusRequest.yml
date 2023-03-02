@@ -9,7 +9,7 @@ summary: BackupStatus request.
 constructor:
   syntax: 'BackupStatusRequest(*, resource_type: Optional[Union[str, _models.DataSourceType]]
     = None, resource_id: Optional[str] = None, po_logical_name: Optional[str] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Container Type - VM, SQLPaaS, DPM, AzureFileShare... Known values
     are:

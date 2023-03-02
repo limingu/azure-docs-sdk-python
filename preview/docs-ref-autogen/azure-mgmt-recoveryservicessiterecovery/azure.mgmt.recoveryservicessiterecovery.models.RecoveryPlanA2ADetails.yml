@@ -11,7 +11,9 @@ summary: 'Recovery plan A2A specific details.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'RecoveryPlanA2ADetails(*, primary_zone: Optional[str] = None, recovery_zone:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, primary_extended_location: Optional[_models.ExtendedLocation]
+    = None, recovery_extended_location: Optional[_models.ExtendedLocation] = None,
+    **kwargs)'
 variables:
 - description: Gets the Instance type. Required.
   name: instance_type
@@ -25,3 +27,11 @@ variables:
   name: recovery_zone
   types:
   - <xref:str>
+- description: The primary extended location.
+  name: primary_extended_location
+  types:
+  - <xref:azure.mgmt.recoveryservicessiterecovery.models.ExtendedLocation>
+- description: The recovery extended location.
+  name: recovery_extended_location
+  types:
+  - <xref:azure.mgmt.recoveryservicessiterecovery.models.ExtendedLocation>

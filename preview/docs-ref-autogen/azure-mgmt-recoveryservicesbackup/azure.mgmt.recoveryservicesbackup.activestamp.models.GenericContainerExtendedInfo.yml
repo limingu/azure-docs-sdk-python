@@ -9,7 +9,7 @@ summary: Container extended information.
 constructor:
   syntax: 'GenericContainerExtendedInfo(*, raw_cert_data: Optional[str] = None, container_identity_info:
     Optional[_models.ContainerIdentityInfo] = None, service_endpoints: Optional[Dict[str,
-    str]] = None, **kwargs)'
+    str]] = None, **kwargs: Any)'
 variables:
 - description: Public key of container cert.
   name: raw_cert_data

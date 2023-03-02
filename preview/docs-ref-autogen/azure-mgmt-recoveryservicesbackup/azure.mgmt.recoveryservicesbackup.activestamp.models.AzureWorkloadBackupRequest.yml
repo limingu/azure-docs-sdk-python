@@ -12,7 +12,7 @@ summary: 'AzureWorkload workload-specific backup request.
 constructor:
   syntax: 'AzureWorkloadBackupRequest(*, backup_type: Optional[Union[str, _models.BackupType]]
     = None, enable_compression: Optional[bool] = None, recovery_point_expiry_time_in_utc:
-    Optional[datetime.datetime] = None, **kwargs)'
+    Optional[datetime.datetime] = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

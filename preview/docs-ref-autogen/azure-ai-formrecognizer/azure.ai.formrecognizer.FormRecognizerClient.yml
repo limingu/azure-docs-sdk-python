@@ -25,7 +25,7 @@ summary: 'FormRecognizerClient extracts information from forms and images into s
 
   >
 
-  > To use API versions 2021-09-30-preview and up, instantiate a DocumentAnalysisClient.
+  > To use API versions 2022-08-31 and up, instantiate a DocumentAnalysisClient.
 
   >'
 constructor:
@@ -63,27 +63,27 @@ constructor:
     - <xref:azure.ai.formrecognizer.FormRecognizerApiVersion>
 examples:
 - "Creating the FormRecognizerClient with an endpoint and API key.<!--[!code-python[Main](les\\\
-  v3.1\\sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
-  : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\
-  \\v3.1\\\\sample_authentication.py\", \"xml:space\": \"preserve\", \"force\": false,\
-  \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-  : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
-  \   from azure.ai.formrecognizer import FormRecognizerClient\n   endpoint = os.environ[\"\
-  AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
-  ]\n\n   form_recognizer_client = FormRecognizerClient(endpoint, AzureKeyCredential(key))\n\
-  \n   ````\n\nCreating the FormRecognizerClient with a token credential.<!--[!code-python[Main](les\\\
-  v3.1\\sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
-  : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\
-  \\v3.1\\\\sample_authentication.py\", \"xml:space\": \"preserve\", \"force\": false,\
-  \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-  : false} -->\n\n````python\n\n   \"\"\"DefaultAzureCredential will use the values\
-  \ from these environment\n   variables: AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET\n\
-  \   \"\"\"\n   from azure.ai.formrecognizer import FormRecognizerClient\n   from\
-  \ azure.identity import DefaultAzureCredential\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-  ]\n   credential = DefaultAzureCredential()\n\n   form_recognizer_client = FormRecognizerClient(endpoint,\
-  \ credential)\n\n   ````\n"
+  v3.1\\sample_authentication_v3_1.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
+  classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"\
+  D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\
+  \\samples\\\\v3.1\\\\sample_authentication_v3_1.py\", \"xml:space\": \"preserve\"\
+  , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+  : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import\
+  \ AzureKeyCredential\n   from azure.ai.formrecognizer import FormRecognizerClient\n\
+  \   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"\
+  AZURE_FORM_RECOGNIZER_KEY\"]\n\n   form_recognizer_client = FormRecognizerClient(endpoint,\
+  \ AzureKeyCredential(key))\n\n   ````\n\nCreating the FormRecognizerClient with\
+  \ a token credential.<!--[!code-python[Main](les\\v3.1\\sample_authentication_v3_1.py\
+  \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\\
+  55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\\samples\\\\v3.1\\\\sample_authentication_v3_1.py\"\
+  , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
+  : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   \"\"\"DefaultAzureCredential\
+  \ will use the values from these environment\n   variables: AZURE_CLIENT_ID, AZURE_TENANT_ID,\
+  \ AZURE_CLIENT_SECRET\n   \"\"\"\n   from azure.ai.formrecognizer import FormRecognizerClient\n\
+  \   from azure.identity import DefaultAzureCredential\n\n   endpoint = os.environ[\"\
+  AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   credential = DefaultAzureCredential()\n\n\
+  \   form_recognizer_client = FormRecognizerClient(endpoint, credential)\n\n   ````\n"
 methods:
 - uid: azure.ai.formrecognizer.FormRecognizerClient.begin_recognize_business_cards
   name: begin_recognize_business_cards
@@ -158,14 +158,15 @@ methods:
   - "Recognize business cards from a file.<!--[!code-python[Main](les\\v3.1\\sample_recognize_business_cards.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_recognize_business_cards.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   from azure.core.credentials import AzureKeyCredential\n   from azure.ai.formrecognizer\
-    \ import FormRecognizerClient\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-    ]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"]\n\n   form_recognizer_client\
-    \ = FormRecognizerClient(\n       endpoint=endpoint, credential=AzureKeyCredential(key)\n\
-    \   )\n   with open(path_to_sample_forms, \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_business_cards(business_card=f,\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\\samples\\\\v3.1\\\
+    \\sample_recognize_business_cards.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
+    \   from azure.ai.formrecognizer import FormRecognizerClient\n\n   endpoint =\
+    \ os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
+    ]\n\n   form_recognizer_client = FormRecognizerClient(\n       endpoint=endpoint,\
+    \ credential=AzureKeyCredential(key)\n   )\n   with open(path_to_sample_forms,\
+    \ \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_business_cards(business_card=f,\
     \ locale=\"en-US\")\n   business_cards = poller.result()\n\n   for idx, business_card\
     \ in enumerate(business_cards):\n       print(\"--------Recognizing business card\
     \ #{}--------\".format(idx+1))\n       contact_names = business_card.fields.get(\"\
@@ -348,7 +349,7 @@ methods:
   - "Recognize text and content/layout information from a form.<!--[!code-python[Main](les\\\
     v3.1\\sample_recognize_content.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\
+    \ \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\
     \\samples\\\\v3.1\\\\sample_recognize_content.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
@@ -518,7 +519,7 @@ methods:
   - "Recognize fields and values from a custom form.<!--[!code-python[Main](les\\\
     v3.1\\sample_recognize_custom_forms.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\
+    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\
     \\samples\\\\v3.1\\\\sample_recognize_custom_forms.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
@@ -681,14 +682,15 @@ methods:
   - "Recognize identity document fields.<!--[!code-python[Main](les\\v3.1\\sample_recognize_identity_documents.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_recognize_identity_documents.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   from azure.core.credentials import AzureKeyCredential\n   from azure.ai.formrecognizer\
-    \ import FormRecognizerClient\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-    ]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"]\n\n   form_recognizer_client\
-    \ = FormRecognizerClient(\n       endpoint=endpoint, credential=AzureKeyCredential(key)\n\
-    \   )\n   with open(path_to_sample_forms, \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_identity_documents(identity_document=f)\n\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\\samples\\\\v3.1\\\
+    \\sample_recognize_identity_documents.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
+    \   from azure.ai.formrecognizer import FormRecognizerClient\n\n   endpoint =\
+    \ os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
+    ]\n\n   form_recognizer_client = FormRecognizerClient(\n       endpoint=endpoint,\
+    \ credential=AzureKeyCredential(key)\n   )\n   with open(path_to_sample_forms,\
+    \ \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_identity_documents(identity_document=f)\n\
     \   id_documents = poller.result()\n\n   for idx, id_document in enumerate(id_documents):\n\
     \       print(\"--------Recognizing ID document #{}--------\".format(idx+1))\n\
     \       first_name = id_document.fields.get(\"FirstName\")\n       if first_name:\n\
@@ -835,14 +837,15 @@ methods:
   - "Recognize invoices from a file.<!--[!code-python[Main](les\\v3.1\\sample_recognize_invoices.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_recognize_invoices.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   from azure.core.credentials import AzureKeyCredential\n   from azure.ai.formrecognizer\
-    \ import FormRecognizerClient\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-    ]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"]\n\n   form_recognizer_client\
-    \ = FormRecognizerClient(\n       endpoint=endpoint, credential=AzureKeyCredential(key)\n\
-    \   )\n   with open(path_to_sample_forms, \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_invoices(invoice=f,\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\\samples\\\\v3.1\\\
+    \\sample_recognize_invoices.py\", \"xml:space\": \"preserve\", \"force\": false,\
+    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
+    \   from azure.ai.formrecognizer import FormRecognizerClient\n\n   endpoint =\
+    \ os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
+    ]\n\n   form_recognizer_client = FormRecognizerClient(\n       endpoint=endpoint,\
+    \ credential=AzureKeyCredential(key)\n   )\n   with open(path_to_sample_forms,\
+    \ \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_invoices(invoice=f,\
     \ locale=\"en-US\")\n   invoices = poller.result()\n\n   for idx, invoice in enumerate(invoices):\n\
     \       print(\"--------Recognizing invoice #{}--------\".format(idx+1))\n   \
     \    vendor_name = invoice.fields.get(\"VendorName\")\n       if vendor_name:\n\
@@ -1064,14 +1067,15 @@ methods:
   - "Recognize sales receipt fields.<!--[!code-python[Main](les\\v3.1\\sample_recognize_receipts.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_recognize_receipts.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   from azure.core.credentials import AzureKeyCredential\n   from azure.ai.formrecognizer\
-    \ import FormRecognizerClient\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-    ]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"]\n\n   form_recognizer_client\
-    \ = FormRecognizerClient(\n       endpoint=endpoint, credential=AzureKeyCredential(key)\n\
-    \   )\n   with open(path_to_sample_forms, \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_receipts(receipt=f,\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\\samples\\\\v3.1\\\
+    \\sample_recognize_receipts.py\", \"xml:space\": \"preserve\", \"force\": false,\
+    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
+    \   from azure.ai.formrecognizer import FormRecognizerClient\n\n   endpoint =\
+    \ os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
+    ]\n\n   form_recognizer_client = FormRecognizerClient(\n       endpoint=endpoint,\
+    \ credential=AzureKeyCredential(key)\n   )\n   with open(path_to_sample_forms,\
+    \ \"rb\") as f:\n       poller = form_recognizer_client.begin_recognize_receipts(receipt=f,\
     \ locale=\"en-US\")\n   receipts = poller.result()\n\n   for idx, receipt in enumerate(receipts):\n\
     \       print(\"--------Recognizing receipt #{}--------\".format(idx+1))\n   \
     \    receipt_type = receipt.fields.get(\"ReceiptType\")\n       if receipt_type:\n\
@@ -1168,7 +1172,7 @@ methods:
   - "Recognize sales receipt fields from a URL.<!--[!code-python[Main](les\\v3.1\\\
     sample_recognize_receipts_from_url.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\
+    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230301001\\\
     \\samples\\\\v3.1\\\\sample_recognize_receipts_from_url.py\", \"xml:space\": \"\
     preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\": {\"\
     linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
