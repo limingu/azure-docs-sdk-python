@@ -569,7 +569,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-mgmt-agrifood",
-        "version": "==1.0.0b3"
+        "version": "==1.0.0a20230302001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -583,7 +584,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-agrifood-farming",
-        "version": "==1.0.0b2"
+        "version": "==1.0.0a20230302001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -978,7 +980,8 @@
         "name": "azure-cognitiveservices-vision-face",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.6.0"
+        "version": "==0.6.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1232,7 +1235,8 @@
         "name": "azure-cognitiveservices-language-textanalytics",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.2.1"
+        "version": "==0.2.1a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -2005,7 +2009,8 @@
         "name": "azure-mgmt-nginx",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.1.0b1"
+        "version": "==2.1.0a20230302001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -3041,7 +3046,8 @@
         "name": "azure-mgmt-edgeorder",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.0.0b1"
+        "version": "==2.0.0a20230302001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -3196,6 +3202,291 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==1.0.0b1"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-containerservice",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==18.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-customsearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.3.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-videosearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-language-luis",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.7.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-vision-customvision",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==3.1.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-customimagesearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.2.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-anomalydetector",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.3.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-websearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-entitysearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-vision-contentmoderator",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-vision-computervision",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.9.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-knowledge-qnamaker",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.3.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-personalizer",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.1.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-language-spellcheck",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-newssearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-containerregistry",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==9.1.0a20220330002",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-visualsearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.2.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-imagesearch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.0.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-cognitiveservices-search-autosuggest",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.2.0a20220330001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",

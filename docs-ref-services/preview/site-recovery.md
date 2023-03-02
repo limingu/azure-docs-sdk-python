@@ -7,11 +7,11 @@ ms.data: 03/02/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: siterecovery
+ms.date: 07/10/2017
+ms.technology: azure
 keywords: Azure, python, SDK, API, Recovery Services Backup
 ms.prod: azure
 manager: douge
-ms.technology: azure
-ms.date: 07/10/2017
 ---
 # Azure Recovery Services Backup libraries for python
 
