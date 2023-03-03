@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-digitaltwins",
-  "Version": "6.4.0b1",
-  "DevVersion": null,
+  "Version": "6.4.0a20230303001",
+  "DevVersion": "6.4.0a20230303001",
   "DirectoryPath": "sdk/digitaltwins/azure-mgmt-digitaltwins",
   "ServiceDirectory": "digitaltwins",
   "ReadMePath": "sdk/digitaltwins/azure-mgmt-digitaltwins/README.md",
