@@ -13,7 +13,7 @@ constructor:
   syntax: 'AzureVMAppContainerProtectableContainer(*, friendly_name: Optional[str]
     = None, backup_management_type: Optional[Union[str, _models.BackupManagementType]]
     = None, health_status: Optional[str] = None, container_id: Optional[str] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Friendly name of the container.
   name: friendly_name

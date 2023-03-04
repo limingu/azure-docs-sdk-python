@@ -12,7 +12,7 @@ summary: 'Cache network settings.
 constructor:
   syntax: 'CacheNetworkSettings(*, mtu: int = 1500, dns_servers: Optional[List[str]]
     = None, dns_search_domain: Optional[str] = None, ntp_server: str = ''time.windows.com'',
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: The IPv4 maximum transmission unit configured for the subnet.
   name: mtu

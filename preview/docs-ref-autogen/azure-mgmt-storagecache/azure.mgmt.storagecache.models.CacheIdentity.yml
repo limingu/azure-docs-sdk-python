@@ -12,7 +12,7 @@ summary: 'Cache identity properties.
 constructor:
   syntax: 'CacheIdentity(*, type: Optional[Union[str, _models.CacheIdentityType]]
     = None, user_assigned_identities: Optional[Dict[str, _models.UserAssignedIdentitiesValue]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: The principal ID for the system-assigned identity of the cache.
   name: principal_id

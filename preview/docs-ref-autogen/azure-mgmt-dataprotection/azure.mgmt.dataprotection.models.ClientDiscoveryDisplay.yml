@@ -9,7 +9,7 @@ summary: Localized display information of an operation.
 constructor:
   syntax: 'ClientDiscoveryDisplay(*, description: Optional[str] = None, operation:
     Optional[str] = None, provider: Optional[str] = None, resource: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Description of the operation having details of what operation is about.
   name: description

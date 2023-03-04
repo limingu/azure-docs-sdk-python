@@ -12,7 +12,7 @@ constructor:
   syntax: 'Job(name: Optional[str] = None, display_name: Optional[str] = None, description:
     Optional[str] = None, tags: Optional[Dict] = None, properties: Optional[Dict]
     = None, experiment_name: Optional[str] = None, compute: Optional[str] = None,
-    services: Optional[Dict[str, azure.ai.ml._restclient.v2022_10_01_preview.models._models_py3.JobService]]
+    services: Optional[Dict[str, azure.ai.ml._restclient.v2022_12_01_preview.models._models_py3.JobService]]
     = None, **kwargs)'
   parameters:
   - name: name

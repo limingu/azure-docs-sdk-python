@@ -14,8 +14,8 @@ summary: 'Parameters to create and update Cosmos DB database accounts.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'DatabaseAccountCreateUpdateParameters(*, locations: List[_models.Location],
-    location: Optional[str] = None, tags: Optional[Dict[str, str]] = None, identity:
-    Optional[_models.ManagedServiceIdentity] = None, kind: Optional[Union[str, _models.DatabaseAccountKind]]
+    location: Optional[str] = None, tags: Optional[Dict[str, str]] = None, kind: Optional[Union[str,
+    _models.DatabaseAccountKind]] = None, identity: Optional[_models.ManagedServiceIdentity]
     = None, consistency_policy: Optional[_models.ConsistencyPolicy] = None, ip_rules:
     Optional[List[_models.IpAddressOrRange]] = None, is_virtual_network_filter_enabled:
     Optional[bool] = None, enable_automatic_failover: Optional[bool] = None, capabilities:
@@ -30,11 +30,11 @@ constructor:
     = None, create_mode: Union[str, _models.CreateMode] = ''Default'', backup_policy:
     Optional[_models.BackupPolicy] = None, cors: Optional[List[_models.CorsPolicy]]
     = None, network_acl_bypass: Optional[Union[str, _models.NetworkAclBypass]] = None,
-    network_acl_bypass_resource_ids: Optional[List[str]] = None, diagnostic_log_settings:
-    Optional[_models.DiagnosticLogSettings] = None, disable_local_auth: Optional[bool]
-    = None, restore_parameters: Optional[_models.RestoreParameters] = None, capacity:
-    Optional[_models.Capacity] = None, enable_materialized_views: Optional[bool] =
-    None, enable_partition_merge: Optional[bool] = None, **kwargs)'
+    network_acl_bypass_resource_ids: Optional[List[str]] = None, disable_local_auth:
+    Optional[bool] = None, restore_parameters: Optional[_models.RestoreParameters]
+    = None, capacity: Optional[_models.Capacity] = None, enable_partition_merge: Optional[bool]
+    = None, minimal_tls_version: Optional[Union[str, _models.MinimalTlsVersion]] =
+    None, **kwargs: Any)'
 variables:
 - description: The unique resource identifier of the ARM resource.
   name: id
@@ -71,10 +71,6 @@ variables:
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Identity for the resource.
-  name: identity
-  types:
-  - <xref:azure.mgmt.cosmosdb.models.ManagedServiceIdentity>
 - description: 'Indicates the type of database account. This can only be set at database
     account
 
@@ -83,6 +79,10 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.cosmosdb.models.DatabaseAccountKind>
+- description: Identity for the resource.
+  name: identity
+  types:
+  - <xref:azure.mgmt.cosmosdb.models.ManagedServiceIdentity>
 - description: The consistency policy for the Cosmos DB account.
   name: consistency_policy
   types:
@@ -217,12 +217,6 @@ variables:
   name: network_acl_bypass_resource_ids
   types:
   - <xref:list>[<xref:str>]
-- description: 'The Object representing the different Diagnostic log settings
-
-    for the Cosmos DB Account.'
-  name: diagnostic_log_settings
-  types:
-  - <xref:azure.mgmt.cosmosdb.models.DiagnosticLogSettings>
 - description: 'Opt-out of local authentication and ensure only MSI and AAD can be
 
     used exclusively for authentication.'
@@ -240,12 +234,6 @@ variables:
   name: capacity
   types:
   - <xref:azure.mgmt.cosmosdb.models.Capacity>
-- description: 'Flag to indicate whether to enable MaterializedViews on the
-
-    Cosmos DB account.'
-  name: enable_materialized_views
-  types:
-  - <xref:bool>
 - description: 'This property is ignored during the update/create operation, as the
 
     metadata is read-only. The object represents the metadata for the Account Keys
@@ -261,6 +249,16 @@ variables:
   name: enable_partition_merge
   types:
   - <xref:bool>
+- description: 'Indicates the minimum allowed Tls version. The default is Tls 1.0,
+
+    except for Cassandra and Mongo API''s, which only work with Tls 1.2. Known values
+    are: "Tls",
+
+    "Tls11", and "Tls12".'
+  name: minimal_tls_version
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.cosmosdb.models.MinimalTlsVersion>
 attributes:
 - uid: azure.mgmt.cosmosdb.models.DatabaseAccountCreateUpdateParameters.database_account_offer_type
   name: database_account_offer_type

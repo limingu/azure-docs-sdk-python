@@ -50,10 +50,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for the policy assignment. Is either a PolicyAssignment
-      type or a
+    description: 'Parameters for the policy assignment. Is either a model type or
+      a IO type.
 
-      IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2021_06_01.models.PolicyAssignment>
@@ -116,10 +116,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for policy assignment. Is either a PolicyAssignment type
-      or a IO
+    description: 'Parameters for policy assignment. Is either a model type or a IO
+      type.
 
-      type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2021_06_01.models.PolicyAssignment>
@@ -770,9 +770,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for policy assignment patch request. Is either a
+    description: 'Parameters for policy assignment patch request. Is either a model
+      type or a
 
-      PolicyAssignmentUpdate type or a IO type. Required.'
+      IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2021_06_01.models.PolicyAssignmentUpdate>
@@ -835,9 +836,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for policy assignment patch request. Is either a
+    description: 'Parameters for policy assignment patch request. Is either a model
+      type or a
 
-      PolicyAssignmentUpdate type or a IO type. Required.'
+      IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2021_06_01.models.PolicyAssignmentUpdate>

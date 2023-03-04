@@ -9,7 +9,7 @@ summary: Additional information on Azure Workload for SQL specific backup item.
 constructor:
   syntax: 'AzureVmWorkloadProtectedItemExtendedInfo(*, oldest_recovery_point: Optional[datetime.datetime]
     = None, recovery_point_count: Optional[int] = None, policy_state: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: The oldest backup copy available for this backup item.
   name: oldest_recovery_point

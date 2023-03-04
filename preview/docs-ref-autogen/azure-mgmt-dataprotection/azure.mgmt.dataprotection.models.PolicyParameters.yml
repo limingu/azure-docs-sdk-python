@@ -9,7 +9,7 @@ summary: Parameters in Policy.
 constructor:
   syntax: 'PolicyParameters(*, data_store_parameters_list: Optional[List[_models.DataStoreParameters]]
     = None, backup_datasource_parameters_list: Optional[List[_models.BackupDatasourceParameters]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Gets or sets the DataStore Parameters.
   name: data_store_parameters_list

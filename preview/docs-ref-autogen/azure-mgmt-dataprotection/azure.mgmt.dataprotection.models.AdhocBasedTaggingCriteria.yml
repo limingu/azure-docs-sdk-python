@@ -8,7 +8,7 @@ inheritances:
 summary: Adhoc backup tagging criteria.
 constructor:
   syntax: 'AdhocBasedTaggingCriteria(*, tag_info: Optional[_models.RetentionTag] =
-    None, **kwargs)'
+    None, **kwargs: Any)'
 variables:
 - description: Retention tag information.
   name: tag_info

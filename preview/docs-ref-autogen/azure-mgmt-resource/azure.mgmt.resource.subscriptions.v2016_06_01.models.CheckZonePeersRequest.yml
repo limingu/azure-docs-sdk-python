@@ -8,7 +8,7 @@ inheritances:
 summary: Check zone peers request parameters.
 constructor:
   syntax: 'CheckZonePeersRequest(*, location: Optional[str] = None, subscription_ids:
-    Optional[List[str]] = None, **kwargs: Any)'
+    Optional[List[str]] = None, **kwargs)'
 variables:
 - description: The Microsoft location.
   name: location

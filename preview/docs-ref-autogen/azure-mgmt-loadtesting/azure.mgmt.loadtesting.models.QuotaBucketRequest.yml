@@ -12,7 +12,7 @@ summary: 'Request object of new quota for a quota bucket.
 constructor:
   syntax: 'QuotaBucketRequest(*, current_usage: Optional[int] = None, current_quota:
     Optional[int] = None, new_quota: Optional[int] = None, dimensions: Optional[_models.QuotaBucketRequestPropertiesDimensions]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

@@ -11,7 +11,8 @@ summary: 'The locations and zones info for SKU.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'SkuLocationInfoItem(*, location: str, zones: Optional[List[str]] = None,
-    zone_details: Optional[List[_models.ResourceSkuZoneDetails]] = None, **kwargs)'
+    zone_details: Optional[List[_models.ResourceSkuZoneDetails]] = None, **kwargs:
+    Any)'
 variables:
 - description: The available location of the SKU. Required.
   name: location

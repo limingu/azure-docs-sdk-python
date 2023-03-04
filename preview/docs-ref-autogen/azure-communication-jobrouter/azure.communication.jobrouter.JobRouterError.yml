@@ -1,0 +1,37 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.JobRouterError
+name: JobRouterError
+fullName: azure.communication.jobrouter.JobRouterError
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'The Communication Services error.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'JobRouterError(*, code: str, message: str, **kwargs)'
+variables:
+- description: The error code. Required.
+  name: code
+  types:
+  - <xref:str>
+- description: The error message. Required.
+  name: message
+  types:
+  - <xref:str>
+- description: The error target.
+  name: target
+  types:
+  - <xref:str>
+- description: Further details about specific errors that led to this error.
+  name: details
+  types:
+  - <xref:list>[<xref:azure.communication.jobrouter.models.JobRouterError>]
+- description: The inner error if any.
+  name: inner_error
+  types:
+  - <xref:azure.communication.jobrouter.models.JobRouterError>

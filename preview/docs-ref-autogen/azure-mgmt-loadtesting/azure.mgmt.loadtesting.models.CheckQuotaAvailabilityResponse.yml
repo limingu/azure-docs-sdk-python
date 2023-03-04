@@ -11,7 +11,7 @@ summary: 'Check quota availability response object.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'CheckQuotaAvailabilityResponse(*, is_available: Optional[bool] = None,
-    availability_status: Optional[str] = None, **kwargs)'
+    availability_status: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

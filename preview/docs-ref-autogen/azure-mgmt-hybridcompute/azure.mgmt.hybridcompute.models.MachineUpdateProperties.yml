@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.hybridcompute.models.MachineUpdateProperties
+name: MachineUpdateProperties
+fullName: azure.mgmt.hybridcompute.models.MachineUpdateProperties
+module: azure.mgmt.hybridcompute.models
+inheritances:
+- azure.mgmt.hybridcompute._serialization.Model
+summary: Describes the ARM updatable properties of a hybrid machine.
+constructor:
+  syntax: 'MachineUpdateProperties(*, location_data: Optional[_models.LocationData]
+    = None, os_profile: Optional[_models.OSProfile] = None, cloud_metadata: Optional[_models.CloudMetadata]
+    = None, parent_cluster_resource_id: Optional[str] = None, private_link_scope_resource_id:
+    Optional[str] = None, **kwargs: Any)'
+variables:
+- description: Metadata pertaining to the geographic location of the resource.
+  name: location_data
+  types:
+  - <xref:azure.mgmt.hybridcompute.models.LocationData>
+- description: Specifies the operating system settings for the hybrid machine.
+  name: os_profile
+  types:
+  - <xref:azure.mgmt.hybridcompute.models.OSProfile>
+- description: The metadata of the cloud environment (Azure/GCP/AWS/OCI...).
+  name: cloud_metadata
+  types:
+  - <xref:azure.mgmt.hybridcompute.models.CloudMetadata>
+- description: 'The resource id of the parent cluster (Azure HCI) this
+
+    machine is assigned to, if any.'
+  name: parent_cluster_resource_id
+  types:
+  - <xref:str>
+- description: 'The resource id of the private link scope this machine is
+
+    assigned to, if any.'
+  name: private_link_scope_resource_id
+  types:
+  - <xref:str>

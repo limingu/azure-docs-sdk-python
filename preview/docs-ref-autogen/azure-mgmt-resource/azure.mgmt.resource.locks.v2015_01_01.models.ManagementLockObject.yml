@@ -11,7 +11,7 @@ summary: 'Management lock information.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'ManagementLockObject(*, name: Optional[str] = None, level: Optional[Union[str,
-    _models.LockLevel]] = None, notes: Optional[str] = None, **kwargs: Any)'
+    _models.LockLevel]] = None, notes: Optional[str] = None, **kwargs)'
 variables:
 - description: The Id of the lock.
   name: id

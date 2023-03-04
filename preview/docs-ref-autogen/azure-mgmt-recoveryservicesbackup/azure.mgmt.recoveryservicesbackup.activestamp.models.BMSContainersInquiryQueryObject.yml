@@ -9,7 +9,7 @@ summary: The query filters that can be used with the inquire container API.
 constructor:
   syntax: 'BMSContainersInquiryQueryObject(*, backup_management_type: Optional[Union[str,
     _models.BackupManagementType]] = None, workload_type: Optional[Union[str, _models.WorkloadType]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Backup management type for this container. Known values are:
 

@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.RouterJobItem
+name: RouterJobItem
+fullName: azure.communication.jobrouter.RouterJobItem
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: Paged instance of RouterJob.
+constructor:
+  syntax: 'RouterJobItem(*, router_job: Optional[_models.RouterJob] = None, etag:
+    Optional[str] = None, **kwargs)'
+variables:
+- description: A unit of work to be routed.
+  name: router_job
+  types:
+  - <xref:azure.communication.jobrouter.models.RouterJob>
+- description: (Optional) The Concurrency Token.
+  name: etag
+  types:
+  - <xref:str>

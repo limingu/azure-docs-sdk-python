@@ -7,77 +7,43 @@ inheritances:
 - azure.ai.ml.entities._endpoint.endpoint.Endpoint
 summary: Online endpoint entity.
 constructor:
-  syntax: 'OnlineEndpoint(name: Optional[str] = None, tags: Optional[Dict[str, Any]]
-    = None, properties: Optional[Dict[str, Any]] = None, auth_mode: str = ''key'',
+  syntax: 'OnlineEndpoint(*, name: Optional[str] = None, tags: Optional[Dict[str,
+    Any]] = None, properties: Optional[Dict[str, Any]] = None, auth_mode: str = ''key'',
     description: Optional[str] = None, location: Optional[str] = None, traffic: Optional[Dict[str,
-    int]] = None, mirror_traffic: Optional[Dict[str, int]] = None, identity: Optional[azure.ai.ml._restclient.v2022_02_01_preview.models._models_py3.IdentityConfiguration]
+    int]] = None, mirror_traffic: Optional[Dict[str, int]] = None, identity: Optional[azure.ai.ml.entities._credentials.IdentityConfiguration]
     = None, scoring_uri: Optional[str] = None, openapi_uri: Optional[str] = None,
     provisioning_state: Optional[str] = None, kind: Optional[str] = None, **kwargs)'
   parameters:
   - name: name
-    description: Name of the resource.
-    defaultValue: None
-    types:
-    - <xref:str>
+    description: Name of the resource, defaults to None
   - name: tags
-    description: Tag dictionary. Tags can be added, removed, and updated.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
+    description: Tag dictionary. Tags can be added, removed, and updated. defaults
+      to None
   - name: properties
-    description: The asset property dictionary.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
+    description: The asset property dictionary, defaults to None
   - name: auth_mode
-    description: 'Possible values include: "aml_token", "key", defaults to "key"'
-    defaultValue: key
-    types:
-    - <xref:str>, <xref:optional>
+    description: 'Possible values include: "aml_token", "key", defaults to KEY'
   - name: description
     description: Description of the inference endpoint, defaults to None
-    defaultValue: None
-    types:
-    - <xref:str>, <xref:optional>
   - name: location
-    description: defaults to None
-    defaultValue: None
-    types:
-    - <xref:str>, <xref:optional>
+    description: Location of the resource, defaults to None
   - name: traffic
     description: Traffic rules on how the traffic will be routed across deployments,
-      defaults to {}
-    defaultValue: None
-    types:
-    - <xref:Dict>[<xref:str>, <xref:int>], <xref:optional>
+      defaults to None
   - name: mirror_traffic
     description: Duplicated live traffic used to inference a single deployment, defaults
-      to {}
-    defaultValue: None
-    types:
-    - <xref:Dict>[<xref:str>, <xref:int>], <xref:optional>
-  - name: provisioning_state
-    description: str, provisioning state, readonly
-    defaultValue: None
-    types:
-    - <xref:str>, <xref:optional>
+      to None
   - name: identity
-    description: defaults to SystemAssigned
-    defaultValue: None
-    types:
-    - <xref:azure.ai.ml.entities.IdentityConfiguration>, <xref:optional>
+    description: Identity Configuration, defaults to SystemAssigned
+  - name: scoring_uri
+    description: Scoring URI, defaults to None
+  - name: openapi_uri
+    description: OpenAPI URI, defaults to None
+  - name: provisioning_state
+    description: Provisioning state of an endpoint, defaults to None
   - name: kind
     description: 'Kind of the resource, we have two kinds: K8s and Managed online
-      endpoints,
-
-      defaults to None.'
-    defaultValue: None
-    types:
-    - <xref:str>, <xref:optional>
-  - name: scoring_uri
-    defaultValue: None
-  - name: openapi_uri
-    defaultValue: None
+      endpoints, defaults to None'
 attributes:
 - uid: azure.ai.ml.entities.OnlineEndpoint.provisioning_state
   name: provisioning_state
@@ -85,4 +51,4 @@ attributes:
   return:
     description: Endpoint provisioning state.
     types:
-    - <xref:Optional>[<xref:str>]
+    - <xref:typing.Optional>[<xref:str>]

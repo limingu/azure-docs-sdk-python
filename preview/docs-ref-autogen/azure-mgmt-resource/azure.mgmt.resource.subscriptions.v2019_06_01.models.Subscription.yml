@@ -12,7 +12,7 @@ summary: 'Subscription information.
 constructor:
   syntax: 'Subscription(*, subscription_policies: Optional[_models.SubscriptionPolicies]
     = None, authorization_source: Optional[str] = None, managed_by_tenants: Optional[List[_models.ManagedByTenant]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: 'The fully qualified ID for the subscription. For example,
 

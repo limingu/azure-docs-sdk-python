@@ -8,7 +8,7 @@ inheritances:
 summary: Resource group export result.
 constructor:
   syntax: 'ResourceGroupExportResult(*, template: Optional[collections.abc.MutableMapping[str,
-    Any]] = None, error: Optional[_models.ErrorResponse] = None, **kwargs: Any)'
+    Any]] = None, error: Optional[_models.ErrorResponse] = None, **kwargs)'
 variables:
 - description: The template content.
   name: template

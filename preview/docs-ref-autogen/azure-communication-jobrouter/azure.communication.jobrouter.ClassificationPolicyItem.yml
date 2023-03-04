@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ClassificationPolicyItem
+name: ClassificationPolicyItem
+fullName: azure.communication.jobrouter.ClassificationPolicyItem
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: Paged instance of ClassificationPolicy.
+constructor:
+  syntax: 'ClassificationPolicyItem(*, classification_policy: Optional[_models.ClassificationPolicy]
+    = None, etag: Optional[str] = None, **kwargs)'
+variables:
+- description: A container for the rules that govern how jobs are classified.
+  name: classification_policy
+  types:
+  - <xref:azure.communication.jobrouter.models.ClassificationPolicy>
+- description: (Optional) The Concurrency Token.
+  name: etag
+  types:
+  - <xref:str>

@@ -21,7 +21,8 @@ constructor:
     _models.RecoveryType]] = None, source_resource_id: Optional[str] = None, property_bag:
     Optional[Dict[str, str]] = None, target_info: Optional[_models.TargetRestoreInfo]
     = None, recovery_mode: Optional[Union[str, _models.RecoveryMode]] = None, target_virtual_machine_id:
-    Optional[str] = None, point_in_time: Optional[datetime.datetime] = None, **kwargs)'
+    Optional[str] = None, point_in_time: Optional[datetime.datetime] = None, **kwargs:
+    Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

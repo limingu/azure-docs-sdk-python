@@ -13,8 +13,7 @@ constructor:
   syntax: 'GenericResource(*, location: Optional[str] = None, tags: Optional[Dict[str,
     str]] = None, plan: Optional[_models.Plan] = None, properties: Optional[collections.abc.MutableMapping[str,
     Any]] = None, kind: Optional[str] = None, managed_by: Optional[str] = None, sku:
-    Optional[_models.Sku] = None, identity: Optional[_models.Identity] = None, **kwargs:
-    Any)'
+    Optional[_models.Sku] = None, identity: Optional[_models.Identity] = None, **kwargs)'
 variables:
 - description: Resource Id.
   name: id

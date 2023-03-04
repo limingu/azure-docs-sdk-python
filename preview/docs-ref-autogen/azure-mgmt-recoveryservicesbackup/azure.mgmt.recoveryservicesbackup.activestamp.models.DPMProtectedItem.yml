@@ -24,7 +24,7 @@ constructor:
     = None, soft_delete_retention_period: Optional[int] = None, friendly_name: Optional[str]
     = None, backup_engine_name: Optional[str] = None, protection_state: Optional[Union[str,
     _models.ProtectedItemState]] = None, extended_info: Optional[_models.DPMProtectedItemExtendedInfo]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type
@@ -137,7 +137,10 @@ variables:
   - <xref:str>
 - description: 'Protection state of the backup engine. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

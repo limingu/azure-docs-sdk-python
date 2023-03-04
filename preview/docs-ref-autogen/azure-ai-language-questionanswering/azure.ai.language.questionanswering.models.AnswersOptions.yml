@@ -4,7 +4,7 @@ name: AnswersOptions
 fullName: azure.ai.language.questionanswering.models.AnswersOptions
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: Parameters to query a knowledge base.
 constructor:
   syntax: 'AnswersOptions(*, qna_id: Optional[int] = None, question: Optional[str]
@@ -12,7 +12,7 @@ constructor:
     Optional[float] = None, answer_context: Optional[_models.KnowledgeBaseAnswerContext]
     = None, ranker_kind: Optional[str] = None, filters: Optional[_models.QueryFilters]
     = None, short_answer_options: Optional[_models.ShortAnswerOptions] = None, include_unstructured_sources:
-    Optional[bool] = None, **kwargs)'
+    Optional[bool] = None, **kwargs: Any)'
 variables:
 - description: 'Exact QnA ID to fetch from the knowledge base, this field takes priority
     over

@@ -9,7 +9,7 @@ summary: Plan for the resource.
 constructor:
   syntax: 'Plan(*, name: Optional[str] = None, publisher: Optional[str] = None, product:
     Optional[str] = None, promotion_code: Optional[str] = None, version: Optional[str]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The plan ID.
   name: name

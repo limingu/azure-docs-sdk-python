@@ -349,7 +349,7 @@ methods:
 - uid: azure.appconfiguration.aio.AzureAppConfigurationClient.update_sync_token
   name: update_sync_token
   summary: Add a sync token to the internal list of tokens.
-  signature: 'update_sync_token(token: str) -> None'
+  signature: 'async update_sync_token(token: str) -> None'
   parameters:
   - name: token
     description: The sync token to be added to the internal list of tokens

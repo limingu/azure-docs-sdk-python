@@ -10,8 +10,7 @@ constructor:
   syntax: 'ParameterDefinitionsValue(*, type: Optional[Union[str, _models.ParameterType]]
     = None, allowed_values: Optional[List[collections.abc.MutableMapping[str, Any]]]
     = None, default_value: Optional[collections.abc.MutableMapping[str, Any]] = None,
-    metadata: Optional[_models.ParameterDefinitionsValueMetadata] = None, **kwargs:
-    Any)'
+    metadata: Optional[_models.ParameterDefinitionsValueMetadata] = None, **kwargs)'
 variables:
 - description: 'The data type of the parameter. Known values are: "String", "Array",
     "Object",

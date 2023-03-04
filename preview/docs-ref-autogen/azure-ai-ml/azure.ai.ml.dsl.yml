@@ -7,12 +7,11 @@ functions:
 - uid: azure.ai.ml.dsl.pipeline
   name: pipeline
   summary: "Build a pipeline which contains all component nodes defined in this\n\
-    function. Set AZURE_ML_CLI_PRIVATE_FEATURES_ENABLED to enable multi layer pipeline.\n\
-    \n> [!NOTE]\n> The following pseudo-code shows how to create a pipeline using\
-    \ this decorator.\n>\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {}, \"linenos\": false}\
-    \ -->\n\n````python\n\n   # Define a pipeline with decorator\n   @pipeline(name='sample_pipeline',\
+    function.\n\n> [!NOTE]\n> The following pseudo-code shows how to create a pipeline\
+    \ using this decorator.\n>\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
+    \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {}, \"linenos\"\
+    : false} -->\n\n````python\n\n   # Define a pipeline with decorator\n   @pipeline(name='sample_pipeline',\
     \ description='pipeline description')\n   def sample_pipeline_func(pipeline_input,\
     \ pipeline_str_param):\n           # component1 and component2 will be added into\
     \ the current pipeline\n           component1 = component1_func(input1=pipeline_input,\

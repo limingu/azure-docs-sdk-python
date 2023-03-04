@@ -9,7 +9,7 @@ summary: The custom resource function definition.
 constructor:
   syntax: 'DataManifestCustomResourceFunctionDefinition(*, name: Optional[str] = None,
     fully_qualified_resource_type: Optional[str] = None, default_properties: Optional[List[str]]
-    = None, allow_custom_properties: Optional[bool] = None, **kwargs: Any)'
+    = None, allow_custom_properties: Optional[bool] = None, **kwargs)'
 variables:
 - description: The function name as it will appear in the policy rule. eg - 'vault'.
   name: name

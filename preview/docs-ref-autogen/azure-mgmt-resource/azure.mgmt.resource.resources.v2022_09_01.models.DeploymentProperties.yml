@@ -15,7 +15,7 @@ constructor:
     = None, parameters: Optional[collections.abc.MutableMapping[str, Any]] = None,
     parameters_link: Optional[_models.ParametersLink] = None, debug_setting: Optional[_models.DebugSetting]
     = None, on_error_deployment: Optional[_models.OnErrorDeployment] = None, expression_evaluation_options:
-    Optional[_models.ExpressionEvaluationOptions] = None, **kwargs: Any)'
+    Optional[_models.ExpressionEvaluationOptions] = None, **kwargs)'
 variables:
 - description: 'The template content. You use this element when you want to pass the
     template

@@ -1,0 +1,53 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.operations.VirtualClusterOperations
+name: VirtualClusterOperations
+fullName: azure.ai.ml.operations.VirtualClusterOperations
+module: azure.ai.ml.operations
+inheritances:
+- builtins.object
+summary: 'VirtualClusterOperations.
+
+
+  You should not instantiate this class directly. Instead, you should
+
+  create an MLClient instance that instantiates it for you and
+
+  attaches it as an attribute.'
+constructor:
+  syntax: 'VirtualClusterOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
+    credentials: azure.core.credentials.TokenCredential, **kwargs: Dict)'
+  parameters:
+  - name: operation_scope
+  - name: credentials
+methods:
+- uid: azure.ai.ml.operations.VirtualClusterOperations.get
+  name: get
+  summary: Get a virtual cluster resource.
+  signature: 'get(name: str) -> Dict'
+  parameters:
+  - name: name
+    description: Name of the virtual cluster.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: Virtual cluster object
+    types:
+    - <xref:Dict>
+- uid: azure.ai.ml.operations.VirtualClusterOperations.list
+  name: list
+  summary: List virtual clusters a user has access to.
+  signature: 'list(*, scope: Optional[str] = None) -> Iterable[Dict]'
+  parameters:
+  - name: scope
+    description: 'scope of the listing, "subscription" or None, defaults to None.
+
+      If None, list virtual clusters across all subscriptions a customer has access
+      to.'
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: An iterator like instance of dictionaries.
+    types:
+    - <xref:azure.core.paging.ItemPaged>[<xref:Dict>]

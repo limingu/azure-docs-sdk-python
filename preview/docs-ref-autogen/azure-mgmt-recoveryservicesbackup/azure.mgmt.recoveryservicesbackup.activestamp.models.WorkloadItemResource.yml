@@ -13,7 +13,7 @@ summary: 'Base class for backup item. Workload-specific backup items are derived
 constructor:
   syntax: 'WorkloadItemResource(*, location: Optional[str] = None, tags: Optional[Dict[str,
     str]] = None, e_tag: Optional[str] = None, properties: Optional[_models.WorkloadItem]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Resource Id represents the complete path to the resource.
   name: id

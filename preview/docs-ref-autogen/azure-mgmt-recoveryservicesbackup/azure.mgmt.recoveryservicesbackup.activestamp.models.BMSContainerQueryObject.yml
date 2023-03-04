@@ -13,7 +13,7 @@ constructor:
   syntax: 'BMSContainerQueryObject(*, backup_management_type: Union[str, _models.BackupManagementType],
     container_type: Optional[Union[str, _models.ContainerType]] = None, backup_engine_name:
     Optional[str] = None, fabric_name: Optional[str] = None, status: Optional[str]
-    = None, friendly_name: Optional[str] = None, **kwargs)'
+    = None, friendly_name: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: 'Backup management type for this container. Required. Known values
 

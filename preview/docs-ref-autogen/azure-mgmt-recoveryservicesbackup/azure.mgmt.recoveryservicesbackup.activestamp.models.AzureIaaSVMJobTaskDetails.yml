@@ -11,7 +11,7 @@ constructor:
     Optional[datetime.datetime] = None, end_time: Optional[datetime.datetime] = None,
     instance_id: Optional[str] = None, duration: Optional[datetime.timedelta] = None,
     status: Optional[str] = None, progress_percentage: Optional[float] = None, task_execution_details:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, **kwargs: Any)'
 variables:
 - description: The task display name.
   name: task_id

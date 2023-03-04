@@ -12,7 +12,7 @@ summary: 'Azure SQL workload-specific backup policy.
 constructor:
   syntax: 'AzureSqlProtectionPolicy(*, protected_items_count: Optional[int] = None,
     resource_guard_operation_requests: Optional[List[str]] = None, retention_policy:
-    Optional[_models.RetentionPolicy] = None, **kwargs)'
+    Optional[_models.RetentionPolicy] = None, **kwargs: Any)'
 variables:
 - description: Number of items associated with this policy.
   name: protected_items_count

@@ -12,7 +12,7 @@ summary: 'Backup resource vault config details.
 constructor:
   syntax: 'BackupResourceVaultConfigResource(*, location: Optional[str] = None, tags:
     Optional[Dict[str, str]] = None, e_tag: Optional[str] = None, properties: Optional[_models.BackupResourceVaultConfig]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Resource Id represents the complete path to the resource.
   name: id

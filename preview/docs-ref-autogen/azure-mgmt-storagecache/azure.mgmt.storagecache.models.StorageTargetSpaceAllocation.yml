@@ -8,7 +8,7 @@ inheritances:
 summary: Storage Target space allocation properties.
 constructor:
   syntax: 'StorageTargetSpaceAllocation(*, name: Optional[str] = None, allocation_percentage:
-    Optional[int] = None, **kwargs)'
+    Optional[int] = None, **kwargs: Any)'
 variables:
 - description: Name of the storage target.
   name: name

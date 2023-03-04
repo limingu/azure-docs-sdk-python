@@ -16,7 +16,7 @@ constructor:
     _models.ParameterValuesValue]] = None, description: Optional[str] = None, metadata:
     Optional[collections.abc.MutableMapping[str, Any]] = None, enforcement_mode: Union[str,
     _models.EnforcementMode] = ''Default'', non_compliance_messages: Optional[List[_models.NonComplianceMessage]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The ID of the policy assignment.
   name: id

@@ -11,7 +11,7 @@ summary: 'List of Template Specs.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'TemplateSpecsListResult(*, value: Optional[List[_models.TemplateSpec]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: An array of Template Specs.
   name: value

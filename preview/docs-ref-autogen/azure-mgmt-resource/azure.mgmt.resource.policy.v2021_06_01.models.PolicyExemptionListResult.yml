@@ -11,7 +11,7 @@ summary: 'List of policy exemptions.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'PolicyExemptionListResult(*, value: Optional[List[_models.PolicyExemption]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: An array of policy exemptions.
   name: value

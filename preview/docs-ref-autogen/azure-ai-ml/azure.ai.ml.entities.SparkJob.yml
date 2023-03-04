@@ -16,9 +16,9 @@ constructor:
     = None, dynamic_allocation_min_executors: Optional[int] = None, dynamic_allocation_max_executors:
     Optional[int] = None, inputs: Optional[Dict] = None, outputs: Optional[Dict] =
     None, compute: Optional[str] = None, identity: Optional[Union[Dict[str, str],
-    azure.ai.ml._restclient.v2022_06_01_preview.models._models_py3.ManagedIdentity,
-    azure.ai.ml._restclient.v2022_06_01_preview.models._models_py3.AmlToken, azure.ai.ml._restclient.v2022_06_01_preview.models._models_py3.UserIdentity]]
-    = None, resources: Optional[Union[Dict, azure.ai.ml.entities._job.spark_resource_configuration.SparkResourceConfiguration]]
+    azure.ai.ml.entities._credentials.ManagedIdentityConfiguration, azure.ai.ml.entities._credentials.AmlTokenConfiguration,
+    azure.ai.ml.entities._credentials.UserIdentityConfiguration]] = None, resources:
+    Optional[Union[Dict, azure.ai.ml.entities._job.spark_resource_configuration.SparkResourceConfiguration]]
     = None, **kwargs)'
   parameters:
   - name: experiment_name
@@ -82,8 +82,7 @@ constructor:
     description: Identity that spark job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:Dict,azure.ai.ml.entities.ManagedIdentityConfiguration,azure.ai.ml.entities.AmlTokenConfiguration,azure.ai.ml.entities.UserIdentityConfiguration>]
   - name: driver_cores
     description: Number of cores to use for the driver process, only in cluster mode.
     isRequired: true

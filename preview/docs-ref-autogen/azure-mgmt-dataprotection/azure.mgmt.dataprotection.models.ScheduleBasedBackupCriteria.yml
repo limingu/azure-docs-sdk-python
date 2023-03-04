@@ -15,7 +15,7 @@ constructor:
     None, days_of_the_week: Optional[List[Union[str, _models.DayOfWeek]]] = None,
     months_of_year: Optional[List[Union[str, _models.Month]]] = None, schedule_times:
     Optional[List[datetime.datetime]] = None, weeks_of_the_month: Optional[List[Union[str,
-    _models.WeekNumber]]] = None, **kwargs)'
+    _models.WeekNumber]]] = None, **kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

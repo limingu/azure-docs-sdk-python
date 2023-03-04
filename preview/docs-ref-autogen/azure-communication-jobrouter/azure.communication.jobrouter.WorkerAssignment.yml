@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.WorkerAssignment
+name: WorkerAssignment
+fullName: azure.communication.jobrouter.WorkerAssignment
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'The assignment for a worker to a job.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'WorkerAssignment(*, id: str, job_id: str, capacity_cost: int, assign_time:
+    datetime.datetime, **kwargs)'
+variables:
+- description: The Id of the assignment. Required.
+  name: id
+  types:
+  - <xref:str>
+- description: The Id of the Job assigned. Required.
+  name: job_id
+  types:
+  - <xref:str>
+- description: 'The amount of capacity this assignment has consumed on the worker.
+
+    Required.'
+  name: capacity_cost
+  types:
+  - <xref:int>
+- description: The assignment time of the job. Required.
+  name: assign_time
+  types:
+  - <xref:datetime.datetime>

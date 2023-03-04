@@ -24,7 +24,8 @@ constructor:
     = None, soft_delete_retention_period: Optional[int] = None, friendly_name: Optional[str]
     = None, policy_state: Optional[str] = None, protection_state: Optional[Union[str,
     _models.ProtectionState]] = None, protected_item_id: Optional[int] = None, source_associations:
-    Optional[Dict[str, str]] = None, fabric_name: Optional[str] = None, **kwargs)'
+    Optional[Dict[str, str]] = None, fabric_name: Optional[str] = None, **kwargs:
+    Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type
@@ -140,7 +141,10 @@ variables:
   - <xref:str>
 - description: 'Backup state of this backup item. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

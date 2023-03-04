@@ -13,7 +13,7 @@ summary: 'Retention tag.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'RetentionTag(*, tag_name: str, **kwargs)'
+  syntax: 'RetentionTag(*, tag_name: str, **kwargs: Any)'
 variables:
 - description: Retention Tag version.
   name: e_tag

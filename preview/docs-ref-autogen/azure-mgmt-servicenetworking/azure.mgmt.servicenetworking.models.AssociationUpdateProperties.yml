@@ -8,7 +8,7 @@ inheritances:
 summary: The updatable properties of the Association.
 constructor:
   syntax: 'AssociationUpdateProperties(*, association_type: Optional[Literal[subnets]]
-    = None, subnet: Optional[_models.AssociationSubnet] = None, **kwargs)'
+    = None, subnet: Optional[_models.AssociationSubnet] = None, **kwargs: Any)'
 variables:
 - description: Association Type. Default value is "subnets".
   name: association_type

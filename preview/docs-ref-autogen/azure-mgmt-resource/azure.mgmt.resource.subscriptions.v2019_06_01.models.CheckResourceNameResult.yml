@@ -5,14 +5,11 @@ fullName: azure.mgmt.resource.subscriptions.v2019_06_01.models.CheckResourceName
 module: azure.mgmt.resource.subscriptions.v2019_06_01.models
 inheritances:
 - azure.mgmt.resource.subscriptions._serialization.Model
-summary: 'Resource Name valid if not a reserved word, does not contain a reserved
-  word and does not start
-
-  with a reserved word.'
+summary: Resource Name valid if not a reserved word, does not contain a reserved word
+  and does not start with a reserved word.
 constructor:
   syntax: 'CheckResourceNameResult(*, name: Optional[str] = None, type: Optional[str]
-    = None, status: Optional[Union[str, _models.ResourceNameStatus]] = None, **kwargs:
-    Any)'
+    = None, status: Optional[Union[str, _models.ResourceNameStatus]] = None, **kwargs)'
 variables:
 - description: Name of Resource.
   name: name

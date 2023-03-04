@@ -1,0 +1,94 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.containerregistry.v2019_04_01.models.Task
+name: Task
+fullName: azure.mgmt.containerregistry.v2019_04_01.models.Task
+module: azure.mgmt.containerregistry.v2019_04_01.models
+inheritances:
+- azure.mgmt.containerregistry.v2019_04_01.models._models_py3.Resource
+summary: 'The task that has the ARM resource and task properties.
+
+  The task will have all information to schedule a run against it.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'Task(*, location: str, tags: Optional[Dict[str, str]] = None, identity:
+    Optional[_models.IdentityProperties] = None, status: Optional[Union[str, _models.TaskStatus]]
+    = None, platform: Optional[_models.PlatformProperties] = None, agent_configuration:
+    Optional[_models.AgentProperties] = None, timeout: int = 3600, step: Optional[_models.TaskStepProperties]
+    = None, trigger: Optional[_models.TriggerProperties] = None, credentials: Optional[_models.Credentials]
+    = None, **kwargs: Any)'
+variables:
+- description: The resource ID.
+  name: id
+  types:
+  - <xref:str>
+- description: The name of the resource.
+  name: name
+  types:
+  - <xref:str>
+- description: The type of the resource.
+  name: type
+  types:
+  - <xref:str>
+- description: 'The location of the resource. This cannot be changed after the resource
+    is
+
+    created. Required.'
+  name: location
+  types:
+  - <xref:str>
+- description: The tags of the resource.
+  name: tags
+  types:
+  - <xref:dict>[<xref:str>, <xref:str>]
+- description: Identity for the resource.
+  name: identity
+  types:
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.IdentityProperties>
+- description: 'The provisioning state of the task. Known values are: "Creating",
+
+    "Updating", "Deleting", "Succeeded", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.ProvisioningState>
+- description: The creation date of task.
+  name: creation_date
+  types:
+  - <xref:datetime.datetime>
+- description: 'The current status of task. Known values are: "Disabled" and "Enabled".'
+  name: status
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.TaskStatus>
+- description: The platform properties against which the run has to happen.
+  name: platform
+  types:
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.PlatformProperties>
+- description: The machine configuration of the run agent.
+  name: agent_configuration
+  types:
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.AgentProperties>
+- description: Run timeout in seconds.
+  name: timeout
+  types:
+  - <xref:int>
+- description: The properties of a task step.
+  name: step
+  types:
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.TaskStepProperties>
+- description: The properties that describe all triggers for the task.
+  name: trigger
+  types:
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.TriggerProperties>
+- description: 'The properties that describes a set of credentials that will be used
+    when
+
+    this run is invoked.'
+  name: credentials
+  types:
+  - <xref:azure.mgmt.containerregistry.v2019_04_01.models.Credentials>

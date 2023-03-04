@@ -1,0 +1,30 @@
+### YamlMime:PythonEnum
+uid: azure.communication.jobrouter.JobStateSelector
+name: JobStateSelector
+fullName: azure.communication.jobrouter.JobStateSelector
+summary: JobStateSelector.
+module: azure.communication.jobrouter
+constructor:
+  syntax: JobStateSelector(value)
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: ACTIVE
+  uid: azure.communication.jobrouter.JobStateSelector.ACTIVE
+- name: ALL
+  uid: azure.communication.jobrouter.JobStateSelector.ALL
+- name: ASSIGNED
+  uid: azure.communication.jobrouter.JobStateSelector.ASSIGNED
+- name: CANCELLED
+  uid: azure.communication.jobrouter.JobStateSelector.CANCELLED
+- name: CLASSIFICATION_FAILED
+  uid: azure.communication.jobrouter.JobStateSelector.CLASSIFICATION_FAILED
+- name: CLOSED
+  uid: azure.communication.jobrouter.JobStateSelector.CLOSED
+- name: COMPLETED
+  uid: azure.communication.jobrouter.JobStateSelector.COMPLETED
+- name: PENDING_CLASSIFICATION
+  uid: azure.communication.jobrouter.JobStateSelector.PENDING_CLASSIFICATION
+- name: QUEUED
+  uid: azure.communication.jobrouter.JobStateSelector.QUEUED

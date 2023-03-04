@@ -1,0 +1,12 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.RouterWorker
+name: RouterWorker
+fullName: azure.communication.jobrouter.RouterWorker
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.RouterWorker
+constructor:
+  syntax: 'RouterWorker(*, queue_assignments: Optional[Dict[str, Optional[Union[azure.communication.jobrouter._generated.models._patch.QueueAssignment,
+    collections.abc.MutableMapping[str, Any]]]]] = None, labels: Optional[Dict[str,
+    Optional[Union[int, float, str, bool]]]] = None, tags: Optional[Dict[str, Optional[Union[int,
+    float, str, bool]]]] = None, **kwargs)'

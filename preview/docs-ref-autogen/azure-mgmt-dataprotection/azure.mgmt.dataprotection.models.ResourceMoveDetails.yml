@@ -10,7 +10,7 @@ summary: ResourceMoveDetails will be returned in response to GetResource call fr
 constructor:
   syntax: 'ResourceMoveDetails(*, operation_id: Optional[str] = None, start_time_utc:
     Optional[str] = None, completion_time_utc: Optional[str] = None, source_resource_path:
-    Optional[str] = None, target_resource_path: Optional[str] = None, **kwargs)'
+    Optional[str] = None, target_resource_path: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: CorrelationId of latest ResourceMove operation attempted.
   name: operation_id

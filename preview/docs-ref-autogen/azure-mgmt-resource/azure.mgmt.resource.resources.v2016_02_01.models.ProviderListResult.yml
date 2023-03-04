@@ -8,7 +8,7 @@ inheritances:
 summary: List of resource providers.
 constructor:
   syntax: 'ProviderListResult(*, value: Optional[List[_models.Provider]] = None, next_link:
-    Optional[str] = None, **kwargs: Any)'
+    Optional[str] = None, **kwargs)'
 variables:
 - description: The list of resource providers.
   name: value

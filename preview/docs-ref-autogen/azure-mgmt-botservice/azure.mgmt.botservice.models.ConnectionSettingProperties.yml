@@ -10,20 +10,11 @@ summary: 'Properties for a Connection Setting Item.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'ConnectionSettingProperties(*, id: Optional[str] = None, name: Optional[str]
-    = None, client_id: Optional[str] = None, client_secret: Optional[str] = None,
-    scopes: Optional[str] = None, service_provider_id: Optional[str] = None, service_provider_display_name:
-    Optional[str] = None, parameters: Optional[List[_models.ConnectionSettingParameter]]
+  syntax: 'ConnectionSettingProperties(*, client_id: Optional[str] = None, client_secret:
+    Optional[str] = None, scopes: str = '''', service_provider_id: Optional[str] =
+    None, service_provider_display_name: Optional[str] = None, parameters: Optional[List[_models.ConnectionSettingParameter]]
     = None, provisioning_state: Optional[str] = None, **kwargs)'
 variables:
-- description: Id associated with the Connection Setting.
-  name: id
-  types:
-  - <xref:str>
-- description: Name associated with the Connection Setting.
-  name: name
-  types:
-  - <xref:str>
 - description: Client Id associated with the Connection Setting.
   name: client_id
   types:

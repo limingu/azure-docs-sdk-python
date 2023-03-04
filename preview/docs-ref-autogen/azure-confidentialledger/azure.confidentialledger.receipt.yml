@@ -1,0 +1,32 @@
+### YamlMime:PythonPackage
+uid: azure.confidentialledger.receipt
+name: receipt
+fullName: azure.confidentialledger.receipt
+type: import
+functions:
+- uid: azure.confidentialledger.receipt.verify_receipt
+  name: verify_receipt
+  summary: 'Verify that a given Azure Confidential Ledger write transaction receipt
+
+    is valid from its content and the Confidential Ledger service identity
+
+    certificate.'
+  signature: 'verify_receipt(receipt: Dict[str, Any], service_cert: str) -> None'
+  parameters:
+  - name: receipt
+    description: 'Receipt dictionary containing the content of an Azure
+
+      Confidential Ledger write transaction receipt.'
+    isRequired: true
+    types:
+    - <xref:Dict>[<xref:str>, <xref:Any>]
+  - name: service_cert
+    description: 'String containing the PEM-encoded
+
+      certificate of the Confidential Ledger service identity.'
+    isRequired: true
+    types:
+    - <xref:str>
+  exceptions:
+  - type: ValueError
+    description: If the receipt verification has failed.

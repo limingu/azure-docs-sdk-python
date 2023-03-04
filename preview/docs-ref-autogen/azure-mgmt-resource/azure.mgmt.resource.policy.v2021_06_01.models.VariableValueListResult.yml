@@ -11,7 +11,7 @@ summary: 'List of variable values.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'VariableValueListResult(*, value: Optional[List[_models.VariableValue]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: An array of variable values.
   name: value

@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.data_transfer.FileSystem
+name: FileSystem
+fullName: azure.ai.ml.data_transfer.FileSystem
+module: azure.ai.ml.data_transfer
+inheritances:
+- azure.ai.ml.entities._mixins.DictMixin
+- azure.ai.ml.entities._mixins.RestTranslatableMixin
+summary: "Define a file system class of a DataTransfer Component or Job.\n\ne.g. source_s3\
+  \ = FileSystem(path='s3://my_bucket/my_folder', connection='azureml:my_s3_connection')\n\
+  \nThe init function of Group will be 'def __init__(self, >>*<<, int_param0, int_param3,\
+  \ int_param1=1)'.\n:param type: The type of the data input. Possible values include:\
+  \ 'file_system', 'database'.\n:type type: str\n:param path: The path to which the\
+  \ input is pointing. Could be pointing to the path of file system.\n:type path:\
+  \ str\n:param connection: Connection is workspace, we didn't support storage connection\
+  \ here, need leverage workspace\nconnection to store these credential info.\n:type\
+  \ connection: str\n:raises ~azure.ai.ml.exceptions.ValidationException: Raised if\
+  \ Source cannot be successfully validated.\n\n   Details will be provided in the\
+  \ error message."
+constructor:
+  syntax: 'FileSystem(*, type: Optional[str] = ''file_system'', path: Optional[str]
+    = None, connection: Optional[str] = None)'

@@ -12,7 +12,7 @@ summary: 'Specifies the operating system settings for the hybrid machine.
 constructor:
   syntax: 'OSProfile(*, windows_configuration: Optional[_models.OSProfileWindowsConfiguration]
     = None, linux_configuration: Optional[_models.OSProfileLinuxConfiguration] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Specifies the host OS name of the hybrid machine.
   name: computer_name

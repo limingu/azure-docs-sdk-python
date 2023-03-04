@@ -14,7 +14,7 @@ constructor:
     = None, source_resource_id: Optional[str] = None, copy_options: Optional[Union[str,
     _models.CopyOptions]] = None, restore_request_type: Optional[Union[str, _models.RestoreRequestType]]
     = None, restore_file_specs: Optional[List[_models.RestoreFileSpecs]] = None, target_details:
-    Optional[_models.TargetAFSRestoreInfo] = None, **kwargs)'
+    Optional[_models.TargetAFSRestoreInfo] = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

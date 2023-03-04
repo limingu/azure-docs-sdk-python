@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.DistributionPolicy
+name: DistributionPolicy
+fullName: azure.communication.jobrouter.DistributionPolicy
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'Policy governing how jobs are distributed to workers.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'DistributionPolicy(*, name: Optional[str] = None, offer_ttl_seconds: Optional[float]
+    = None, mode: Optional[_models.DistributionMode] = None, **kwargs)'
+variables:
+- description: The unique identifier of the policy.
+  name: id
+  types:
+  - <xref:str>
+- description: The human readable name of the policy.
+  name: name
+  types:
+  - <xref:str>
+- description: 'The expiry time of any offers created under this policy will be
+
+    governed by the offer time to live.'
+  name: offer_ttl_seconds
+  types:
+  - <xref:float>
+- description: Abstract base class for defining a distribution mode.
+  name: mode
+  types:
+  - <xref:azure.communication.jobrouter.models.DistributionMode>

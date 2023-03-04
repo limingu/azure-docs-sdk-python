@@ -73,8 +73,9 @@ methods:
 - uid: azure.ai.ml.operations.BatchEndpointOperations.invoke
   name: invoke
   summary: Invokes the batch endpoint with the provided payload.
-  signature: 'invoke(endpoint_name: str, *, deployment_name: str = None, input: azure.ai.ml.entities._inputs_outputs.input.Input
-    = None, params_override=None, **kwargs) -> azure.ai.ml._restclient.v2020_09_01_dataplanepreview.models._models_py3.BatchJobResource'
+  signature: 'invoke(endpoint_name: str, *, deployment_name: Optional[str] = None,
+    inputs: Optional[Dict[str, azure.ai.ml.entities._inputs_outputs.input.Input]]
+    = None, **kwargs) -> azure.ai.ml.entities._deployment.batch_job.BatchJob'
   parameters:
   - name: endpoint_name
     description: The endpoint name.
@@ -82,29 +83,26 @@ methods:
     types:
     - <xref:str>
   - name: deployment_name
-    description: 'The name of a specific deployment to invoke. This is optional.
+    description: '(Optional) The name of a specific deployment to invoke. This is
+      optional.
 
       By default requests are routed to any of the deployments according to the traffic
       rules.'
     isRequired: true
     types:
-    - <xref:Optional>[<xref:str>]
-  - name: input
-    description: An existing data asset, public uri file or folder to use with the
-      deployment
+    - <xref:str>
+  - name: inputs
+    description: '(Optional) A dictionary of existing data asset, public uri file
+      or folder
+
+      to use with the deployment'
     isRequired: true
     types:
-    - <xref:Optional>[<xref:azure.ai.ml.Input>]
-  - name: params_override
-    description: Parameters to overwrite deployment configurations, for batch endpoints
-      only.
-    isRequired: true
-    types:
-    - <xref:Dict>
+    - <xref:Dict>[<xref:str>, <xref:azure.ai.ml.Input>]
   return:
     description: The invoked batch deployment job.
     types:
-    - <xref:BatchJobResource>
+    - <xref:azure.ai.ml.entities.BatchJob>
   exceptions:
   - type: azure.ai.ml.exceptions.ValidationException
     description: 'Raised if deployment cannot be successfully validated.
@@ -135,7 +133,7 @@ methods:
   summary: 'List jobs under the provided batch endpoint deployment. This is only
 
     valid for batch endpoint.'
-  signature: 'list_jobs(endpoint_name: str) -> List[azure.ai.ml._restclient.v2020_09_01_dataplanepreview.models._models_py3.BatchJobResource]'
+  signature: 'list_jobs(endpoint_name: str) -> azure.core.paging.ItemPaged[azure.ai.ml.entities._deployment.batch_job.BatchJob]'
   parameters:
   - name: endpoint_name
     description: The endpoint name
@@ -145,4 +143,4 @@ methods:
   return:
     description: List of jobs
     types:
-    - <xref:list>[<xref:BatchJobResource>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.ai.ml.entities.BatchJob>]

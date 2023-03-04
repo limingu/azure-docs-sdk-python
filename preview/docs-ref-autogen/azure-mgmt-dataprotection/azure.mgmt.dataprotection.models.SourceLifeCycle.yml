@@ -12,7 +12,7 @@ summary: 'Source LifeCycle.
 constructor:
   syntax: 'SourceLifeCycle(*, delete_after: _models.DeleteOption, source_data_store:
     _models.DataStoreInfoBase, target_data_store_copy_settings: Optional[List[_models.TargetCopySetting]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Delete Option. Required.
   name: delete_after

@@ -23,6 +23,13 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials.AzureKeyCredential>
+  - name: api_version
+    description: 'Azure Communication Rooms API version.
+
+      Default value is "2022-02-01". Note that overriding this default value may result
+      in unsupported behavior.'
+    types:
+    - <xref:str>
 methods:
 - uid: azure.communication.rooms.aio.RoomsClient.add_participants
   name: add_participants

@@ -29,7 +29,7 @@ constructor:
     = None, protected_item_data_source_id: Optional[str] = None, protected_item_health_status:
     Optional[Union[str, _models.ProtectedItemHealthStatus]] = None, extended_info:
     Optional[_models.AzureVmWorkloadProtectedItemExtendedInfo] = None, kpis_healths:
-    Optional[Dict[str, _models.KPIResourceHealthDetails]] = None, **kwargs)'
+    Optional[Dict[str, _models.KPIResourceHealthDetails]] = None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type
@@ -157,7 +157,10 @@ variables:
   - <xref:str>
 - description: 'Backup state of this backup item. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

@@ -7,7 +7,8 @@ inheritances:
 - builtins.object
 summary: A client to interact with a specific account change feed.
 constructor:
-  syntax: 'ChangeFeedClient(account_url: str, credential: Optional[Any] = None, **kwargs:
+  syntax: 'ChangeFeedClient(account_url: str, credential: Optional[Union[str, Dict[str,
+    str], AzureNamedKeyCredential, AzureSasCredential, TokenCredential]] = None, **kwargs:
     Any)'
   parameters:
   - name: account_url
@@ -21,15 +22,21 @@ constructor:
 
       account URL already has a SAS token. The value can be a SAS token string,
 
-      an instance of a AzureSasCredential from azure.core.credentials, an account
+      an instance of a AzureSasCredential or AzureNamedKeyCredential from azure.core.credentials,
 
-      shared access key, or an instance of a TokenCredentials class from azure.identity.
+      an account shared access key, or an instance of a TokenCredentials class from
+      azure.identity.
 
       If the resource URI already contains a SAS token, this will be ignored in favor
       of an explicit credential
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
-      will raise a ValueError.'
+      will raise a ValueError.
+
+      If using an instance of AzureNamedKeyCredential, "name" should be the storage
+      account name, and "key"
+
+      should be the storage account key.'
     defaultValue: None
   - name: secondary_hostname
     description: The hostname of the secondary endpoint.
@@ -58,18 +65,19 @@ examples:
 - "Creating the ChangeFeedClient from a URL to a public blob (no auth needed).<!--[!code-python[Main](les\\\
   change_feed_samples.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
   \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\
-  \\1\\\\s\\\\dist_temp\\\\2\\\\azure-storage-blob-changefeed-12.0.0b4\\\\samples\\\
-  \\change_feed_samples.py\", \"xml:space\": \"preserve\", \"force\": false, \"language\"\
-  : \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\
-  \n````python\n\n   cf_client = ChangeFeedClient(\"https://{}.blob.core.windows.net\"\
+  \\1\\\\s\\\\dist_temp\\\\2\\\\azure-storage-blob-changefeed-12.0.0a20230302001\\\
+  \\samples\\\\change_feed_samples.py\", \"xml:space\": \"preserve\", \"force\": false,\
+  \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+  : false} -->\n\n````python\n\n   cf_client = ChangeFeedClient(\"https://{}.blob.core.windows.net\"\
   .format(self.ACCOUNT_NAME),\n                                credential=self.ACCOUNT_KEY)\n\
   \n   ````\n"
 methods:
 - uid: azure.storage.blob.changefeed.ChangeFeedClient.from_connection_string
   name: from_connection_string
   summary: Create ChangeFeedClient from a Connection String.
-  signature: 'from_connection_string(conn_str: str, credential: Optional[Any] = None,
-    **kwargs: Any) -> azure.storage.blob.changefeed._change_feed_client.ChangeFeedClient'
+  signature: 'from_connection_string(conn_str: str, credential: Optional[Union[str,
+    Dict[str, str], AzureNamedKeyCredential, AzureSasCredential, TokenCredential]]
+    = None, **kwargs: Any) -> ChangeFeedClient'
   parameters:
   - name: conn_str
     description: A connection string to an Azure Storage account.
@@ -84,13 +92,18 @@ methods:
 
       access key values. The value can be a SAS token string,
 
-      an instance of a AzureSasCredential from azure.core.credentials, an account
-      shared access
+      an instance of a AzureSasCredential or AzureNamedKeyCredential from azure.core.credentials,
 
-      key, or an instance of a TokenCredentials class from azure.identity.
+      an account shared access key, or an instance of a TokenCredentials class from
+      azure.identity.
 
       Credentials provided here will take precedence over those in the connection
-      string.'
+      string.
+
+      If using an instance of AzureNamedKeyCredential, "name" should be the storage
+      account name, and "key"
+
+      should be the storage account key.'
     defaultValue: None
   return:
     description: A change feed client.
@@ -128,16 +141,16 @@ methods:
   - "List all change feed events.<!--[!code-python[Main](les\\change_feed_samples.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\2\\\\azure-storage-blob-changefeed-12.0.0b4\\\\samples\\\\change_feed_samples.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   cf_client = ChangeFeedClient(\"https://{}.blob.core.windows.net\".format(self.ACCOUNT_NAME),\n\
-    \                                credential=self.ACCOUNT_KEY)\n   change_feed\
-    \ = cf_client.list_changes()\n\n   # print all events\n   for event in change_feed:\n\
-    \       print(event)\n\n   ````\n\nList change feed events by page.<!--[!code-python[Main](les\\\
-    change_feed_samples.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\":\
-    \ [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\2\\\\azure-storage-blob-changefeed-12.0.0b4\\\
+    dist_temp\\\\2\\\\azure-storage-blob-changefeed-12.0.0a20230302001\\\\samples\\\
+    \\change_feed_samples.py\", \"xml:space\": \"preserve\", \"force\": false, \"\
+    language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   cf_client = ChangeFeedClient(\"https://{}.blob.core.windows.net\"\
+    .format(self.ACCOUNT_NAME),\n                                credential=self.ACCOUNT_KEY)\n\
+    \   change_feed = cf_client.list_changes()\n\n   # print all events\n   for event\
+    \ in change_feed:\n       print(event)\n\n   ````\n\nList change feed events by\
+    \ page.<!--[!code-python[Main](les\\change_feed_samples.py )]-->\n\n<!-- literal_block\
+    \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
+    : [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\2\\\\azure-storage-blob-changefeed-12.0.0a20230302001\\\
     \\samples\\\\change_feed_samples.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   # [START create_change_feed_client]\n\

@@ -24,7 +24,7 @@ constructor:
     health_status: Optional[Union[str, _models.HealthStatus]] = None, last_backup_status:
     Optional[str] = None, last_backup_time: Optional[datetime.datetime] = None, kpis_healths:
     Optional[Dict[str, _models.KPIResourceHealthDetails]] = None, extended_info: Optional[_models.AzureFileshareProtectedItemExtendedInfo]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type

@@ -8,8 +8,7 @@ inheritances:
 summary: The list of subscription feature registrations.
 constructor:
   syntax: 'SubscriptionFeatureRegistrationList(*, next_link: Optional[str] = None,
-    value: Optional[List[_models.SubscriptionFeatureRegistration]] = None, **kwargs:
-    Any)'
+    value: Optional[List[_models.SubscriptionFeatureRegistration]] = None, **kwargs)'
 variables:
 - description: The link used to get the next page of subscription feature registrations
     list.

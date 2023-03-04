@@ -21,7 +21,8 @@ summary: 'Recovery point specific to PointInTime.
 constructor:
   syntax: 'AzureWorkloadPointInTimeRecoveryPoint(*, recovery_point_tier_details: Optional[List[_models.RecoveryPointTierInformation]]
     = None, recovery_point_move_readiness_info: Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]]
-    = None, time_ranges: Optional[List[_models.PointInTimeRange]] = None, **kwargs)'
+    = None, time_ranges: Optional[List[_models.PointInTimeRange]] = None, **kwargs:
+    Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

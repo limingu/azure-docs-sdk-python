@@ -8,7 +8,7 @@ inheritances:
 summary: Monitoring Settings.
 constructor:
   syntax: 'MonitoringSettings(*, azure_monitor_alert_settings: Optional[_models.AzureMonitorAlertSettings]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Settings for Azure Monitor based alerts.
   name: azure_monitor_alert_settings

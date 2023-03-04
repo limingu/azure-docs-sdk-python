@@ -14,14 +14,14 @@ constructor:
     description: Maximum number of concurrent AutoML iterations.
     isRequired: true
     types:
-    - <xref:int>
+    - <xref:int>, <xref:optional>
   - name: max_trials
     description: Maximum number of AutoML iterations.
     isRequired: true
     types:
-    - <xref:int>
-  - name: timeout
+    - <xref:int>, <xref:optional>
+  - name: timeout_minutes
     description: AutoML job timeout.
     isRequired: true
     types:
-    - <xref:datetime.timedelta>
+    - <xref:int>, <xref:optional>

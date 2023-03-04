@@ -8,7 +8,8 @@ inheritances:
 constructor:
   syntax: 'DataOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
     operation_config: azure.ai.ml._scope_dependent_operations.OperationConfig, service_client:
-    azure.ai.ml._restclient.v2022_05_01._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
+    Union[azure.ai.ml._restclient.v2022_10_01._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
+    azure.ai.ml._restclient.v2021_10_01_dataplanepreview._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces],
     datastore_operations: azure.ai.ml.operations._datastore_operations.DatastoreOperations,
     **kwargs: Dict)'
   parameters:
@@ -20,7 +21,8 @@ methods:
 - uid: azure.ai.ml.operations.DataOperations.archive
   name: archive
   summary: Archive a data asset.
-  signature: 'archive(name: str, version: str = None, label: str = None) -> None'
+  signature: 'archive(name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: name
     description: Name of data asset.
@@ -29,12 +31,12 @@ methods:
     - <xref:str>
   - name: version
     description: Version of data asset.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: label
     description: Label of the data asset. (mutually exclusive with version)
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   return:
@@ -81,12 +83,12 @@ methods:
     - <xref:str>
   - name: version
     description: Version of data asset.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: label
     description: Label of the data asset. (mutually exclusive with version)
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   return:
@@ -98,15 +100,38 @@ methods:
     description: 'Raised if Data cannot be successfully
 
       identified and retrieved. Details will be provided in the error message.'
+- uid: azure.ai.ml.operations.DataOperations.import_data
+  name: import_data
+  summary: '> [!NOTE]
+
+    > This is an experimental method, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+    for more information.
+
+    >
+
+
+    Returns the data import job that is creating the data asset.'
+  signature: 'import_data(data_import: azure.ai.ml.entities._data_import.data_import.DataImport)
+    -> azure.ai.ml.entities._job.job.Job'
+  parameters:
+  - name: data_import
+    description: DataImport object.
+    isRequired: true
+    types:
+    - <xref:azure.ai.ml.entities.DataImport>
+  return:
+    description: data import job object.
+    types:
+    - <xref:azure.ai.ml.entities.Job>
 - uid: azure.ai.ml.operations.DataOperations.list
   name: list
   summary: List the data assets of the workspace.
-  signature: 'list(name: Optional[str] = None, *, list_view_type: azure.ai.ml._restclient.v2022_02_01_preview.models._azure_machine_learning_workspaces_enums.ListViewType
+  signature: 'list(name: Optional[str] = None, *, list_view_type: azure.ai.ml._restclient.v2022_10_01_preview.models._azure_machine_learning_workspaces_enums.ListViewType
     = <ListViewType.ACTIVE_ONLY: ''ActiveOnly''>) -> azure.core.paging.ItemPaged[azure.ai.ml.entities._assets._artifacts.data.Data]'
   parameters:
   - name: name
     description: Name of a specific data asset, optional.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
   - name: list_view_type
@@ -123,7 +148,8 @@ methods:
 - uid: azure.ai.ml.operations.DataOperations.restore
   name: restore
   summary: Restore an archived data asset.
-  signature: 'restore(name: str, version: str = None, label: str = None) -> None'
+  signature: 'restore(name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: name
     description: Name of data asset.
@@ -132,13 +158,42 @@ methods:
     - <xref:str>
   - name: version
     description: Version of data asset.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: label
     description: Label of the data asset. (mutually exclusive with version)
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   return:
     description: None
+- uid: azure.ai.ml.operations.DataOperations.show_materialization_status
+  name: show_materialization_status
+  summary: '> [!NOTE]
+
+    > This is an experimental method, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+    for more information.
+
+    >
+
+
+    List materialization jobs of the asset.'
+  signature: 'show_materialization_status(name: str, *, list_view_type: azure.ai.ml._restclient.v2022_10_01_preview.models._azure_machine_learning_workspaces_enums.ListViewType
+    = <ListViewType.ACTIVE_ONLY: ''ActiveOnly''>) -> Iterable[azure.ai.ml.entities._job.job.Job]'
+  parameters:
+  - name: name
+    description: name of asset being created by the materialization jobs.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: list_view_type
+    description: 'View type for including/excluding (for example) archived jobs. Default:
+      ACTIVE_ONLY.'
+    isRequired: true
+    types:
+    - <xref:Optional>[<xref:ListViewType>]
+  return:
+    description: An iterator like instance of Job objects.
+    types:
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.ai.ml.entities.Job>]

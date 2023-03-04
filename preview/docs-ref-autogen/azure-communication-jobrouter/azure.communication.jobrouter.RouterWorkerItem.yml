@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.RouterWorkerItem
+name: RouterWorkerItem
+fullName: azure.communication.jobrouter.RouterWorkerItem
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: Paged instance of RouterWorker.
+constructor:
+  syntax: 'RouterWorkerItem(*, router_worker: Optional[_models.RouterWorker] = None,
+    etag: Optional[str] = None, **kwargs)'
+variables:
+- description: An entity for jobs to be routed to.
+  name: router_worker
+  types:
+  - <xref:azure.communication.jobrouter.models.RouterWorker>
+- description: (Optional) The Concurrency Token.
+  name: etag
+  types:
+  - <xref:str>

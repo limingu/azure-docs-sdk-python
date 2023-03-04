@@ -10,7 +10,7 @@ constructor:
   syntax: 'OperationResource(*, end_time: Optional[datetime.datetime] = None, error:
     Optional[_models.Error] = None, id: Optional[str] = None, name: Optional[str]
     = None, properties: Optional[_models.OperationExtendedInfo] = None, start_time:
-    Optional[datetime.datetime] = None, status: Optional[str] = None, **kwargs)'
+    Optional[datetime.datetime] = None, status: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: End time of the operation.
   name: end_time

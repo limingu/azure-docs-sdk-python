@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.JobQueueItem
+name: JobQueueItem
+fullName: azure.communication.jobrouter.JobQueueItem
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: Paged instance of JobQueue.
+constructor:
+  syntax: 'JobQueueItem(*, job_queue: Optional[_models.JobQueue] = None, etag: Optional[str]
+    = None, **kwargs)'
+variables:
+- description: A queue that can contain jobs to be routed.
+  name: job_queue
+  types:
+  - <xref:azure.communication.jobrouter.models.JobQueue>
+- description: (Optional) The Concurrency Token.
+  name: etag
+  types:
+  - <xref:str>

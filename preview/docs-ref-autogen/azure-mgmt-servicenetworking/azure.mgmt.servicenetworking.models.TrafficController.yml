@@ -6,7 +6,9 @@ module: azure.mgmt.servicenetworking.models
 inheritances:
 - azure.mgmt.servicenetworking.models._models_py3.TrackedResource
 summary: 'Concrete tracked resource types can be created by aliasing this type using
-  a specific property type.
+  a specific property
+
+  type.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.
@@ -15,7 +17,7 @@ summary: 'Concrete tracked resource types can be created by aliasing this type u
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'TrafficController(*, location: str, tags: Optional[Dict[str, str]] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

@@ -16,7 +16,7 @@ constructor:
   syntax: 'Frontend(*, location: str, tags: Optional[Dict[str, str]] = None, mode:
     Optional[Literal[public]] = None, ip_address_version: Optional[Union[str, _models.FrontendIPAddressVersion]]
     = None, public_ip_address: Optional[_models.FrontendPropertiesIPAddress] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

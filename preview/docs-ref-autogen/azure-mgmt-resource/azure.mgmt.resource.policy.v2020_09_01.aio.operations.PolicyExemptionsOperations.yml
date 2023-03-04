@@ -54,10 +54,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for the policy exemption. Is either a PolicyExemption
-      type or a
+    description: 'Parameters for the policy exemption. Is either a model type or a
+      IO type.
 
-      IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2020_09_01.models.PolicyExemption>

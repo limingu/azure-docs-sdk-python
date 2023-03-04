@@ -8,7 +8,7 @@ inheritances:
 summary: Deployment on error behavior.
 constructor:
   syntax: 'OnErrorDeployment(*, type: Optional[Union[str, _models.OnErrorDeploymentType]]
-    = None, deployment_name: Optional[str] = None, **kwargs: Any)'
+    = None, deployment_name: Optional[str] = None, **kwargs)'
 variables:
 - description: 'The deployment on error behavior type. Possible values are LastSuccessful
     and

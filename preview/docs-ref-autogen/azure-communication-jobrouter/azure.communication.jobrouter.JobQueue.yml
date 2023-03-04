@@ -1,0 +1,43 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.JobQueue
+name: JobQueue
+fullName: azure.communication.jobrouter.JobQueue
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'A queue that can contain jobs to be routed.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'JobQueue(*, name: Optional[str] = None, distribution_policy_id: Optional[str]
+    = None, labels: Optional[Dict[str, Any]] = None, exception_policy_id: Optional[str]
+    = None, **kwargs)'
+variables:
+- description: The Id of this queue.
+  name: id
+  types:
+  - <xref:str>
+- description: The name of this queue.
+  name: name
+  types:
+  - <xref:str>
+- description: 'The ID of the distribution policy that will determine how a job
+
+    is distributed to workers.'
+  name: distribution_policy_id
+  types:
+  - <xref:str>
+- description: 'A set of key/value pairs that are identifying attributes used by the
+    rules
+
+    engines to make decisions.'
+  name: labels
+  types:
+  - <xref:dict>[<xref:str>, <xref:any>]
+- description: '(Optional) The ID of the exception policy that determines various
+
+    job escalation rules.'
+  name: exception_policy_id
+  types:
+  - <xref:str>

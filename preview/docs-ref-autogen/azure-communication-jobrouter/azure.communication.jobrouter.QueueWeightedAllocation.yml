@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.QueueWeightedAllocation
+name: QueueWeightedAllocation
+fullName: azure.communication.jobrouter.QueueWeightedAllocation
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'Contains the weight percentage and label selectors to be applied if selected
+  for weighted distributions.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'QueueWeightedAllocation(*, weight: float, label_selectors: List[_models.QueueSelector],
+    **kwargs)'
+variables:
+- description: The percentage of this weight, expressed as a fraction of 1. Required.
+  name: weight
+  types:
+  - <xref:float>
+- description: 'A collection of label selectors that will be applied if this allocation
+
+    is selected. Required.'
+  name: label_selectors
+  types:
+  - <xref:list>[<xref:azure.communication.jobrouter.models.QueueSelector>]

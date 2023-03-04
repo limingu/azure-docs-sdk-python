@@ -8,7 +8,7 @@ inheritances:
 summary: The type of the paths for alias.
 constructor:
   syntax: 'AliasPathType(*, path: Optional[str] = None, api_versions: Optional[List[str]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The path of an alias.
   name: path

@@ -17,7 +17,7 @@ constructor:
     None, description: Optional[str] = None, linked_templates: Optional[List[_models.LinkedTemplateArtifact]]
     = None, metadata: Optional[collections.abc.MutableMapping[str, Any]] = None, main_template:
     Optional[collections.abc.MutableMapping[str, Any]] = None, ui_form_definition:
-    Optional[collections.abc.MutableMapping[str, Any]] = None, **kwargs: Any)'
+    Optional[collections.abc.MutableMapping[str, Any]] = None, **kwargs)'
 variables:
 - description: String Id used to locate any resource on Azure.
   name: id

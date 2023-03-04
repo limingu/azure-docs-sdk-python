@@ -1,0 +1,36 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.JobAssignment
+name: JobAssignment
+fullName: azure.communication.jobrouter.JobAssignment
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'Assignment details of a job to a worker.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'JobAssignment(*, id: str, assign_time: datetime.datetime, worker_id: Optional[str]
+    = None, complete_time: Optional[datetime.datetime] = None, close_time: Optional[datetime.datetime]
+    = None, **kwargs)'
+variables:
+- description: The Id of the job assignment. Required.
+  name: id
+  types:
+  - <xref:str>
+- description: The Id of the Worker assigned to the job.
+  name: worker_id
+  types:
+  - <xref:str>
+- description: The assignment time of the job. Required.
+  name: assign_time
+  types:
+  - <xref:datetime.datetime>
+- description: The time the job was marked as completed after being assigned.
+  name: complete_time
+  types:
+  - <xref:datetime.datetime>
+- description: The time the job was marked as closed after being completed.
+  name: close_time
+  types:
+  - <xref:datetime.datetime>

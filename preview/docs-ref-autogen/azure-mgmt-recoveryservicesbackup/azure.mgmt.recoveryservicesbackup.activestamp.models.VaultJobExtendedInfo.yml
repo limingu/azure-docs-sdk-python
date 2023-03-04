@@ -8,7 +8,7 @@ inheritances:
 summary: Vault Job for CMK - has CMK specific info.
 constructor:
   syntax: 'VaultJobExtendedInfo(*, property_bag: Optional[Dict[str, str]] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Job properties.
   name: property_bag

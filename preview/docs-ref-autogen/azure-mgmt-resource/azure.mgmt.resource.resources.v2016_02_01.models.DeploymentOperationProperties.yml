@@ -11,7 +11,7 @@ constructor:
     timestamp: Optional[datetime.datetime] = None, service_request_id: Optional[str]
     = None, status_code: Optional[str] = None, status_message: Optional[Any] = None,
     target_resource: Optional[_models.TargetResource] = None, request: Optional[_models.HttpMessage]
-    = None, response: Optional[_models.HttpMessage] = None, **kwargs: Any)'
+    = None, response: Optional[_models.HttpMessage] = None, **kwargs)'
 variables:
 - description: The state of the provisioning.
   name: provisioning_state

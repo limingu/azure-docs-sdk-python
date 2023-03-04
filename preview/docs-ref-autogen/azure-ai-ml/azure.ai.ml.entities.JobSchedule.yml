@@ -12,9 +12,9 @@ inheritances:
 summary: JobSchedule object.
 constructor:
   syntax: 'JobSchedule(*, name: str, trigger: Union[azure.ai.ml.entities._schedule.trigger.CronTrigger,
-    azure.ai.ml.entities._schedule.trigger.RecurrenceTrigger], create_job: azure.ai.ml.entities._job.job.Job,
-    display_name: Optional[str] = None, description: Optional[str] = None, tags: Optional[Dict]
-    = None, properties: Optional[Dict] = None, **kwargs)'
+    azure.ai.ml.entities._schedule.trigger.RecurrenceTrigger], create_job: Union[azure.ai.ml.entities._job.job.Job,
+    str], display_name: Optional[str] = None, description: Optional[str] = None, tags:
+    Optional[Dict] = None, properties: Optional[Dict] = None, **kwargs)'
   parameters:
   - name: name
     description: Name of the schedule.
@@ -27,10 +27,10 @@ constructor:
     types:
     - <xref:Union>[<xref:azure.ai.ml.entities.CronTrigger>, <xref:azure.ai.ml.entities.RecurrenceTrigger>]
   - name: create_job
-    description: The schedule action job definition.
+    description: The schedule action job definition, or the existing job name.
     isRequired: true
     types:
-    - <xref:azure.ai.ml.entities.Job>
+    - <xref:Union>[<xref:azure.ai.ml.entities.Job>, <xref:str>]
   - name: display_name
     description: Display name of the schedule.
     isRequired: true

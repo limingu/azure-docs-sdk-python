@@ -7,8 +7,7 @@ inheritances:
 - azure.mgmt.resource.subscriptions._serialization.Model
 summary: Location list operation response.
 constructor:
-  syntax: 'LocationListResult(*, value: Optional[List[_models.Location]] = None, **kwargs:
-    Any)'
+  syntax: 'LocationListResult(*, value: Optional[List[_models.Location]] = None, **kwargs)'
 variables:
 - description: An array of locations.
   name: value

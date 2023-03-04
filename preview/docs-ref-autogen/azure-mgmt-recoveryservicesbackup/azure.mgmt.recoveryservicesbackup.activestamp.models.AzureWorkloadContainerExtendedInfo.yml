@@ -9,7 +9,7 @@ summary: Extended information of the container.
 constructor:
   syntax: 'AzureWorkloadContainerExtendedInfo(*, host_server_name: Optional[str] =
     None, inquiry_info: Optional[_models.InquiryInfo] = None, nodes_list: Optional[List[_models.DistributedNodesInfo]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Host Os Name in case of Stand Alone and Cluster Name in case of
 

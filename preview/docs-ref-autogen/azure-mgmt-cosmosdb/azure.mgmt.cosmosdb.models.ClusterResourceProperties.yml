@@ -19,7 +19,7 @@ constructor:
     Optional[List[_models.Certificate]] = None, external_gossip_certificates: Optional[List[_models.Certificate]]
     = None, external_seed_nodes: Optional[List[_models.SeedNode]] = None, hours_between_backups:
     Optional[int] = None, deallocated: Optional[bool] = None, cassandra_audit_logging_enabled:
-    Optional[bool] = None, **kwargs)'
+    Optional[bool] = None, **kwargs: Any)'
 variables:
 - description: 'The status of the resource at the time the operation was called.
 
@@ -71,9 +71,9 @@ variables:
     clients. ''None'' turns off authentication, so should not be used except in emergencies.
 
     ''Cassandra'' is the default password based authentication. The default is ''Cassandra''.
-    ''Ldap'' is
+    Known
 
-    in preview. Known values are: "None", "Cassandra", and "Ldap".'
+    values are: "None" and "Cassandra".'
   name: authentication_method
   types:
   - <xref:str>
@@ -149,7 +149,9 @@ variables:
   name: seed_nodes
   types:
   - <xref:list>[<xref:azure.mgmt.cosmosdb.models.SeedNode>]
-- description: Number of hours to wait between taking a backup of the cluster.
+- description: 'Number of hours to wait between taking a backup of the cluster. To
+
+    disable backups, set this property to 0.'
   name: hours_between_backups
   types:
   - <xref:int>

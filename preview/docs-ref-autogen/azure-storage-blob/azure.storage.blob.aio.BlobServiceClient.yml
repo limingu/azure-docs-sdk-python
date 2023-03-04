@@ -117,16 +117,16 @@ examples:
 - "Creating the BlobServiceClient with account url and credential.<!--[!code-python[Main](les\\\
   blob_samples_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
   classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"\
-  D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\\
-  samples\\\\blob_samples_authentication_async.py\", \"xml:space\": \"preserve\",\
-  \ \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+  D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\
+  \\samples\\\\blob_samples_authentication_async.py\", \"xml:space\": \"preserve\"\
+  , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
   : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.storage.blob.aio import\
   \ BlobServiceClient\n   blob_service_client = BlobServiceClient(account_url=self.url,\
   \ credential=self.shared_access_key)\n\n   ````\n\nCreating the BlobServiceClient\
   \ with Azure Identity credentials.<!--[!code-python[Main](les\\blob_samples_authentication_async.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
   : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\\
-  60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\\blob_samples_authentication_async.py\"\
+  60\\\\azure-storage-blob-12.16.0a20230302001\\\\samples\\\\blob_samples_authentication_async.py\"\
   , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
   : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   # Get a token\
   \ credential for authentication\n   from azure.identity.aio import ClientSecretCredential\n\
@@ -198,7 +198,7 @@ methods:
   - "Creating a container in the blob service.<!--[!code-python[Main](les\\blob_samples_service_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\\blob_samples_service_async.py\"\
+    dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\\samples\\\\blob_samples_service_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   try:\n       new_container = await blob_service_client.create_container(\"\
@@ -286,7 +286,7 @@ methods:
   - "Deleting a container in the blob service.<!--[!code-python[Main](les\\blob_samples_service_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\\blob_samples_service_async.py\"\
+    dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\\samples\\\\blob_samples_service_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   # Delete container if it exists\n   try:\n       await blob_service_client.delete_container(\"\
@@ -350,10 +350,10 @@ methods:
   - "Getting account information for the blob service.<!--[!code-python[Main](les\\\
     blob_samples_service_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\
-    \\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   account_info = await blob_service_client.get_account_information()\n\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\
+    \\samples\\\\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   account_info = await blob_service_client.get_account_information()\n\
     \   print('Using Storage SKU: {}'.format(account_info['sku_name']))\n\n   ````\n"
 - uid: azure.storage.blob.aio.BlobServiceClient.get_blob_client
   name: get_blob_client
@@ -401,10 +401,10 @@ methods:
   - "Getting the blob client to interact with a specific blob.<!--[!code-python[Main](les\\\
     blob_samples_service_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\
-    \\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   blob_client = blob_service_client.get_blob_client(container=\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\
+    \\samples\\\\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   blob_client = blob_service_client.get_blob_client(container=\"\
     containertestasync\", blob=\"my_blob\")\n   try:\n       stream = await blob_client.download_blob()\n\
     \   except ResourceNotFoundError:\n       print(\"No blob found.\")\n\n   ````\n"
 - uid: azure.storage.blob.aio.BlobServiceClient.get_container_client
@@ -432,11 +432,11 @@ methods:
   - "Getting the container client to interact with a specific container.<!--[!code-python[Main](les\\\
     blob_samples_service_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\
-    \\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   # Get a client to interact with a specific container\
-    \ - though it may not yet exist\n   container_client = blob_service_client.get_container_client(\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\
+    \\samples\\\\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   # Get a client to interact with\
+    \ a specific container - though it may not yet exist\n   container_client = blob_service_client.get_container_client(\"\
     containertestasync\")\n   try:\n       blobs_list = []\n       async for blob\
     \ in container_client.list_blobs():\n           blobs_list.append(blob)\n\n  \
     \     for blob in blobs_list:\n           print(\"Found blob: \", blob.name)\n\
@@ -471,10 +471,10 @@ methods:
   - "Getting service properties for the blob service.<!--[!code-python[Main](les\\\
     blob_samples_service_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\
-    \\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   properties = await blob_service_client.get_service_properties()\n\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\
+    \\samples\\\\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   properties = await blob_service_client.get_service_properties()\n\
     \n   ````\n"
 - uid: azure.storage.blob.aio.BlobServiceClient.get_service_stats
   name: get_service_stats
@@ -531,7 +531,7 @@ methods:
   - "Getting service stats for the blob service.<!--[!code-python[Main](les\\blob_samples_service_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\\blob_samples_service_async.py\"\
+    dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\\samples\\\\blob_samples_service_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   stats = await blob_service_client.get_service_stats()\n\n   ````\n"
@@ -635,7 +635,7 @@ methods:
   - "Listing the containers in the blob service.<!--[!code-python[Main](les\\blob_samples_service_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\\blob_samples_service_async.py\"\
+    dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\\samples\\\\blob_samples_service_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   # List all containers\n   all_containers = []\n   async for container in\
@@ -730,20 +730,20 @@ methods:
   - "Setting service properties for the blob service.<!--[!code-python[Main](les\\\
     blob_samples_service_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.15.0b1\\\\samples\\\
-    \\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   # Create service properties\n   from azure.storage.blob\
-    \ import BlobAnalyticsLogging, Metrics, CorsRule, RetentionPolicy\n\n   # Create\
-    \ logging settings\n   logging = BlobAnalyticsLogging(read=True, write=True, delete=True,\
-    \ retention_policy=RetentionPolicy(enabled=True, days=5))\n\n   # Create metrics\
-    \ for requests statistics\n   hour_metrics = Metrics(enabled=True, include_apis=True,\
-    \ retention_policy=RetentionPolicy(enabled=True, days=5))\n   minute_metrics =\
-    \ Metrics(enabled=True, include_apis=True,\n                           retention_policy=RetentionPolicy(enabled=True,\
-    \ days=5))\n\n   # Create CORS rules\n   cors_rule = CorsRule(['www.xyz.com'],\
-    \ ['GET'])\n   cors = [cors_rule]\n\n   # Set the service properties\n   await\
-    \ blob_service_client.set_service_properties(logging, hour_metrics, minute_metrics,\
-    \ cors)\n\n   ````\n"
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\60\\\\azure-storage-blob-12.16.0a20230302001\\\
+    \\samples\\\\blob_samples_service_async.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   # Create service properties\n\
+    \   from azure.storage.blob import BlobAnalyticsLogging, Metrics, CorsRule, RetentionPolicy\n\
+    \n   # Create logging settings\n   logging = BlobAnalyticsLogging(read=True, write=True,\
+    \ delete=True, retention_policy=RetentionPolicy(enabled=True, days=5))\n\n   #\
+    \ Create metrics for requests statistics\n   hour_metrics = Metrics(enabled=True,\
+    \ include_apis=True, retention_policy=RetentionPolicy(enabled=True, days=5))\n\
+    \   minute_metrics = Metrics(enabled=True, include_apis=True,\n              \
+    \             retention_policy=RetentionPolicy(enabled=True, days=5))\n\n   #\
+    \ Create CORS rules\n   cors_rule = CorsRule(['www.xyz.com'], ['GET'])\n   cors\
+    \ = [cors_rule]\n\n   # Set the service properties\n   await blob_service_client.set_service_properties(logging,\
+    \ hour_metrics, minute_metrics, cors)\n\n   ````\n"
 - uid: azure.storage.blob.aio.BlobServiceClient.undelete_container
   name: undelete_container
   summary: 'Restores soft-deleted container.

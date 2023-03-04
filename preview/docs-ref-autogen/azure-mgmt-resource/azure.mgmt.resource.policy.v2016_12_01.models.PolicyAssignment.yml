@@ -13,7 +13,7 @@ constructor:
   syntax: 'PolicyAssignment(*, type: Optional[str] = None, name: Optional[str] = None,
     display_name: Optional[str] = None, policy_definition_id: Optional[str] = None,
     scope: Optional[str] = None, parameters: Optional[collections.abc.MutableMapping[str,
-    Any]] = None, description: Optional[str] = None, **kwargs: Any)'
+    Any]] = None, description: Optional[str] = None, **kwargs)'
 variables:
 - description: The ID of the policy assignment.
   name: id

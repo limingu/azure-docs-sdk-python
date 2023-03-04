@@ -11,7 +11,7 @@ summary: 'Location metadata information.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'LocationMetadata(*, paired_region: Optional[List[_models.PairedRegion]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: 'The type of the region. Known values are: "Physical" and "Logical".'
   name: region_type

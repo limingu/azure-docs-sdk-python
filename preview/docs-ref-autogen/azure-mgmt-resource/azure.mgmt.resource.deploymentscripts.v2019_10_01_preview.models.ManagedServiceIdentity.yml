@@ -12,7 +12,7 @@ summary: 'Managed identity generic object.
 constructor:
   syntax: 'ManagedServiceIdentity(*, type: Optional[Union[str, _models.ManagedServiceIdentityType]]
     = None, user_assigned_identities: Optional[Dict[str, _models.UserAssignedIdentity]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: Type of the managed identity. "UserAssigned"
   name: type

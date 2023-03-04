@@ -20,7 +20,7 @@ constructor:
     status: str, subscription_id: str, supported_actions: List[str], vault_name: str,
     data_source_set_name: Optional[str] = None, duration: Optional[str] = None, etag:
     Optional[str] = None, source_data_store_name: Optional[str] = None, destination_data_store_name:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, **kwargs: Any)'
 variables:
 - description: Job Activity Id. Required.
   name: activity_id

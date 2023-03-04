@@ -29,7 +29,7 @@ constructor:
     Optional[str] = None, is_deferred_delete_schedule_upcoming: Optional[bool] = None,
     is_rehydrate: Optional[bool] = None, resource_guard_operation_requests: Optional[List[str]]
     = None, is_archive_enabled: Optional[bool] = None, policy_name: Optional[str]
-    = None, soft_delete_retention_period: Optional[int] = None, **kwargs)'
+    = None, soft_delete_retention_period: Optional[int] = None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type

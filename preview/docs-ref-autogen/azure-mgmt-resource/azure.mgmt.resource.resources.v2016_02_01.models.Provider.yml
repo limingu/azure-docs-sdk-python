@@ -9,7 +9,7 @@ summary: Resource provider information.
 constructor:
   syntax: 'Provider(*, id: Optional[str] = None, namespace: Optional[str] = None,
     registration_state: Optional[str] = None, resource_types: Optional[List[_models.ProviderResourceType]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The provider id.
   name: id

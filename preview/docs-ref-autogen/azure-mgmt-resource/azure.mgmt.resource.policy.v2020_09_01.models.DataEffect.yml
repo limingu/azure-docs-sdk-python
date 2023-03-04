@@ -8,7 +8,7 @@ inheritances:
 summary: The data effect definition.
 constructor:
   syntax: 'DataEffect(*, name: Optional[str] = None, details_schema: Optional[collections.abc.MutableMapping[str,
-    Any]] = None, **kwargs: Any)'
+    Any]] = None, **kwargs)'
 variables:
 - description: The data effect name.
   name: name

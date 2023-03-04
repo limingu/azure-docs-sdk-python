@@ -22,7 +22,7 @@ summary: 'FormTrainingClient is the Form Recognizer interface to use for creatin
 
   >
 
-  > To use API versions 2021-09-30-preview and up, instantiate a DocumentModelAdministrationClient.
+  > To use API versions 2022-08-31 and up, instantiate a DocumentModelAdministrationClient.
 
   >'
 constructor:
@@ -60,27 +60,27 @@ constructor:
     - <xref:azure.ai.formrecognizer.FormRecognizerApiVersion>
 examples:
 - "Creating the FormTrainingClient with an endpoint and API key.<!--[!code-python[Main](les\\\
-  v3.1\\sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
-  : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\
-  \\v3.1\\\\sample_authentication.py\", \"xml:space\": \"preserve\", \"force\": false,\
-  \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-  : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
-  \   from azure.ai.formrecognizer import FormTrainingClient\n   endpoint = os.environ[\"\
-  AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
-  ]\n\n   form_training_client = FormTrainingClient(endpoint, AzureKeyCredential(key))\n\
-  \n   ````\n\nCreating the FormTrainingClient with a token credential.<!--[!code-python[Main](les\\\
-  v3.1\\sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
-  : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\
-  \\v3.1\\\\sample_authentication.py\", \"xml:space\": \"preserve\", \"force\": false,\
-  \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-  : false} -->\n\n````python\n\n   \"\"\"DefaultAzureCredential will use the values\
-  \ from these environment\n   variables: AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET\n\
-  \   \"\"\"\n   from azure.ai.formrecognizer import FormTrainingClient\n   from azure.identity\
-  \ import DefaultAzureCredential\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-  ]\n   credential = DefaultAzureCredential()\n\n   form_training_client = FormTrainingClient(endpoint,\
-  \ credential)\n\n   ````\n"
+  v3.1\\sample_authentication_v3_1.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
+  classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"\
+  D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\
+  \\samples\\\\v3.1\\\\sample_authentication_v3_1.py\", \"xml:space\": \"preserve\"\
+  , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+  : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import\
+  \ AzureKeyCredential\n   from azure.ai.formrecognizer import FormTrainingClient\n\
+  \   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"\
+  AZURE_FORM_RECOGNIZER_KEY\"]\n\n   form_training_client = FormTrainingClient(endpoint,\
+  \ AzureKeyCredential(key))\n\n   ````\n\nCreating the FormTrainingClient with a\
+  \ token credential.<!--[!code-python[Main](les\\v3.1\\sample_authentication_v3_1.py\
+  \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\\
+  55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\\samples\\\\v3.1\\\\sample_authentication_v3_1.py\"\
+  , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
+  : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   \"\"\"DefaultAzureCredential\
+  \ will use the values from these environment\n   variables: AZURE_CLIENT_ID, AZURE_TENANT_ID,\
+  \ AZURE_CLIENT_SECRET\n   \"\"\"\n   from azure.ai.formrecognizer import FormTrainingClient\n\
+  \   from azure.identity import DefaultAzureCredential\n\n   endpoint = os.environ[\"\
+  AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   credential = DefaultAzureCredential()\n\n\
+  \   form_training_client = FormTrainingClient(endpoint, credential)\n\n   ````\n"
 methods:
 - uid: azure.ai.formrecognizer.FormTrainingClient.begin_copy_model
   name: begin_copy_model
@@ -126,8 +126,8 @@ methods:
   - "Copy a model from the source resource to the target resource<!--[!code-python[Main](les\\\
     v3.1\\sample_copy_model.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\\
-    samples\\\\v3.1\\\\sample_copy_model.py\", \"xml:space\": \"preserve\", \"force\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\
+    \\samples\\\\v3.1\\\\sample_copy_model.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   source_client = FormTrainingClient(endpoint=source_endpoint,\
     \ credential=AzureKeyCredential(source_key))\n\n   poller = source_client.begin_copy_model(\n\
@@ -179,12 +179,13 @@ methods:
   - "Create a composed model<!--[!code-python[Main](les\\v3.1\\sample_create_composed_model.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_create_composed_model.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   from azure.core.credentials import AzureKeyCredential\n   from azure.ai.formrecognizer\
-    \ import FormTrainingClient\n\n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"\
-    ]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"]\n   po_supplies = os.environ['PURCHASE_ORDER_OFFICE_SUPPLIES_SAS_URL_V2']\n\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\\samples\\\\v3.1\\\
+    \\sample_create_composed_model.py\", \"xml:space\": \"preserve\", \"force\": false,\
+    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
+    \   from azure.ai.formrecognizer import FormTrainingClient\n\n   endpoint = os.environ[\"\
+    AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
+    ]\n   po_supplies = os.environ['PURCHASE_ORDER_OFFICE_SUPPLIES_SAS_URL_V2']\n\
     \   po_equipment = os.environ['PURCHASE_ORDER_OFFICE_EQUIPMENT_SAS_URL_V2']\n\
     \   po_furniture = os.environ['PURCHASE_ORDER_OFFICE_FURNITURE_SAS_URL_V2']\n\
     \   po_cleaning_supplies = os.environ['PURCHASE_ORDER_OFFICE_CLEANING_SUPPLIES_SAS_URL_V2']\n\
@@ -299,7 +300,7 @@ methods:
   - "Training a model (without labels) with your custom forms.<!--[!code-python[Main](les\\\
     v3.1\\sample_train_model_without_labels.py )]-->\n\n<!-- literal_block {\"ids\"\
     : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\
+    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\
     \\samples\\\\v3.1\\\\sample_train_model_without_labels.py\", \"xml:space\": \"\
     preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\": {\"\
     linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.ai.formrecognizer\
@@ -344,11 +345,11 @@ methods:
   - "Delete a custom model.<!--[!code-python[Main](les\\v3.1\\sample_manage_custom_models.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_manage_custom_models.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   form_training_client.delete_model(model_id=custom_model.model_id)\n\n   try:\n\
-    \       form_training_client.get_custom_model(model_id=custom_model.model_id)\n\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\\samples\\\\v3.1\\\
+    \\sample_manage_custom_models.py\", \"xml:space\": \"preserve\", \"force\": false,\
+    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   form_training_client.delete_model(model_id=custom_model.model_id)\n\
+    \n   try:\n       form_training_client.get_custom_model(model_id=custom_model.model_id)\n\
     \   except ResourceNotFoundError:\n       print(\"Successfully deleted model with\
     \ id {}\".format(custom_model.model_id))\n\n   ````\n"
 - uid: azure.ai.formrecognizer.FormTrainingClient.get_account_properties
@@ -367,7 +368,7 @@ methods:
   - "Get properties for the form recognizer account.<!--[!code-python[Main](les\\\
     v3.1\\sample_manage_custom_models.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\
+    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\
     \\samples\\\\v3.1\\\\sample_manage_custom_models.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   form_training_client = FormTrainingClient(endpoint=endpoint,\
@@ -418,8 +419,8 @@ methods:
   - "Authorize the target resource to receive the copied model<!--[!code-python[Main](les\\\
     v3.1\\sample_copy_model.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\\
-    samples\\\\v3.1\\\\sample_copy_model.py\", \"xml:space\": \"preserve\", \"force\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\
+    \\samples\\\\v3.1\\\\sample_copy_model.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   target_client = FormTrainingClient(endpoint=target_endpoint,\
     \ credential=AzureKeyCredential(target_key))\n\n   target = target_client.get_copy_authorization(\n\
@@ -449,10 +450,10 @@ methods:
   - "Get a custom model with a model ID.<!--[!code-python[Main](les\\v3.1\\sample_manage_custom_models.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\\samples\\\\v3.1\\\\sample_manage_custom_models.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   custom_model = form_training_client.get_custom_model(model_id=model.model_id)\n\
+    dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\\samples\\\\v3.1\\\
+    \\sample_manage_custom_models.py\", \"xml:space\": \"preserve\", \"force\": false,\
+    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   custom_model = form_training_client.get_custom_model(model_id=model.model_id)\n\
     \   print(\"\\nModel ID: {}\".format(custom_model.model_id))\n   print(\"Status:\
     \ {}\".format(custom_model.status))\n   print(\"Model name: {}\".format(custom_model.model_name))\n\
     \   print(\"Is this a composed model?: {}\".format(custom_model.properties.is_composed_model))\n\
@@ -483,9 +484,9 @@ methods:
   - "List model information for each model on the account.<!--[!code-python[Main](les\\\
     v3.1\\sample_manage_custom_models.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.0b6\\\
+    : \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\55\\\\azure-ai-formrecognizer-3.2.1a20230302002\\\
     \\samples\\\\v3.1\\\\sample_manage_custom_models.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   custom_models = form_training_client.list_custom_models()\n\
-    \n   print(\"We have models with the following IDs:\")\n   for model in custom_models:\n\
-    \       print(model.model_id)\n\n   ````\n"
+    \n   print(\"We have models with the following IDs:\")\n   for model_info in custom_models:\n\
+    \       print(model_info.model_id)\n\n   ````\n"

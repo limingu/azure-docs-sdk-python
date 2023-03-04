@@ -16,7 +16,7 @@ constructor:
     = None, retention_policy: Optional[_models.RetentionPolicy] = None, tiering_policy:
     Optional[Dict[str, _models.TieringPolicy]] = None, instant_rp_retention_range_in_days:
     Optional[int] = None, time_zone: Optional[str] = None, policy_type: Optional[Union[str,
-    _models.IAASVMPolicyType]] = None, **kwargs)'
+    _models.IAASVMPolicyType]] = None, **kwargs: Any)'
 variables:
 - description: Number of items associated with this policy.
   name: protected_items_count

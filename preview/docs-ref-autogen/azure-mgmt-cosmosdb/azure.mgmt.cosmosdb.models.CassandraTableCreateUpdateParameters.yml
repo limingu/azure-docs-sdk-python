@@ -14,9 +14,8 @@ summary: 'Parameters to create and update Cosmos DB Cassandra table.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'CassandraTableCreateUpdateParameters(*, resource: _models.CassandraTableResource,
-    location: Optional[str] = None, tags: Optional[Dict[str, str]] = None, identity:
-    Optional[_models.ManagedServiceIdentity] = None, options: Optional[_models.CreateUpdateOptions]
-    = None, **kwargs)'
+    location: Optional[str] = None, tags: Optional[Dict[str, str]] = None, options:
+    Optional[_models.CreateUpdateOptions] = None, **kwargs: Any)'
 variables:
 - description: The unique resource identifier of the ARM resource.
   name: id
@@ -53,10 +52,6 @@ variables:
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Identity for the resource.
-  name: identity
-  types:
-  - <xref:azure.mgmt.cosmosdb.models.ManagedServiceIdentity>
 - description: The standard JSON format of a Cassandra table. Required.
   name: resource
   types:

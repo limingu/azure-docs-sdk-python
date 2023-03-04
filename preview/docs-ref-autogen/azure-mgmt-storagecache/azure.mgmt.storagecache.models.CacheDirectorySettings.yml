@@ -9,7 +9,7 @@ summary: Cache Directory Services settings.
 constructor:
   syntax: 'CacheDirectorySettings(*, active_directory: Optional[_models.CacheActiveDirectorySettings]
     = None, username_download: Optional[_models.CacheUsernameDownloadSettings] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Specifies settings for joining the HPC Cache to an Active Directory
 
