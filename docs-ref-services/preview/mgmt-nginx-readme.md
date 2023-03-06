@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-nginx, nginx
 author: lmazuel
 ms.author: lmazuel
-ms.date: 12/30/2022
+ms.date: 03/06/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: nginx
