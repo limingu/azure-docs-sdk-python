@@ -8,8 +8,7 @@ inheritances:
 summary: The object that represents the operation.
 constructor:
   syntax: 'OperationDisplay(*, provider: Optional[str] = None, resource: Optional[str]
-    = None, operation: Optional[str] = None, description: Optional[str] = None, **kwargs:
-    Any)'
+    = None, operation: Optional[str] = None, description: Optional[str] = None, **kwargs)'
 variables:
 - description: 'Service provider: Microsoft.Resources.'
   name: provider

@@ -10,7 +10,7 @@ constructor:
   syntax: 'DppWorkerRequest(*, subscription_id: Optional[str] = None, uri: Optional[str]
     = None, headers: Optional[Dict[str, List[str]]] = None, supported_group_versions:
     Optional[List[str]] = None, culture_info: Optional[str] = None, parameters: Optional[Dict[str,
-    str]] = None, http_method: Optional[str] = None, **kwargs)'
+    str]] = None, http_method: Optional[str] = None, **kwargs: Any)'
 variables:
 - name: subscription_id
   types:

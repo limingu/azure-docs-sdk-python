@@ -8,7 +8,7 @@ inheritances:
 summary: Provides methods to update, get, and list settings for an Azure Key Vault.
 constructor:
   syntax: 'KeyVaultSettingsClient(vault_url: str, credential: AsyncTokenCredential,
-    **kwargs: Any)'
+    **kwargs)'
   parameters:
   - name: vault_url
     description: 'URL of the vault on which the client will operate. This is also

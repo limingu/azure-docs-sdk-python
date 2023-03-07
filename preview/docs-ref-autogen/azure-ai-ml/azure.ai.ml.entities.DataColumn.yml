@@ -1,0 +1,27 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.DataColumn
+name: DataColumn
+fullName: azure.ai.ml.entities.DataColumn
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._mixins.RestTranslatableMixin
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  A dataframe column
+
+  :param name: The column name
+
+  :type name: str, required
+
+  :param type: Column data type
+
+  :type type: ~azure.ai.ml.entities.DataColumnType, optional'
+constructor:
+  syntax: 'DataColumn(*, name: str, type: azure.ai.ml.entities._featurestore_entity.data_column_type.DataColumnType
+    = None, **kwargs)'

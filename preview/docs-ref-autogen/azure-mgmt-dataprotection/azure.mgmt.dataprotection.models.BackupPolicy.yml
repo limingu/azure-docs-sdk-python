@@ -11,7 +11,7 @@ summary: 'Rule based backup policy.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'BackupPolicy(*, datasource_types: List[str], policy_rules: List[_models.BasePolicyRule],
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Type of datasource for the backup management. Required.
   name: datasource_types

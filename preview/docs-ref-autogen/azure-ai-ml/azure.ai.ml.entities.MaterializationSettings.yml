@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.MaterializationSettings
+name: MaterializationSettings
+fullName: azure.ai.ml.entities.MaterializationSettings
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._mixins.RestTranslatableMixin
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'MaterializationSettings(*, schedule: azure.ai.ml.entities._schedule.trigger.RecurrenceTrigger,
+    offline_enabled: Optional[bool] = None, online_enabled: Optional[bool] = None,
+    notification: Optional[azure.ai.ml.entities._notification.notification.Notification]
+    = None, resource: Optional[azure.ai.ml.entities._featureset.materialization_compute_resource.MaterializationComputeResource]
+    = None, spark_conf: Optional[Dict[str, str]] = None, **kwargs)'

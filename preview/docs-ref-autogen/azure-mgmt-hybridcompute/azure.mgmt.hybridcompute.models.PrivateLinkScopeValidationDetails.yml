@@ -12,7 +12,7 @@ summary: 'PrivateLinkScopeValidationDetails.
 constructor:
   syntax: 'PrivateLinkScopeValidationDetails(*, public_network_access: Union[str,
     _models.PublicNetworkAccessType] = ''Disabled'', connection_details: Optional[List[_models.ConnectionDetail]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Azure resource Id.
   name: id

@@ -8,7 +8,7 @@ inheritances:
 summary: Soft delete related settings.
 constructor:
   syntax: 'SoftDeleteSettings(*, state: Optional[Union[str, _models.SoftDeleteState]]
-    = None, retention_duration_in_days: Optional[float] = None, **kwargs)'
+    = None, retention_duration_in_days: Optional[float] = None, **kwargs: Any)'
 variables:
 - description: 'State of soft delete. Known values are: "Off", "On", and "AlwaysOn".'
   name: state

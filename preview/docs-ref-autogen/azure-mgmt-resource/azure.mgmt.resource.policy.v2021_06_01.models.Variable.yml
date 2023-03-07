@@ -13,7 +13,7 @@ summary: 'The variable.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'Variable(*, columns: List[_models.PolicyVariableColumn], **kwargs: Any)'
+  syntax: 'Variable(*, columns: List[_models.PolicyVariableColumn], **kwargs)'
 variables:
 - description: 'Azure Resource Manager metadata containing createdBy and modifiedBy
 

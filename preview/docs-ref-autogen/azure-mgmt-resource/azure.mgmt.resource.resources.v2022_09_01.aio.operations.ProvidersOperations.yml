@@ -157,9 +157,10 @@ methods:
     types:
     - <xref:str>
   - name: properties
-    description: 'The third party consent for S2S. Is either a ProviderRegistrationRequest
+    description: 'The third party consent for S2S. Is either a model type or a IO
+      type.
 
-      type or a IO type. Default value is None.'
+      Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.resources.v2022_09_01.models.ProviderRegistrationRequest>

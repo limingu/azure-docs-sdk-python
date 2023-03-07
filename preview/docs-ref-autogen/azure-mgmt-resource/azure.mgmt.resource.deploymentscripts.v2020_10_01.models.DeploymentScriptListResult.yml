@@ -11,7 +11,7 @@ summary: 'List of deployment scripts.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'DeploymentScriptListResult(*, value: Optional[List[_models.DeploymentScript]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: An array of deployment scripts.
   name: value

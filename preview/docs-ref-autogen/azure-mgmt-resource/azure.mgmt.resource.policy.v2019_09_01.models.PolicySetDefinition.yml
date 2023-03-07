@@ -15,7 +15,7 @@ constructor:
     metadata: Optional[collections.abc.MutableMapping[str, Any]] = None, parameters:
     Optional[Dict[str, _models.ParameterDefinitionsValue]] = None, policy_definitions:
     Optional[List[_models.PolicyDefinitionReference]] = None, policy_definition_groups:
-    Optional[List[_models.PolicyDefinitionGroup]] = None, **kwargs: Any)'
+    Optional[List[_models.PolicyDefinitionGroup]] = None, **kwargs)'
 variables:
 - description: The ID of the policy set definition.
   name: id

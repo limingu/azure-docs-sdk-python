@@ -18,13 +18,15 @@ constructor:
     compute: Optional[str] = None, inputs: Optional[Dict[str, Union[azure.ai.ml.entities._inputs_outputs.input.Input,
     str, bool, int, float, enum.Enum]]] = None, outputs: Optional[Dict[str, Union[str,
     azure.ai.ml.entities._inputs_outputs.output.Output]]] = None, limits: Optional[azure.ai.ml.entities._job.job_limits.CommandJobLimits]
-    = None, identity: Optional[Union[azure.ai.ml.entities._job.identity.ManagedIdentity,
-    azure.ai.ml.entities._job.identity.AmlToken, azure.ai.ml.entities._job.identity.UserIdentity]]
+    = None, identity: Optional[Union[azure.ai.ml.entities._credentials.ManagedIdentityConfiguration,
+    azure.ai.ml.entities._credentials.AmlTokenConfiguration, azure.ai.ml.entities._credentials.UserIdentityConfiguration]]
     = None, distribution: Optional[Union[Dict, azure.ai.ml.entities._job.distribution.MpiDistribution,
     azure.ai.ml.entities._job.distribution.TensorFlowDistribution, azure.ai.ml.entities._job.distribution.PyTorchDistribution]]
     = None, environment: Optional[Union[str, azure.ai.ml.entities._assets.environment.Environment]]
     = None, environment_variables: Optional[Dict] = None, resources: Optional[azure.ai.ml.entities._job.job_resource_configuration.JobResourceConfiguration]
-    = None, services: Optional[Dict[str, azure.ai.ml.entities._job.job_service.JobService]]
+    = None, services: Optional[Dict[str, Union[azure.ai.ml.entities._job.job_service.JobService,
+    azure.ai.ml.entities._job.job_service.JupyterLabJobService, azure.ai.ml.entities._job.job_service.SshJobService,
+    azure.ai.ml.entities._job.job_service.TensorBoardJobService, azure.ai.ml.entities._job.job_service.VsCodeJobService]]]
     = None, **kwargs)'
   parameters:
   - name: component
@@ -117,13 +119,18 @@ constructor:
     description: Identity that training job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:ManagedIdentity>, <xref:AmlToken>, <xref:UserIdentity>]
   - name: services
-    description: Interactive services for the node.
+    description: 'Interactive services for the node. This is an experimental parameter,
+      and may change at any time.
+
+      Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+      for more information.'
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:azure.ai.ml.entities.JobService>]
+    - <xref:Dict>[<xref:str>, <xref:Union>[<xref:azure.ai.ml.entities.JobService>,
+      <xref:azure.ai.ml.entities.JupyterLabJobService>, <xref:azure.ai.ml.entities.SshJobService>,
+      <xref:azure.ai.ml.entities.TensorBoardJobService>, <xref:azure.ai.ml.entities.VsCodeJobService>]]
 methods:
 - uid: azure.ai.ml.entities.Command.set_limits
   name: set_limits
@@ -148,9 +155,13 @@ methods:
     compute: Optional[str] = None, max_concurrent_trials: Optional[int] = None, max_total_trials:
     Optional[int] = None, timeout: Optional[int] = None, trial_timeout: Optional[int]
     = None, early_termination_policy: Optional[Union[azure.ai.ml.entities._job.sweep.early_termination_policy.EarlyTerminationPolicy,
-    str]] = None, search_space: Optional[Dict[str, azure.ai.ml.entities._job.sweep.search_space.SweepDistribution]]
-    = None, identity: Optional[Union[azure.ai.ml.entities._job.identity.ManagedIdentity,
-    azure.ai.ml.entities._job.identity.AmlToken, azure.ai.ml.entities._job.identity.UserIdentity]]
+    str]] = None, search_space: Optional[Dict[str, Union[azure.ai.ml.entities._job.sweep.search_space.Choice,
+    azure.ai.ml.entities._job.sweep.search_space.LogNormal, azure.ai.ml.entities._job.sweep.search_space.LogUniform,
+    azure.ai.ml.entities._job.sweep.search_space.Normal, azure.ai.ml.entities._job.sweep.search_space.QLogNormal,
+    azure.ai.ml.entities._job.sweep.search_space.QLogUniform, azure.ai.ml.entities._job.sweep.search_space.QNormal,
+    azure.ai.ml.entities._job.sweep.search_space.QUniform, azure.ai.ml.entities._job.sweep.search_space.Randint,
+    azure.ai.ml.entities._job.sweep.search_space.Uniform]]] = None, identity: Optional[Union[azure.ai.ml.entities._credentials.ManagedIdentityConfiguration,
+    azure.ai.ml.entities._credentials.AmlTokenConfiguration, azure.ai.ml.entities._credentials.UserIdentityConfiguration]]
     = None) -> azure.ai.ml.entities._builders.sweep.Sweep'
   parameters:
   - name: primary_metric
@@ -213,8 +224,7 @@ methods:
     description: Identity that training job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:azure.ai.ml.entities.ManagedIdentityConfiguration,azure.ai.ml.entities.AmlTokenConfiguration,azure.ai.ml.entities.UserIdentityConfiguration>]
   return:
     description: A sweep node with component from current Command node as its trial
       component.
@@ -229,6 +239,9 @@ attributes:
   name: component
 - uid: azure.ai.ml.entities.Command.distribution
   name: distribution
+- uid: azure.ai.ml.entities.Command.identity
+  name: identity
+  summary: Configuration of the hyperparameter identity.
 - uid: azure.ai.ml.entities.Command.parameters
   name: parameters
   summary: MLFlow parameters.

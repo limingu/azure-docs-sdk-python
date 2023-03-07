@@ -4,7 +4,7 @@ name: SimGroupResourceId
 fullName: azure.mgmt.mobilenetwork.models.SimGroupResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to a SIM group resource.
 
 
@@ -12,7 +12,7 @@ summary: 'Reference to a SIM group resource.
 constructor:
   syntax: 'SimGroupResourceId(*, id: str, **kwargs)'
 variables:
-- description: Required. SIM group resource ID.
+- description: SIM group resource ID. Required.
   name: id
   types:
   - <xref:str>

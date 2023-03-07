@@ -17,7 +17,7 @@ constructor:
     = None, workload_type: Optional[str] = None, duration: Optional[datetime.timedelta]
     = None, actions_info: Optional[List[Union[str, _models.JobSupportedAction]]] =
     None, error_details: Optional[List[_models.AzureWorkloadErrorInfo]] = None, extended_info:
-    Optional[_models.AzureWorkloadJobExtendedInfo] = None, **kwargs)'
+    Optional[_models.AzureWorkloadJobExtendedInfo] = None, **kwargs: Any)'
 variables:
 - description: Friendly name of the entity on which the current job is executing.
   name: entity_friendly_name

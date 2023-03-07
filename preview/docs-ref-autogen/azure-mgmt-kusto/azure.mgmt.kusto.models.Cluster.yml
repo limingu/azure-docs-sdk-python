@@ -27,7 +27,7 @@ constructor:
     restrict_outbound_network_access: Union[str, _models.ClusterNetworkAccessFlag]
     = ''Disabled'', allowed_fqdn_list: Optional[List[str]] = None, public_ip_type:
     Union[str, _models.PublicIPType] = ''IPv4'', virtual_cluster_graduation_properties:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

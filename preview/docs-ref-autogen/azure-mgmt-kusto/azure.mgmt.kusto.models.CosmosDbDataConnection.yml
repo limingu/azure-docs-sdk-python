@@ -17,7 +17,7 @@ constructor:
     = None, mapping_rule_name: Optional[str] = None, managed_identity_resource_id:
     Optional[str] = None, cosmos_db_account_resource_id: Optional[str] = None, cosmos_db_database:
     Optional[str] = None, cosmos_db_container: Optional[str] = None, retrieval_start_date:
-    Optional[datetime.datetime] = None, **kwargs)'
+    Optional[datetime.datetime] = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

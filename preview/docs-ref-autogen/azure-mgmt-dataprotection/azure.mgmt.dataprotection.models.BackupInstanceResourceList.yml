@@ -8,7 +8,7 @@ inheritances:
 summary: BackupInstance Resource list response.
 constructor:
   syntax: 'BackupInstanceResourceList(*, next_link: Optional[str] = None, value: Optional[List[_models.BackupInstanceResource]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'The uri to fetch the next page of resources. Call ListNext() fetches
     next page

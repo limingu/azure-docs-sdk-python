@@ -11,7 +11,7 @@ constructor:
     _models.EncryptionAtRestType]] = None, key_uri: Optional[str] = None, subscription_id:
     Optional[str] = None, last_update_status: Optional[Union[str, _models.LastUpdateStatus]]
     = None, infrastructure_encryption_state: Optional[Union[str, _models.InfrastructureEncryptionState]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Encryption At Rest Type. Known values are: "Invalid",
 

@@ -6,16 +6,14 @@ module: azure.mgmt.resource.policy.v2021_06_01.models
 inheritances:
 - azure.mgmt.resource.policy._serialization.Model
 summary: 'Identity for the resource.  Policy assignments support a maximum of one
-  identity.  That is
-
-  either a system assigned identity or a single user assigned identity.
+  identity.  That is either a system assigned identity or a single user assigned identity.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'Identity(*, type: Optional[Union[str, _models.ResourceIdentityType]] =
     None, user_assigned_identities: Optional[Dict[str, _models.UserAssignedIdentitiesValue]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: 'The principal ID of the resource identity.  This property will only
     be

@@ -11,7 +11,7 @@ constructor:
     backup_management_type: Optional[Union[str, _models.BackupManagementType]] = None,
     operation: Optional[Union[str, _models.JobOperationType]] = None, job_id: Optional[str]
     = None, start_time: Optional[datetime.datetime] = None, end_time: Optional[datetime.datetime]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'Status of the job. Known values are: "Invalid", "InProgress", "Completed",
 

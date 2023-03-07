@@ -16,7 +16,7 @@ constructor:
     Optional[List[str]] = None, label_selectors: Optional[List[str]] = None, persistent_volume_restore_mode:
     Optional[Union[str, _models.PersistentVolumeRestoreMode]] = None, conflict_policy:
     Optional[Union[str, _models.ExistingResourcePolicy]] = None, namespace_mappings:
-    Optional[Dict[str, str]] = None, **kwargs)'
+    Optional[Dict[str, str]] = None, **kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type
@@ -59,12 +59,12 @@ variables:
   name: label_selectors
   types:
   - <xref:list>[<xref:str>]
-- description: 'Gets or sets the PV Restore Mode property. This property
+- description: 'Gets or sets the PV (Persistent Volume) Restore Mode
 
-    sets whether volumes needs to be restored. Known values are: "RestoreWithVolumeData"
-    and
+    property. This property sets whether volumes needs to be restored. Known values
+    are:
 
-    "RestoreWithoutVolumeData".'
+    "RestoreWithVolumeData" and "RestoreWithoutVolumeData".'
   name: persistent_volume_restore_mode
   types:
   - <xref:str>

@@ -29,10 +29,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'The policy set definition properties. Is either a PolicySetDefinition
-      type
+    description: 'The policy set definition properties. Is either a model type or
+      a IO type.
 
-      or a IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2020_09_01.models.PolicySetDefinition>
@@ -77,10 +77,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'The policy set definition properties. Is either a PolicySetDefinition
-      type
+    description: 'The policy set definition properties. Is either a model type or
+      a IO type.
 
-      or a IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2020_09_01.models.PolicySetDefinition>

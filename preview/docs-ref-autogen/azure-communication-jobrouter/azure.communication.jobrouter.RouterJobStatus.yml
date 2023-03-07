@@ -1,0 +1,28 @@
+### YamlMime:PythonEnum
+uid: azure.communication.jobrouter.RouterJobStatus
+name: RouterJobStatus
+fullName: azure.communication.jobrouter.RouterJobStatus
+summary: The state of the Job.
+module: azure.communication.jobrouter
+constructor:
+  syntax: RouterJobStatus(value)
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: ASSIGNED
+  uid: azure.communication.jobrouter.RouterJobStatus.ASSIGNED
+- name: CANCELLED
+  uid: azure.communication.jobrouter.RouterJobStatus.CANCELLED
+- name: CLASSIFICATION_FAILED
+  uid: azure.communication.jobrouter.RouterJobStatus.CLASSIFICATION_FAILED
+- name: CLOSED
+  uid: azure.communication.jobrouter.RouterJobStatus.CLOSED
+- name: COMPLETED
+  uid: azure.communication.jobrouter.RouterJobStatus.COMPLETED
+- name: CREATED
+  uid: azure.communication.jobrouter.RouterJobStatus.CREATED
+- name: PENDING_CLASSIFICATION
+  uid: azure.communication.jobrouter.RouterJobStatus.PENDING_CLASSIFICATION
+- name: QUEUED
+  uid: azure.communication.jobrouter.RouterJobStatus.QUEUED

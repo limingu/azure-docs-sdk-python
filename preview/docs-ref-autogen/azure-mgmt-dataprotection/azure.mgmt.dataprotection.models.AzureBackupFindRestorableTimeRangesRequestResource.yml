@@ -12,7 +12,7 @@ constructor:
     = None, supported_group_versions: Optional[List[str]] = None, culture_info: Optional[str]
     = None, parameters: Optional[Dict[str, str]] = None, http_method: Optional[str]
     = None, content: Optional[_models.AzureBackupFindRestorableTimeRangesRequest]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - name: subscription_id
   types:

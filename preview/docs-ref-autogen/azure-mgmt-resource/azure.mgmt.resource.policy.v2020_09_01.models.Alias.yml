@@ -12,7 +12,7 @@ summary: 'The alias type.
 constructor:
   syntax: 'Alias(*, name: Optional[str] = None, paths: Optional[List[_models.AliasPath]]
     = None, type: Optional[Union[str, _models.AliasType]] = None, default_path: Optional[str]
-    = None, default_pattern: Optional[_models.AliasPattern] = None, **kwargs: Any)'
+    = None, default_pattern: Optional[_models.AliasPattern] = None, **kwargs)'
 variables:
 - description: The alias name.
   name: name

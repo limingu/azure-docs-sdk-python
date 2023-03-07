@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.FeaturesetMaterializationOperation
+name: FeaturesetMaterializationOperation
+fullName: azure.ai.ml.entities.FeaturesetMaterializationOperation
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._mixins.RestTranslatableMixin
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'FeaturesetMaterializationOperation(*, type: azure.ai.ml.entities._featureset.materialization_type.MaterializationType,
+    feature_window_start_time: Optional[Union[str, datetime.datetime]], feature_window_end_time:
+    Optional[Union[str, datetime.datetime]], name: Optional[str], display_name: Optional[str],
+    creation_context: Optional[azure.ai.ml.entities._featureset.creation_context.CreationContext],
+    duration: Optional[Union[str, datetime.timedelta]], status: Optional[str], tags:
+    Optional[Dict[str, str]], **kwargs)'

@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ConditionalWorkerSelectorAttachment
+name: ConditionalWorkerSelectorAttachment
+fullName: azure.communication.jobrouter.ConditionalWorkerSelectorAttachment
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.WorkerSelectorAttachment
+summary: 'Describes a set of label selectors that will be attached if the given condition
+  resolves to true.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'ConditionalWorkerSelectorAttachment(*, condition: _models.RouterRule, label_selectors:
+    List[_models.WorkerSelector], **kwargs)'
+variables:
+- description: The type discriminator describing the type of label selector attachment.
+    Required.
+  name: kind
+  types:
+  - <xref:str>
+- description: 'A rule of one of the following types:
+
+
+    StaticRule:  A rule providing static rules that always return the same result,
+    regardless of
+
+    input.
+
+    DirectMapRule:  A rule that return the same labels as the input labels.
+
+    ExpressionRule: A rule providing inline expression rules.
+
+    AzureFunctionRule: A rule providing a binding to an HTTP Triggered Azure Function.
+    Required.'
+  name: condition
+  types:
+  - <xref:azure.communication.jobrouter.models.RouterRule>
+- description: The label selectors to attach. Required.
+  name: label_selectors
+  types:
+  - <xref:list>[<xref:azure.communication.jobrouter.models.WorkerSelector>]

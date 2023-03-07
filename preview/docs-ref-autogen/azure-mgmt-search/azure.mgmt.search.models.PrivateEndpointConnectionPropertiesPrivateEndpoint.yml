@@ -8,7 +8,7 @@ inheritances:
 summary: The private endpoint resource from Microsoft.Network provider.
 constructor:
   syntax: 'PrivateEndpointConnectionPropertiesPrivateEndpoint(*, id: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: The resource id of the private endpoint resource from Microsoft.Network
     provider.

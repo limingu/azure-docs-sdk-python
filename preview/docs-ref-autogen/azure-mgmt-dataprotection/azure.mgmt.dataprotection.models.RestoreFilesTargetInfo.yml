@@ -12,7 +12,7 @@ summary: 'Class encapsulating restore as files target parameters.
 constructor:
   syntax: 'RestoreFilesTargetInfo(*, recovery_option: Union[str, _models.RecoveryOption],
     target_details: _models.TargetDetails, restore_location: Optional[str] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: 'Type of Datasource object, used to initialize the right inherited
     type.

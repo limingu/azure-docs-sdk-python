@@ -18,7 +18,8 @@ constructor:
     _models.JobSupportedAction]]] = None, mab_server_name: Optional[str] = None, mab_server_type:
     Optional[Union[str, _models.MabServerType]] = None, workload_type: Optional[Union[str,
     _models.WorkloadType]] = None, error_details: Optional[List[_models.MabErrorInfo]]
-    = None, extended_info: Optional[_models.MabJobExtendedInfo] = None, **kwargs)'
+    = None, extended_info: Optional[_models.MabJobExtendedInfo] = None, **kwargs:
+    Any)'
 variables:
 - description: Friendly name of the entity on which the current job is executing.
   name: entity_friendly_name

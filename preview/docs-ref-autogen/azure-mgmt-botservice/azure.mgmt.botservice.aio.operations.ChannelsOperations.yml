@@ -37,9 +37,9 @@ methods:
 
       "MsTeamsChannel", "SkypeChannel", "WebChatChannel", "DirectLineChannel", "SmsChannel",
 
-      "LineChannel", "DirectLineSpeechChannel", "OutlookChannel", "Omnichannel", and
+      "LineChannel", "DirectLineSpeechChannel", "OutlookChannel", "Omnichannel", "TelephonyChannel",
 
-      "TelephonyChannel". Required.'
+      "AcsChatChannel", "SearchAssistant", and "M365Extensions". Required.'
     isRequired: true
     types:
     - <xref:str>
@@ -189,9 +189,9 @@ methods:
 
       "MsTeamsChannel", "SkypeChannel", "WebChatChannel", "DirectLineChannel", "SmsChannel",
 
-      "LineChannel", "DirectLineSpeechChannel", "OutlookChannel", "Omnichannel", and
+      "LineChannel", "DirectLineSpeechChannel", "OutlookChannel", "Omnichannel", "TelephonyChannel",
 
-      "TelephonyChannel". Required.'
+      "AcsChatChannel", "SearchAssistant", and "M365Extensions". Required.'
     isRequired: true
     types:
     - <xref:str>
@@ -235,9 +235,9 @@ methods:
 
       "MsTeamsChannel", "SkypeChannel", "WebChatChannel", "DirectLineChannel", "SmsChannel",
 
-      "LineChannel", "DirectLineSpeechChannel", "OutlookChannel", "Omnichannel", and
+      "LineChannel", "DirectLineSpeechChannel", "OutlookChannel", "Omnichannel", "TelephonyChannel",
 
-      "TelephonyChannel". Required.'
+      "AcsChatChannel", "SearchAssistant", and "M365Extensions". Required.'
     isRequired: true
     types:
     - <xref:str>

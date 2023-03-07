@@ -15,7 +15,7 @@ constructor:
     Optional[List[_models.ResourceTypeAliases]] = None, effects: Optional[List[_models.DataEffect]]
     = None, field_values: Optional[List[str]] = None, standard: Optional[List[str]]
     = None, custom: Optional[List[_models.DataManifestCustomResourceFunctionDefinition]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The ID of the data policy manifest.
   name: id

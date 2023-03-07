@@ -29,10 +29,9 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'The management lock parameters. Is either a ManagementLockObject
-      type or a
+    description: 'The management lock parameters. Is either a model type or a IO type.
 
-      IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.locks.v2015_01_01.models.ManagementLockObject>
@@ -93,9 +92,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Create or update management lock parameters. Is either a
+    description: 'Create or update management lock parameters. Is either a model type
+      or a IO
 
-      ManagementLockObject type or a IO type. Required.'
+      type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.locks.v2015_01_01.models.ManagementLockObject>
@@ -129,10 +129,9 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'The management lock parameters. Is either a ManagementLockObject
-      type or a
+    description: 'The management lock parameters. Is either a model type or a IO type.
 
-      IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.locks.v2015_01_01.models.ManagementLockObject>

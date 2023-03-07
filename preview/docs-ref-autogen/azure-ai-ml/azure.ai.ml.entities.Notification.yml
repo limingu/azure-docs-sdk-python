@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.Notification
+name: Notification
+fullName: azure.ai.ml.entities.Notification
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._mixins.RestTranslatableMixin
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  Configuration for notification.'
+constructor:
+  syntax: 'Notification(*, email_on: Optional[List[str]] = None, emails: Optional[List[str]]
+    = None)'

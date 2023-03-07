@@ -8,7 +8,7 @@ inheritances:
 summary: Operations List response which contains list of available APIs.
 constructor:
   syntax: 'ClientDiscoveryResponse(*, next_link: Optional[str] = None, value: Optional[List[_models.ClientDiscoveryValueForSingleApi]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Link to the next chunk of Response.
   name: next_link

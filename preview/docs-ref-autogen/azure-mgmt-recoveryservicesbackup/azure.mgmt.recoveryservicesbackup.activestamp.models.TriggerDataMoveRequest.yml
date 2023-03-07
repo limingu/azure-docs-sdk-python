@@ -12,7 +12,7 @@ summary: 'Trigger DataMove Request.
 constructor:
   syntax: 'TriggerDataMoveRequest(*, source_resource_id: str, source_region: str,
     data_move_level: Union[str, _models.DataMoveLevel], correlation_id: str, source_container_arm_ids:
-    Optional[List[str]] = None, pause_gc: Optional[bool] = None, **kwargs)'
+    Optional[List[str]] = None, pause_gc: Optional[bool] = None, **kwargs: Any)'
 variables:
 - description: ARM Id of source vault. Required.
   name: source_resource_id

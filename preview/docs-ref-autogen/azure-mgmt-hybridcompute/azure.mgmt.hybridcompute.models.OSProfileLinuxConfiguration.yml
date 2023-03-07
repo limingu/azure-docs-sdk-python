@@ -8,7 +8,8 @@ inheritances:
 summary: Specifies the linux configuration for update management.
 constructor:
   syntax: 'OSProfileLinuxConfiguration(*, assessment_mode: Optional[Union[str, _models.AssessmentModeTypes]]
-    = None, patch_mode: Optional[Union[str, _models.PatchModeTypes]] = None, **kwargs)'
+    = None, patch_mode: Optional[Union[str, _models.PatchModeTypes]] = None, **kwargs:
+    Any)'
 variables:
 - description: 'Specifies the assessment mode. Known values are: "ImageDefault" and
 

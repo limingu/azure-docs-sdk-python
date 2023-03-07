@@ -11,7 +11,7 @@ constructor:
     = None, property_bag: Optional[Dict[str, str]] = None, internal_property_bag:
     Optional[Dict[str, str]] = None, progress_percentage: Optional[float] = None,
     estimated_remaining_duration: Optional[str] = None, dynamic_error_message: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: List of tasks associated with this job.
   name: tasks_list

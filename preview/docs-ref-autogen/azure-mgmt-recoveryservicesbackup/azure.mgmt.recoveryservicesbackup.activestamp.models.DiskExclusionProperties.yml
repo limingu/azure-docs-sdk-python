@@ -8,7 +8,7 @@ inheritances:
 summary: DiskExclusionProperties.
 constructor:
   syntax: 'DiskExclusionProperties(*, disk_lun_list: Optional[List[int]] = None, is_inclusion_list:
-    Optional[bool] = None, **kwargs)'
+    Optional[bool] = None, **kwargs: Any)'
 variables:
 - description: List of Disks' Logical Unit Numbers (LUN) to be used for VM Protection.
   name: disk_lun_list

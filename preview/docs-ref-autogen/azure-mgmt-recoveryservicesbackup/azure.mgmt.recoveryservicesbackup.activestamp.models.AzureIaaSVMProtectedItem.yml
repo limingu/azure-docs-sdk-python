@@ -32,7 +32,8 @@ constructor:
     = None, health_details: Optional[List[_models.AzureIaaSVMHealthDetails]] = None,
     kpis_healths: Optional[Dict[str, _models.KPIResourceHealthDetails]] = None, last_backup_status:
     Optional[str] = None, extended_info: Optional[_models.AzureIaaSVMProtectedItemExtendedInfo]
-    = None, extended_properties: Optional[_models.ExtendedProperties] = None, **kwargs)'
+    = None, extended_properties: Optional[_models.ExtendedProperties] = None, **kwargs:
+    Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type
@@ -151,7 +152,10 @@ variables:
   - <xref:str>
 - description: 'Backup state of this backup item. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

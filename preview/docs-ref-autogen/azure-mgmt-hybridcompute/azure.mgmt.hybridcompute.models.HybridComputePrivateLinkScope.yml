@@ -15,7 +15,7 @@ summary: 'An Azure Arc PrivateLinkScope definition.
 constructor:
   syntax: 'HybridComputePrivateLinkScope(*, location: str, tags: Optional[Dict[str,
     str]] = None, properties: Optional[_models.HybridComputePrivateLinkScopeProperties]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Azure resource Id.
   name: id

@@ -8,7 +8,7 @@ inheritances:
 summary: ResourceManagementPrivateLinkListResult.
 constructor:
   syntax: 'ResourceManagementPrivateLinkListResult(*, value: Optional[List[_models.ResourceManagementPrivateLink]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: An array of resource management private links.
   name: value

@@ -14,7 +14,7 @@ constructor:
     = None, display_name: Optional[str] = None, description: Optional[str] = None,
     metadata: Optional[collections.abc.MutableMapping[str, Any]] = None, parameters:
     Optional[collections.abc.MutableMapping[str, Any]] = None, policy_definitions:
-    Optional[List[_models.PolicyDefinitionReference]] = None, **kwargs: Any)'
+    Optional[List[_models.PolicyDefinitionReference]] = None, **kwargs)'
 variables:
 - description: The ID of the policy set definition.
   name: id

@@ -11,7 +11,7 @@ constructor:
     = None, oldest_recovery_point_in_vault: Optional[datetime.datetime] = None, oldest_recovery_point_in_archive:
     Optional[datetime.datetime] = None, newest_recovery_point_in_archive: Optional[datetime.datetime]
     = None, recovery_point_count: Optional[int] = None, policy_state: Optional[str]
-    = None, recovery_model: Optional[str] = None, **kwargs)'
+    = None, recovery_model: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: 'The oldest backup copy available for this backup item across all
 

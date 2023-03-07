@@ -6,7 +6,9 @@ module: azure.mgmt.recoveryservicesbackup.activestamp.models
 inheritances:
 - azure.mgmt.recoveryservicesbackup.activestamp.models._models_py3.AzureWorkloadRecoveryPoint
 summary: 'SQL specific recoverypoint, specifically encapsulates full/diff recoverypoint
-  along with extended info.
+  along with
+
+  extended info.
 
 
   You probably want to use the sub-classes and not this class directly. Known sub-classes
@@ -20,8 +22,9 @@ constructor:
   syntax: 'AzureWorkloadSQLRecoveryPoint(*, recovery_point_time_in_utc: Optional[datetime.datetime]
     = None, type: Optional[Union[str, _models.RestorePointType]] = None, recovery_point_tier_details:
     Optional[List[_models.RecoveryPointTierInformationV2]] = None, recovery_point_move_readiness_info:
-    Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]] = None, extended_info:
-    Optional[_models.AzureWorkloadSQLRecoveryPointExtendedInfo] = None, **kwargs)'
+    Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]] = None, recovery_point_properties:
+    Optional[_models.RecoveryPointProperties] = None, extended_info: Optional[_models.AzureWorkloadSQLRecoveryPointExtendedInfo]
+    = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 
@@ -49,6 +52,10 @@ variables:
   name: recovery_point_move_readiness_info
   types:
   - <xref:dict>[<xref:str,azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointMoveReadinessInfo>]
+- description: Properties of Recovery Point.
+  name: recovery_point_properties
+  types:
+  - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointProperties>
 - description: 'Extended Info that provides data directory details. Will be populated
     in
 

@@ -8,7 +8,7 @@ inheritances:
 summary: RestoreJobRecoveryPointDetails.
 constructor:
   syntax: 'RestoreJobRecoveryPointDetails(*, recovery_point_id: Optional[str] = None,
-    recovery_point_time: Optional[datetime.datetime] = None, **kwargs)'
+    recovery_point_time: Optional[datetime.datetime] = None, **kwargs: Any)'
 variables:
 - name: recovery_point_id
   types:

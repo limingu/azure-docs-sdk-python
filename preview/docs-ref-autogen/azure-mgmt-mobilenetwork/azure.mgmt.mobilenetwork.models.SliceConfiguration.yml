@@ -4,7 +4,7 @@ name: SliceConfiguration
 fullName: azure.mgmt.mobilenetwork.models.SliceConfiguration
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Per-slice settings.
 
 
@@ -14,22 +14,26 @@ constructor:
     _models.DataNetworkResourceId, data_network_configurations: List[_models.DataNetworkConfiguration],
     **kwargs)'
 variables:
-- description: Required. A reference to the slice that these settings apply to.
+- description: 'A reference to the slice that these settings apply to. The slice must
+    be in the
+
+    same location as the SIM policy. Required.'
   name: slice
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SliceResourceId>
-- description: 'Required. The default data network to use if the UE does not
+- description: 'The default data network to use if the UE does not explicitly
 
-    explicitly specify it. Configuration for this object must exist in the
+    specify it. Configuration for this object must exist in the `dataNetworkConfigurations`
+    map.
 
-    `dataNetworkConfigurations` map.'
+    The data network must be in the same location as the SIM policy. Required.'
   name: default_data_network
   types:
   - <xref:azure.mgmt.mobilenetwork.models.DataNetworkResourceId>
-- description: 'Required. The allowed data networks and the settings to use
+- description: 'The allowed data networks and the settings to use for them.
 
-    for them. The list must not contain duplicate items and must contain at least
-    one item.'
+    The list must not contain duplicate items and must contain at least one item.
+    Required.'
   name: data_network_configurations
   types:
   - <xref:list>[<xref:azure.mgmt.mobilenetwork.models.DataNetworkConfiguration>]

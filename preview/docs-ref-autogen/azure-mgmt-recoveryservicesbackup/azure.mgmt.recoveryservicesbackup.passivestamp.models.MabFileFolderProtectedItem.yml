@@ -23,7 +23,7 @@ constructor:
     last_backup_status: Optional[str] = None, last_backup_time: Optional[datetime.datetime]
     = None, protection_state: Optional[str] = None, deferred_delete_sync_time_in_utc:
     Optional[int] = None, extended_info: Optional[_models.MabFileFolderProtectedItemExtendedInfo]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type

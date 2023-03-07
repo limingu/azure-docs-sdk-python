@@ -1,0 +1,55 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ClassificationPolicy
+name: ClassificationPolicy
+fullName: azure.communication.jobrouter.ClassificationPolicy
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'A container for the rules that govern how jobs are classified.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'ClassificationPolicy(*, name: Optional[str] = None, fallback_queue_id:
+    Optional[str] = None, queue_selectors: Optional[List[_models.QueueSelectorAttachment]]
+    = None, prioritization_rule: Optional[_models.RouterRule] = None, worker_selectors:
+    Optional[List[_models.WorkerSelectorAttachment]] = None, **kwargs)'
+variables:
+- description: Unique identifier of this policy.
+  name: id
+  types:
+  - <xref:str>
+- description: Friendly name of this policy.
+  name: name
+  types:
+  - <xref:str>
+- description: 'The fallback queue to select if the queue selector doesn''t find a
+
+    match.'
+  name: fallback_queue_id
+  types:
+  - <xref:str>
+- description: The queue selectors to resolve a queue for a given job.
+  name: queue_selectors
+  types:
+  - <xref:list>[<xref:azure.communication.jobrouter.models.QueueSelectorAttachment>]
+- description: 'A rule of one of the following types:
+
+
+    StaticRule:  A rule providing static rules that always return the same result,
+    regardless of
+
+    input.
+
+    DirectMapRule:  A rule that return the same labels as the input labels.
+
+    ExpressionRule: A rule providing inline expression rules.
+
+    AzureFunctionRule: A rule providing a binding to an HTTP Triggered Azure Function.'
+  name: prioritization_rule
+  types:
+  - <xref:azure.communication.jobrouter.models.RouterRule>
+- description: The worker label selectors to attach to a given job.
+  name: worker_selectors
+  types:
+  - <xref:list>[<xref:azure.communication.jobrouter.models.WorkerSelectorAttachment>]

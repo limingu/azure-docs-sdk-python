@@ -6,7 +6,7 @@ module: azure.ai.ml.entities
 inheritances:
 - azure.ai.ml.entities._job.job.Job
 - azure.ai.ml.entities._mixins.YamlTranslatableMixin
-- azure.ai.ml.entities._job.pipeline._io.PipelineIOMixin
+- azure.ai.ml.entities._job.pipeline._io.mixin.PipelineIOMixin
 - azure.ai.ml.entities._validation.SchemaValidatableMixin
 summary: 'Pipeline job.
 
@@ -21,8 +21,8 @@ constructor:
     = None, name: Optional[str] = None, description: Optional[str] = None, display_name:
     Optional[str] = None, experiment_name: Optional[str] = None, jobs: Optional[Dict[str,
     azure.ai.ml.entities._builders.base_node.BaseNode]] = None, settings: Optional[azure.ai.ml.entities._job.pipeline.pipeline_job_settings.PipelineJobSettings]
-    = None, identity: Optional[Union[azure.ai.ml.entities._job.identity.ManagedIdentity,
-    azure.ai.ml.entities._job.identity.AmlToken, azure.ai.ml.entities._job.identity.UserIdentity]]
+    = None, identity: Optional[Union[azure.ai.ml.entities._credentials.ManagedIdentityConfiguration,
+    azure.ai.ml.entities._credentials.AmlTokenConfiguration, azure.ai.ml.entities._credentials.UserIdentityConfiguration]]
     = None, compute: Optional[str] = None, tags: Optional[Dict[str, str]] = None,
     **kwargs)'
   parameters:
@@ -77,8 +77,7 @@ constructor:
     description: Identity that training job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:azure.ai.ml.entities.ManagedIdentityConfiguration,azure.ai.ml.entities.AmlTokenConfiguration,azure.ai.ml.entities.UserIdentityConfiguration>]
   - name: compute
     description: Compute target name of the built pipeline.
     isRequired: true

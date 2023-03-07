@@ -8,7 +8,7 @@ inheritances:
 summary: Base class for validate operation response.
 constructor:
   syntax: 'ValidateOperationResponse(*, validation_results: Optional[List[_models.ErrorDetail]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Gets the validation result.
   name: validation_results

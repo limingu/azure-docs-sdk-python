@@ -8,7 +8,7 @@ inheritances:
 summary: Daily retention format.
 constructor:
   syntax: 'DailyRetentionFormat(*, days_of_the_month: Optional[List[_models.Day]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: List of days of the month.
   name: days_of_the_month

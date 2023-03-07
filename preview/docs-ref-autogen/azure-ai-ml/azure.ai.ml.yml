@@ -19,10 +19,12 @@ functions:
     Optional[str] = None, inputs: Optional[Dict] = None, outputs: Optional[Dict] =
     None, instance_count: Optional[int] = None, instance_type: Optional[str] = None,
     docker_args: Optional[str] = None, shm_size: Optional[str] = None, timeout: Optional[int]
-    = None, code: Optional[Union[os.PathLike, str]] = None, identity: Optional[Union[azure.ai.ml.entities._job.identity.ManagedIdentity,
-    azure.ai.ml.entities._job.identity.AmlToken, azure.ai.ml.entities._job.identity.UserIdentity]]
-    = None, is_deterministic: bool = True, services: Optional[dict] = None, **kwargs)
-    -> azure.ai.ml.entities._builders.command.Command'
+    = None, code: Optional[Union[os.PathLike, str]] = None, identity: Optional[Union[azure.ai.ml.entities._credentials.ManagedIdentityConfiguration,
+    azure.ai.ml.entities._credentials.AmlTokenConfiguration, azure.ai.ml.entities._credentials.UserIdentityConfiguration]]
+    = None, is_deterministic: bool = True, services: Optional[Dict[str, Union[azure.ai.ml.entities._job.job_service.JobService,
+    azure.ai.ml.entities._job.job_service.JupyterLabJobService, azure.ai.ml.entities._job.job_service.SshJobService,
+    azure.ai.ml.entities._job.job_service.TensorBoardJobService, azure.ai.ml.entities._job.job_service.VsCodeJobService]]]
+    = None, **kwargs) -> azure.ai.ml.entities._builders.command.Command'
   parameters:
   - name: name
     description: Name of the command job or component created
@@ -134,7 +136,7 @@ functions:
     description: Identity that training job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>]
+    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentityConfiguration,azure.ai.ml.AmlTokenConfiguration>]
   - name: is_deterministic
     description: 'Specify whether the command will return same output given same input.
 
@@ -151,10 +153,14 @@ functions:
     types:
     - <xref:bool>
   - name: services
-    description: Interactive services for the node.
+    description: 'Interactive services for the node. This is an experimental parameter,
+      and may change at any time.
+
+      Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+      for more information.'
     isRequired: true
     types:
-    - <xref:dict>
+    - <xref:Dict>[<xref:str>, <xref:azure.ai.ml.entities.JobService>]
 - uid: azure.ai.ml.load_batch_deployment
   name: load_batch_deployment
   summary: Construct a batch deployment object from yaml file.
@@ -405,6 +411,54 @@ functions:
   exceptions:
   - type: azure.ai.ml.exceptions.ValidationException
     description: 'Raised if Data cannot be successfully validated.
+
+      Details will be provided in the error message.'
+- uid: azure.ai.ml.load_data_import
+  name: load_data_import
+  summary: Construct a data object from yaml file.
+  signature: 'load_data_import(source: Union[str, os.PathLike, IO], *, relative_origin:
+    Optional[str] = None, **kwargs) -> azure.ai.ml.entities._data_import.data_import.DataImport'
+  parameters:
+  - name: source
+    description: 'The local yaml source of a data object. Must be either a
+
+      path to a local file, or an already-open file.
+
+      If the source is a path, it will be open and read.
+
+      An exception is raised if the file does not exist.
+
+      If the source is an open file, the file will be read directly,
+
+      and an exception is raised if the file is not readable.'
+    isRequired: true
+    types:
+    - <xref:Union>[<xref:PathLike>, <xref:str>, <xref:io.TextIOWrapper>]
+  - name: relative_origin
+    description: 'The origin to be used when deducing
+
+      the relative locations of files referenced in the parsed yaml.
+
+      Defaults to the inputted source''s directory if it is a file or file path input.
+
+      Defaults to "./" if the source is a stream input with no name value.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: params_override
+    description: 'Fields to overwrite on top of the yaml file.
+
+      Format is [{"field1": "value1"}, {"field2": "value2"}]'
+    isRequired: true
+    types:
+    - <xref:List>[<xref:Dict>]
+  return:
+    description: Constructed data_import object.
+    types:
+    - <xref:azure.ai.ml.entities.DataImport>
+  exceptions:
+  - type: azure.ai.ml.exceptions.ValidationException
+    description: 'Raised if DataImport cannot be successfully validated.
 
       Details will be provided in the error message.'
 - uid: azure.ai.ml.load_datastore
@@ -839,8 +893,8 @@ functions:
     Optional[Union[Dict[str, str], azure.ai.ml.entities._job.spark_job_entry.SparkJobEntry]]
     = None, py_files: Optional[List[str]] = None, jars: Optional[List[str]] = None,
     files: Optional[List[str]] = None, archives: Optional[List[str]] = None, identity:
-    Optional[Union[Dict[str, str], azure.ai.ml._restclient.v2022_06_01_preview.models._models_py3.ManagedIdentity,
-    azure.ai.ml._restclient.v2022_06_01_preview.models._models_py3.AmlToken, azure.ai.ml._restclient.v2022_06_01_preview.models._models_py3.UserIdentity]]
+    Optional[Union[Dict[str, str], azure.ai.ml._restclient.v2023_02_01_preview.models._models_py3.ManagedIdentity,
+    azure.ai.ml._restclient.v2023_02_01_preview.models._models_py3.AmlToken, azure.ai.ml._restclient.v2023_02_01_preview.models._models_py3.UserIdentity]]
     = None, driver_cores: Optional[int] = None, driver_memory: Optional[str] = None,
     executor_cores: Optional[int] = None, executor_memory: Optional[str] = None, executor_instances:
     Optional[int] = None, dynamic_allocation_enabled: Optional[bool] = None, dynamic_allocation_min_executors:
@@ -911,8 +965,7 @@ functions:
     description: Identity that spark job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:Dict>, <xref:ManagedIdentity>, <xref:AmlToken>, <xref:UserIdentity>]
   - name: driver_cores
     description: Number of cores to use for the driver process, only in cluster mode.
     isRequired: true
@@ -997,18 +1050,19 @@ functions:
     types:
     - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.entities.SparkResourceConfiguration>]
 classes:
-- azure.ai.ml.AmlToken
+- azure.ai.ml.AmlTokenConfiguration
 - azure.ai.ml.Input
 - azure.ai.ml.MLClient
-- azure.ai.ml.ManagedIdentity
+- azure.ai.ml.ManagedIdentityConfiguration
 - azure.ai.ml.MpiDistribution
 - azure.ai.ml.Output
 - azure.ai.ml.PyTorchDistribution
 - azure.ai.ml.TensorFlowDistribution
-- azure.ai.ml.UserIdentity
+- azure.ai.ml.UserIdentityConfiguration
 packages:
 - azure.ai.ml.automl
 - azure.ai.ml.constants
+- azure.ai.ml.data_transfer
 - azure.ai.ml.dsl
 - azure.ai.ml.entities
 - azure.ai.ml.identity

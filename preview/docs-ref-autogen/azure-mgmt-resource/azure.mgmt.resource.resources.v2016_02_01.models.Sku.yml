@@ -9,7 +9,7 @@ summary: Sku for the resource.
 constructor:
   syntax: 'Sku(*, name: Optional[str] = None, tier: Optional[str] = None, size: Optional[str]
     = None, family: Optional[str] = None, model: Optional[str] = None, capacity: Optional[int]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The sku name.
   name: name

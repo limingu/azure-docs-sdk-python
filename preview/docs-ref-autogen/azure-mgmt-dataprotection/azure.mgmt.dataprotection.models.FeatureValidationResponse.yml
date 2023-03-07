@@ -11,7 +11,7 @@ summary: 'Feature Validation Response.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'FeatureValidationResponse(*, feature_type: Optional[Union[str, _models.FeatureType]]
-    = None, features: Optional[List[_models.SupportedFeature]] = None, **kwargs)'
+    = None, features: Optional[List[_models.SupportedFeature]] = None, **kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

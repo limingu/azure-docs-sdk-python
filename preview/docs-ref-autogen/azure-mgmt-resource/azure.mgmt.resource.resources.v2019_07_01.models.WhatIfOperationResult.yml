@@ -5,13 +5,11 @@ fullName: azure.mgmt.resource.resources.v2019_07_01.models.WhatIfOperationResult
 module: azure.mgmt.resource.resources.v2019_07_01.models
 inheritances:
 - azure.mgmt.resource.resources._serialization.Model
-summary: 'Result of the What-If operation. Contains a list of predicted changes and
-  a URL link to get to
-
-  the next set of results.'
+summary: Result of the What-If operation. Contains a list of predicted changes and
+  a URL link to get to the next set of results.
 constructor:
   syntax: 'WhatIfOperationResult(*, status: Optional[str] = None, error: Optional[_models.ErrorResponse]
-    = None, changes: Optional[List[_models.WhatIfChange]] = None, **kwargs: Any)'
+    = None, changes: Optional[List[_models.WhatIfChange]] = None, **kwargs)'
 variables:
 - description: Status of the What-If operation.
   name: status

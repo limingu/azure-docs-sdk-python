@@ -18,7 +18,7 @@ constructor:
     Optional[_models.TemplateLink] = None, parameters: Optional[collections.abc.MutableMapping[str,
     Any]] = None, parameters_link: Optional[_models.ParametersLink] = None, mode:
     Optional[Union[str, _models.DeploymentMode]] = None, debug_setting: Optional[_models.DebugSetting]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The state of the provisioning.
   name: provisioning_state

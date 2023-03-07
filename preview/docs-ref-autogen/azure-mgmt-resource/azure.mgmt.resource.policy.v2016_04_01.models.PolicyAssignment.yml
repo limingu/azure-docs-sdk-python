@@ -9,7 +9,7 @@ summary: The policy assignment.
 constructor:
   syntax: 'PolicyAssignment(*, id: Optional[str] = None, type: Optional[str] = None,
     name: Optional[str] = None, display_name: Optional[str] = None, policy_definition_id:
-    Optional[str] = None, scope: Optional[str] = None, **kwargs: Any)'
+    Optional[str] = None, scope: Optional[str] = None, **kwargs)'
 variables:
 - description: The ID of the policy assignment.
   name: id

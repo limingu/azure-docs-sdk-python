@@ -8,8 +8,7 @@ inheritances:
 summary: The policy definition reference.
 constructor:
   syntax: 'PolicyDefinitionReference(*, policy_definition_id: Optional[str] = None,
-    parameters: Optional[collections.abc.MutableMapping[str, Any]] = None, **kwargs:
-    Any)'
+    parameters: Optional[collections.abc.MutableMapping[str, Any]] = None, **kwargs)'
 variables:
 - description: The ID of the policy definition or policy set definition.
   name: policy_definition_id

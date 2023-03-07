@@ -12,7 +12,8 @@ summary: 'Azure Storage-specific protectable containers.
 constructor:
   syntax: 'AzureStorageProtectableContainer(*, friendly_name: Optional[str] = None,
     backup_management_type: Optional[Union[str, _models.BackupManagementType]] = None,
-    health_status: Optional[str] = None, container_id: Optional[str] = None, **kwargs)'
+    health_status: Optional[str] = None, container_id: Optional[str] = None, **kwargs:
+    Any)'
 variables:
 - description: Friendly name of the container.
   name: friendly_name

@@ -20,7 +20,7 @@ constructor:
     _models.EventGridDataFormat]] = None, ignore_first_record: Optional[bool] = None,
     blob_storage_event_type: Optional[Union[str, _models.BlobStorageEventType]] =
     None, managed_identity_resource_id: Optional[str] = None, database_routing: Optional[Union[str,
-    _models.DatabaseRouting]] = None, **kwargs)'
+    _models.DatabaseRouting]] = None, **kwargs: Any)'
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 

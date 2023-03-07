@@ -11,7 +11,7 @@ summary: 'Schedule based trigger context.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ScheduleBasedTriggerContext(*, schedule: _models.BackupSchedule, tagging_criteria:
-    List[_models.TaggingCriteria], **kwargs)'
+    List[_models.TaggingCriteria], **kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

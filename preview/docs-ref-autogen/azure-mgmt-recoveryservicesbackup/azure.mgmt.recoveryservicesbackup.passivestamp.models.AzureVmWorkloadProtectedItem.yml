@@ -36,7 +36,7 @@ constructor:
     = None, protected_item_health_status: Optional[Union[str, _models.ProtectedItemHealthStatus]]
     = None, extended_info: Optional[_models.AzureVmWorkloadProtectedItemExtendedInfo]
     = None, kpis_healths: Optional[Dict[str, _models.KPIResourceHealthDetails]] =
-    None, **kwargs)'
+    None, **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type

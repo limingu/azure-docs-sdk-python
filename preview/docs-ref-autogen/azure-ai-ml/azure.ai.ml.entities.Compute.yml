@@ -9,7 +9,7 @@ inheritances:
 summary: Compute resource.
 constructor:
   syntax: 'Compute(name: str, location: Optional[str] = None, description: Optional[str]
-    = None, resource_id: Optional[str] = None, **kwargs)'
+    = None, resource_id: Optional[str] = None, tags: Optional[dict] = None, **kwargs)'
   parameters:
   - name: type
     description: 'The type of the compute, possible values are
@@ -24,7 +24,7 @@ constructor:
     types:
     - <xref:str>
   - name: location
-    description: The resource location, defaults to None
+    description: The resource location, defaults to workspace location.
     defaultValue: None
     types:
     - <xref:Optional>[<xref:str>], <xref:optional>
@@ -38,6 +38,11 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>, <xref:optional>
+  - name: tags
+    description: A set of tags. Contains resource tags defined as key/value pairs.
+    defaultValue: None
+    types:
+    - <xref:Optional>[<xref:dict>[<xref:str>, <xref:str>]]
 methods:
 - uid: azure.ai.ml.entities.Compute.dump
   name: dump

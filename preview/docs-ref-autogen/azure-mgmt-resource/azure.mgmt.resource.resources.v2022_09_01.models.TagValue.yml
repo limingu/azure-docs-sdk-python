@@ -11,7 +11,7 @@ summary: 'Tag information.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'TagValue(*, tag_value: Optional[str] = None, count: Optional[_models.TagCount]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The tag value ID.
   name: id

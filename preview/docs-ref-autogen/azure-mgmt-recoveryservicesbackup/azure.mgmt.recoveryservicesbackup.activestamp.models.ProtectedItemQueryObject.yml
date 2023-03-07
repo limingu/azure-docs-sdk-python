@@ -12,7 +12,7 @@ constructor:
     = None, item_type: Optional[Union[str, _models.DataSourceType]] = None, policy_name:
     Optional[str] = None, container_name: Optional[str] = None, backup_engine_name:
     Optional[str] = None, friendly_name: Optional[str] = None, fabric_name: Optional[str]
-    = None, backup_set_name: Optional[str] = None, **kwargs)'
+    = None, backup_set_name: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: 'Health State for the backed up item. Known values are: "Passed",
 

@@ -10,7 +10,8 @@ summary: 'Parameters to be used during configuration of backup of blobs.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'BlobBackupDatasourceParameters(*, containers_list: List[str], **kwargs)'
+  syntax: 'BlobBackupDatasourceParameters(*, containers_list: List[str], **kwargs:
+    Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

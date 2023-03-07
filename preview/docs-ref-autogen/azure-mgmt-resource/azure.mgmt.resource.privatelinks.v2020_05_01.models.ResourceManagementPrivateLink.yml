@@ -11,7 +11,7 @@ summary: 'ResourceManagementPrivateLink.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'ResourceManagementPrivateLink(*, properties: Optional[_models.ResourceManagementPrivateLinkEndpointConnections]
-    = None, location: Optional[str] = None, **kwargs: Any)'
+    = None, location: Optional[str] = None, **kwargs)'
 variables:
 - name: properties
   types:

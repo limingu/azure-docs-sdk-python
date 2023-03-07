@@ -15,7 +15,7 @@ summary: 'Template Spec object.
 constructor:
   syntax: 'TemplateSpec(*, location: str, tags: Optional[Dict[str, str]] = None, description:
     Optional[str] = None, display_name: Optional[str] = None, metadata: Optional[collections.abc.MutableMapping[str,
-    Any]] = None, **kwargs: Any)'
+    Any]] = None, **kwargs)'
 variables:
 - description: String Id used to locate any resource on Azure.
   name: id

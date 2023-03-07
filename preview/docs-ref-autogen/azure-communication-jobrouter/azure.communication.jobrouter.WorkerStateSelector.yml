@@ -1,0 +1,20 @@
+### YamlMime:PythonEnum
+uid: azure.communication.jobrouter.WorkerStateSelector
+name: WorkerStateSelector
+fullName: azure.communication.jobrouter.WorkerStateSelector
+summary: WorkerStateSelector.
+module: azure.communication.jobrouter
+constructor:
+  syntax: WorkerStateSelector(value)
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: ACTIVE
+  uid: azure.communication.jobrouter.WorkerStateSelector.ACTIVE
+- name: ALL
+  uid: azure.communication.jobrouter.WorkerStateSelector.ALL
+- name: DRAINING
+  uid: azure.communication.jobrouter.WorkerStateSelector.DRAINING
+- name: INACTIVE
+  uid: azure.communication.jobrouter.WorkerStateSelector.INACTIVE

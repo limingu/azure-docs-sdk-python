@@ -4,7 +4,7 @@ name: PrivateEndpointConnection
 fullName: azure.mgmt.search.models.PrivateEndpointConnection
 module: azure.mgmt.search.models
 inheritances:
-- azure.mgmt.search._serialization.Model
+- azure.mgmt.search.models._models_py3.Resource
 summary: 'Describes an existing Private Endpoint connection to the Azure Cognitive
   Search service.
 
@@ -12,20 +12,22 @@ summary: 'Describes an existing Private Endpoint connection to the Azure Cogniti
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'PrivateEndpointConnection(*, properties: Optional[_models.PrivateEndpointConnectionProperties]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
-- description: 'The ID of the private endpoint connection. This can be used with the
-    Azure Resource
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    Manager to link resources together.'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
-- description: The name of the private endpoint connection.
+- description: The name of the resource.
   name: name
   types:
   - <xref:str>
-- description: The resource type.
+- description: 'The type of the resource. E.g. "Microsoft.Compute/virtualMachines"
+    or
+
+    "Microsoft.Storage/storageAccounts".'
   name: type
   types:
   - <xref:str>

@@ -8,7 +8,8 @@ inheritances:
 summary: Daily retention schedule.
 constructor:
   syntax: 'DailyRetentionSchedule(*, retention_times: Optional[List[datetime.datetime]]
-    = None, retention_duration: Optional[_models.RetentionDuration] = None, **kwargs)'
+    = None, retention_duration: Optional[_models.RetentionDuration] = None, **kwargs:
+    Any)'
 variables:
 - description: Retention times of retention policy.
   name: retention_times

@@ -5,6 +5,6 @@ fullName: azure.ai.ml.entities.AccountKeyConfiguration
 module: azure.ai.ml.entities
 inheritances:
 - azure.ai.ml.entities._mixins.RestTranslatableMixin
-- abc.ABC
+- azure.ai.ml.entities._mixins.DictMixin
 constructor:
   syntax: 'AccountKeyConfiguration(*, account_key: str)'

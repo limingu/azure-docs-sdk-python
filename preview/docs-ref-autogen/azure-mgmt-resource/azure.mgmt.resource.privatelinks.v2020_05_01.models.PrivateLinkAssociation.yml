@@ -11,7 +11,7 @@ summary: 'PrivateLinkAssociation.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'PrivateLinkAssociation(*, properties: Optional[_models.PrivateLinkAssociationPropertiesExpanded]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The private link association properties.
   name: properties

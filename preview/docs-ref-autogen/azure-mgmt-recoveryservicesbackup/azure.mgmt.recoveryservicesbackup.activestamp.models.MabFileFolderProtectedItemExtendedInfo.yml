@@ -9,7 +9,7 @@ summary: Additional information on the backed up item.
 constructor:
   syntax: 'MabFileFolderProtectedItemExtendedInfo(*, last_refreshed_at: Optional[datetime.datetime]
     = None, oldest_recovery_point: Optional[datetime.datetime] = None, recovery_point_count:
-    Optional[int] = None, **kwargs)'
+    Optional[int] = None, **kwargs: Any)'
 variables:
 - description: Last time when the agent data synced to service.
   name: last_refreshed_at

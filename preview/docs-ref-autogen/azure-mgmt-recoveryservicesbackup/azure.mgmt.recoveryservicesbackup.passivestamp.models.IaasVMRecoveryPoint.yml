@@ -20,7 +20,7 @@ constructor:
     Optional[bool] = None, os_type: Optional[str] = None, recovery_point_disk_configuration:
     Optional[_models.RecoveryPointDiskConfiguration] = None, zones: Optional[List[str]]
     = None, recovery_point_move_readiness_info: Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

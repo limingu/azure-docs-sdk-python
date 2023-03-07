@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ExceptionPolicyItem
+name: ExceptionPolicyItem
+fullName: azure.communication.jobrouter.ExceptionPolicyItem
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: Paged instance of ExceptionPolicy.
+constructor:
+  syntax: 'ExceptionPolicyItem(*, exception_policy: Optional[_models.ExceptionPolicy]
+    = None, etag: Optional[str] = None, **kwargs)'
+variables:
+- description: A policy that defines actions to execute when exception are triggered.
+  name: exception_policy
+  types:
+  - <xref:azure.communication.jobrouter.models.ExceptionPolicy>
+- description: (Optional) The Concurrency Token.
+  name: etag
+  types:
+  - <xref:str>

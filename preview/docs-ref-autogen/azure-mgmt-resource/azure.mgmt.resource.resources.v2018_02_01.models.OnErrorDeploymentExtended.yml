@@ -11,7 +11,7 @@ summary: 'Deployment on error behavior with additional details.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'OnErrorDeploymentExtended(*, type: Optional[Union[str, _models.OnErrorDeploymentType]]
-    = None, deployment_name: Optional[str] = None, **kwargs: Any)'
+    = None, deployment_name: Optional[str] = None, **kwargs)'
 variables:
 - description: The state of the provisioning for the on error deployment.
   name: provisioning_state

@@ -5,13 +5,11 @@ fullName: azure.mgmt.resource.resources.v2019_07_01.models.OperationListResult
 module: azure.mgmt.resource.resources.v2019_07_01.models
 inheritances:
 - azure.mgmt.resource.resources._serialization.Model
-summary: 'Result of the request to list Microsoft.Resources operations. It contains
-  a list of operations
-
-  and a URL link to get the next set of results.'
+summary: Result of the request to list Microsoft.Resources operations. It contains
+  a list of operations and a URL link to get the next set of results.
 constructor:
   syntax: 'OperationListResult(*, value: Optional[List[_models.Operation]] = None,
-    next_link: Optional[str] = None, **kwargs: Any)'
+    next_link: Optional[str] = None, **kwargs)'
 variables:
 - description: List of Microsoft.Resources operations.
   name: value

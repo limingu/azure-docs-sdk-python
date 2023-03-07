@@ -8,7 +8,7 @@ inheritances:
 summary: The provider extended location.
 constructor:
   syntax: 'ProviderExtendedLocation(*, location: Optional[str] = None, type: Optional[str]
-    = None, extended_locations: Optional[List[str]] = None, **kwargs: Any)'
+    = None, extended_locations: Optional[List[str]] = None, **kwargs)'
 variables:
 - description: The azure location.
   name: location

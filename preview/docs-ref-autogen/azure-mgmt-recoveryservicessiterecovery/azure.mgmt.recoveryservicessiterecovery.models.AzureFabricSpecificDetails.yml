@@ -12,6 +12,7 @@ summary: 'Azure Fabric Specific Details.
 constructor:
   syntax: 'AzureFabricSpecificDetails(*, location: Optional[str] = None, container_ids:
     Optional[List[str]] = None, zones: Optional[List[_models.A2AZoneDetails]] = None,
+    extended_locations: Optional[List[_models.A2AExtendedLocationDetails]] = None,
     **kwargs)'
 variables:
 - description: Gets the class type. Overridden in derived classes. Required.
@@ -30,3 +31,7 @@ variables:
   name: zones
   types:
   - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.A2AZoneDetails>]
+- description: The ExtendedLocations.
+  name: extended_locations
+  types:
+  - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.A2AExtendedLocationDetails>]

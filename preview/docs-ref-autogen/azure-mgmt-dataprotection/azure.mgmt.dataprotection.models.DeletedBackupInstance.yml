@@ -17,7 +17,7 @@ constructor:
     _models.PolicyInfo, object_type: str, friendly_name: Optional[str] = None, data_source_set_info:
     Optional[_models.DatasourceSet] = None, datasource_auth_credentials: Optional[_models.AuthCredentials]
     = None, validation_type: Optional[Union[str, _models.ValidationType]] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Gets or sets the Backup Instance friendly name.
   name: friendly_name

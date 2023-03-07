@@ -4,33 +4,46 @@ name: PlatformConfiguration
 fullName: azure.mgmt.mobilenetwork.models.PlatformConfiguration
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'The platform where the packet core is deployed.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'PlatformConfiguration(*, type: Union[str, _models.PlatformType], azure_stack_edge_device:
-    Optional[_models.AzureStackEdgeDeviceResourceId] = None, connected_cluster: Optional[_models.ConnectedClusterResourceId]
+    Optional[_models.AzureStackEdgeDeviceResourceId] = None, azure_stack_hci_cluster:
+    Optional[_models.AzureStackHCIClusterResourceId] = None, connected_cluster: Optional[_models.ConnectedClusterResourceId]
     = None, custom_location: Optional[_models.CustomLocationResourceId] = None, **kwargs)'
 variables:
-- description: 'Required. The platform type where packet core is deployed. Known values
+- description: 'The platform type where packet core is deployed. Required. Known values
     are:
 
-    "AKS-HCI", "BaseVM".'
+    "AKS-HCI" and "3P-AZURE-STACK-HCI".'
   name: type
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.PlatformType>
-- description: 'The Azure Stack Edge device where where the packet core is
+- description: 'The Azure Stack Edge device where the packet core is deployed.
 
-    deployed. If the device is part of a fault tolerant pair, either device in the
-    pair can be
-
-    specified.'
+    If the device is part of a fault tolerant pair, either device in the pair can
+    be specified.'
   name: azure_stack_edge_device
   types:
   - <xref:azure.mgmt.mobilenetwork.models.AzureStackEdgeDeviceResourceId>
+- description: 'The Azure Stack Edge devices where the packet core is deployed.
+
+    If the packet core is deployed across multiple devices, all devices will appear
+    in this list.'
+  name: azure_stack_edge_devices
+  types:
+  - <xref:list>[<xref:azure.mgmt.mobilenetwork.models.AzureStackEdgeDeviceResourceId>]
+- description: The Azure Stack HCI cluster where the packet core is deployed.
+  name: azure_stack_hci_cluster
+  types:
+  - <xref:azure.mgmt.mobilenetwork.models.AzureStackHCIClusterResourceId>
 - description: Azure Arc connected cluster where the packet core is deployed.
   name: connected_cluster
   types:

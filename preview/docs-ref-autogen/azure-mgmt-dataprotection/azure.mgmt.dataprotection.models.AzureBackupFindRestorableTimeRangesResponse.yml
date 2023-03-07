@@ -9,7 +9,7 @@ summary: List Restore Ranges Response.
 constructor:
   syntax: 'AzureBackupFindRestorableTimeRangesResponse(*, restorable_time_ranges:
     Optional[List[_models.RestorableTimeRange]] = None, object_type: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: Returns the Restore Ranges available on the Backup Instance.
   name: restorable_time_ranges

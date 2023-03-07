@@ -9,7 +9,7 @@ summary: Role definition permissions.
 constructor:
   syntax: 'Permission(*, actions: Optional[List[str]] = None, not_actions: Optional[List[str]]
     = None, data_actions: Optional[List[str]] = None, not_data_actions: Optional[List[str]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: Allowed actions.
   name: actions

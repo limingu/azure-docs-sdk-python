@@ -8,7 +8,7 @@ inheritances:
 summary: Result of the request to get PLA for a MG scope.
 constructor:
   syntax: 'PrivateLinkAssociationGetResult(*, value: Optional[List[_models.PrivateLinkAssociation]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: private link association information.
   name: value

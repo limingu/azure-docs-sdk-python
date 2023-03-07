@@ -4,8 +4,7 @@ name: UserIdentityConfiguration
 fullName: azure.ai.ml.entities.UserIdentityConfiguration
 module: azure.ai.ml.entities
 inheritances:
-- abc.ABC
-- azure.ai.ml.entities._mixins.RestTranslatableMixin
+- azure.ai.ml.entities._credentials._BaseIdentityConfiguration
 summary: User identity configuration.
 constructor:
   syntax: UserIdentityConfiguration()

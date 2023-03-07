@@ -11,7 +11,7 @@ summary: 'Validate restore request object.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ValidateRestoreRequestObject(*, restore_request_object: _models.AzureBackupRestoreRequest,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Gets or sets the restore request object. Required.
   name: restore_request_object

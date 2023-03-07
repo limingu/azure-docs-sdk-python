@@ -9,7 +9,7 @@ summary: Elements class for feature request.
 constructor:
   syntax: 'SupportedFeature(*, feature_name: Optional[str] = None, support_status:
     Optional[Union[str, _models.FeatureSupportStatus]] = None, exposure_controlled_features:
-    Optional[List[str]] = None, **kwargs)'
+    Optional[List[str]] = None, **kwargs: Any)'
 variables:
 - description: support feature type.
   name: feature_name

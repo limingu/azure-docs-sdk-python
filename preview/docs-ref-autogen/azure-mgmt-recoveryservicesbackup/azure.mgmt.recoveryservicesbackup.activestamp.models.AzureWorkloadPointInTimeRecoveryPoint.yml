@@ -19,8 +19,9 @@ constructor:
   syntax: 'AzureWorkloadPointInTimeRecoveryPoint(*, recovery_point_time_in_utc: Optional[datetime.datetime]
     = None, type: Optional[Union[str, _models.RestorePointType]] = None, recovery_point_tier_details:
     Optional[List[_models.RecoveryPointTierInformationV2]] = None, recovery_point_move_readiness_info:
-    Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]] = None, time_ranges:
-    Optional[List[_models.PointInTimeRange]] = None, **kwargs)'
+    Optional[Dict[str, _models.RecoveryPointMoveReadinessInfo]] = None, recovery_point_properties:
+    Optional[_models.RecoveryPointProperties] = None, time_ranges: Optional[List[_models.PointInTimeRange]]
+    = None, **kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 
@@ -48,6 +49,10 @@ variables:
   name: recovery_point_move_readiness_info
   types:
   - <xref:dict>[<xref:str,azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointMoveReadinessInfo>]
+- description: Properties of Recovery Point.
+  name: recovery_point_properties
+  types:
+  - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointProperties>
 - description: List of log ranges.
   name: time_ranges
   types:

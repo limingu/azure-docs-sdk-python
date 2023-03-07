@@ -14,8 +14,7 @@ constructor:
     = None, mode: Optional[str] = None, display_name: Optional[str] = None, description:
     Optional[str] = None, policy_rule: Optional[collections.abc.MutableMapping[str,
     Any]] = None, metadata: Optional[collections.abc.MutableMapping[str, Any]] = None,
-    parameters: Optional[Dict[str, _models.ParameterDefinitionsValue]] = None, **kwargs:
-    Any)'
+    parameters: Optional[Dict[str, _models.ParameterDefinitionsValue]] = None, **kwargs)'
 variables:
 - description: The ID of the policy definition.
   name: id

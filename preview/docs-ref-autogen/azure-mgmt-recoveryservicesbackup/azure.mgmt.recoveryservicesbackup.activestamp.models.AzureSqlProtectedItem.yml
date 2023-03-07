@@ -24,7 +24,7 @@ constructor:
     = None, soft_delete_retention_period: Optional[int] = None, protected_item_data_id:
     Optional[str] = None, protection_state: Optional[Union[str, _models.ProtectedItemState]]
     = None, extended_info: Optional[_models.AzureSqlProtectedItemExtendedInfo] = None,
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: backup item type. Required.
   name: protected_item_type
@@ -135,7 +135,10 @@ variables:
   - <xref:str>
 - description: 'Backup state of the backed up item. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

@@ -12,7 +12,7 @@ constructor:
     = None, inner_error: Optional[_models.InnerError] = None, is_retryable: Optional[bool]
     = None, is_user_error: Optional[bool] = None, properties: Optional[Dict[str, str]]
     = None, message: Optional[str] = None, recommended_action: Optional[List[str]]
-    = None, target: Optional[str] = None, **kwargs)'
+    = None, target: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: Unique code for this error.
   name: code

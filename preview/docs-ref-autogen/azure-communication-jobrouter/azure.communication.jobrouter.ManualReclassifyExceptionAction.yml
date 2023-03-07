@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ManualReclassifyExceptionAction
+name: ManualReclassifyExceptionAction
+fullName: azure.communication.jobrouter.ManualReclassifyExceptionAction
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.ExceptionAction
+summary: 'An action that manually reclassifies a job by providing the queue, priority
+  and worker selectors.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'ManualReclassifyExceptionAction(*, queue_id: Optional[str] = None, priority:
+    Optional[int] = None, worker_selectors: Optional[List[_models.WorkerSelector]]
+    = None, **kwargs)'
+variables:
+- description: The type discriminator describing a sub-type of ExceptionAction. Required.
+  name: kind
+  types:
+  - <xref:str>
+- description: Updated QueueId.
+  name: queue_id
+  types:
+  - <xref:str>
+- description: Updated Priority.
+  name: priority
+  types:
+  - <xref:int>
+- description: Updated WorkerSelectors.
+  name: worker_selectors
+  types:
+  - <xref:list>[<xref:azure.communication.jobrouter.models.WorkerSelector>]

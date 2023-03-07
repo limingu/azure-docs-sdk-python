@@ -8,7 +8,7 @@ inheritances:
 summary: Retention duration.
 constructor:
   syntax: 'RetentionDuration(*, count: Optional[int] = None, duration_type: Optional[Union[str,
-    _models.RetentionDurationType]] = None, **kwargs)'
+    _models.RetentionDurationType]] = None, **kwargs: Any)'
 variables:
 - description: 'Count of duration types. Retention duration is obtained by the counting
     the

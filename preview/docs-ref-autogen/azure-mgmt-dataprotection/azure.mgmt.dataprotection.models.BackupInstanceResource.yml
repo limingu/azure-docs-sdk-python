@@ -11,7 +11,7 @@ summary: 'BackupInstance Resource.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'BackupInstanceResource(*, tags: Optional[Dict[str, str]] = None, properties:
-    Optional[_models.BackupInstance] = None, **kwargs)'
+    Optional[_models.BackupInstance] = None, **kwargs: Any)'
 variables:
 - description: Proxy Resource Id represents the complete path to the resource.
   name: id

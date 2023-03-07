@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.Featureset
+name: Featureset
+fullName: azure.ai.ml.entities.Featureset
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._assets._artifacts.artifact.Artifact
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'Featureset(*, name: str = None, entities: List[str], specification: azure.ai.ml.entities._featureset.featureset_specification.FeaturesetSpecification,
+    version: Optional[str] = None, stage: Optional[str] = None, description: Optional[str]
+    = None, materialization_settings: Optional[azure.ai.ml.entities._featureset.materialization_settings.MaterializationSettings]
+    = None, tags: Optional[Dict] = None, properties: Optional[Dict[str, str]] = None,
+    **kwargs)'

@@ -97,11 +97,11 @@ methods:
       VSCode debug is only supported for local endpoints.'
   - type: azure.ai.ml.exceptions.VSCodeCommandNotFound
     description: Raised if VSCode instance cannot be instantiated.
-- uid: azure.ai.ml.operations.OnlineDeploymentOperations.delete
-  name: delete
+- uid: azure.ai.ml.operations.OnlineDeploymentOperations.begin_delete
+  name: begin_delete
   summary: Delete a deployment.
-  signature: 'delete(name: str, endpoint_name: str, *, local: Optional[bool] = False)
-    -> azure.core.polling._poller.LROPoller[None]'
+  signature: 'begin_delete(name: str, endpoint_name: str, *, local: Optional[bool]
+    = False) -> azure.core.polling._poller.LROPoller[None]'
   parameters:
   - name: name
     description: The name of the deployment

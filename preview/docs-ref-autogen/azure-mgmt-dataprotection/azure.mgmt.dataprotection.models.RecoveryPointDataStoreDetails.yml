@@ -13,7 +13,7 @@ constructor:
   syntax: 'RecoveryPointDataStoreDetails(*, creation_time: Optional[datetime.datetime]
     = None, expiry_time: Optional[datetime.datetime] = None, id: Optional[str] = None,
     meta_data: Optional[str] = None, state: Optional[str] = None, type: Optional[str]
-    = None, visible: Optional[bool] = None, **kwargs)'
+    = None, visible: Optional[bool] = None, **kwargs: Any)'
 variables:
 - name: creation_time
   types:

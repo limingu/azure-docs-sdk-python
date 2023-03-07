@@ -13,7 +13,7 @@ constructor:
   syntax: 'AzureBackupRestoreWithRehydrationRequest(*, restore_target_info: _models.RestoreTargetInfoBase,
     source_data_store_type: Union[str, _models.SourceDataStoreType], recovery_point_id:
     str, rehydration_priority: Union[str, _models.RehydrationPriority], rehydration_retention_duration:
-    str, source_resource_id: Optional[str] = None, **kwargs)'
+    str, source_resource_id: Optional[str] = None, **kwargs: Any)'
 variables:
 - description: Required.
   name: object_type
@@ -25,7 +25,7 @@ variables:
   - <xref:azure.mgmt.dataprotection.models.RestoreTargetInfoBase>
 - description: 'Gets or sets the type of the source data store. Required. Known
 
-    values are: "ArchiveStore", "SnapshotStore", and "VaultStore".'
+    values are: "ArchiveStore", "SnapshotStore", "OperationalStore", and "VaultStore".'
   name: source_data_store_type
   types:
   - <xref:str>

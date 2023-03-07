@@ -10,7 +10,7 @@ summary: 'Name and Type of the Resource.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'ResourceName(*, name: str, type: str, **kwargs: Any)'
+  syntax: 'ResourceName(*, name: str, type: str, **kwargs)'
 variables:
 - description: Name of the resource. Required.
   name: name

@@ -11,7 +11,7 @@ constructor:
     status: Optional[Union[str, _models.OperationStatusValues]] = None, start_time:
     Optional[datetime.datetime] = None, end_time: Optional[datetime.datetime] = None,
     error: Optional[_models.OperationStatusError] = None, properties: Optional[_models.OperationStatusExtendedInfo]
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
 variables:
 - description: ID of the operation.
   name: id
