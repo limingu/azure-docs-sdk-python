@@ -17,7 +17,7 @@ constructor:
     _models.ExemptionCategory], policy_definition_reference_ids: Optional[List[str]]
     = None, expires_on: Optional[datetime.datetime] = None, display_name: Optional[str]
     = None, description: Optional[str] = None, metadata: Optional[collections.abc.MutableMapping[str,
-    Any]] = None, **kwargs: Any)'
+    Any]] = None, **kwargs)'
 variables:
 - description: 'Azure Resource Manager metadata containing createdBy and modifiedBy
 

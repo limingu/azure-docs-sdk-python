@@ -12,7 +12,7 @@ summary: 'A set of rules describing access policies applied to NFSv3 clients of 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'NfsAccessPolicy(*, name: str, access_rules: List[_models.NfsAccessRule],
-    **kwargs)'
+    **kwargs: Any)'
 variables:
 - description: Name identifying this policy. Access Policy names are not case sensitive.
     Required.

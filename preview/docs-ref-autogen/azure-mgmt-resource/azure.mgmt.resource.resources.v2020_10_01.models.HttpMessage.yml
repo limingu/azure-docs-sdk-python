@@ -8,7 +8,7 @@ inheritances:
 summary: HTTP message.
 constructor:
   syntax: 'HttpMessage(*, content: Optional[collections.abc.MutableMapping[str, Any]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: HTTP message content.
   name: content

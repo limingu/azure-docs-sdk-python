@@ -34,10 +34,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for the policy assignment. Is either a PolicyAssignment
-      type or a
+    description: 'Parameters for the policy assignment. Is either a model type or
+      a IO type.
 
-      IO type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2016_04_01.models.PolicyAssignment>
@@ -92,10 +92,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters for policy assignment. Is either a PolicyAssignment type
-      or a IO
+    description: 'Parameters for policy assignment. Is either a model type or a IO
+      type.
 
-      type. Required.'
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.resource.policy.v2016_04_01.models.PolicyAssignment>

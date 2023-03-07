@@ -1,0 +1,49 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.operations.WorkspaceOutboundRuleOperations
+name: WorkspaceOutboundRuleOperations
+fullName: azure.ai.ml.operations.WorkspaceOutboundRuleOperations
+module: azure.ai.ml.operations
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'WorkspaceOutboundRuleOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
+    service_client: azure.ai.ml._restclient.v2022_12_01_preview._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
+    all_operations: azure.ai.ml._scope_dependent_operations.OperationsContainer, credentials:
+    Optional[azure.core.credentials.TokenCredential] = None, **kwargs: Dict)'
+  parameters:
+  - name: operation_scope
+  - name: service_client
+  - name: all_operations
+  - name: credentials
+    defaultValue: None
+methods:
+- uid: azure.ai.ml.operations.WorkspaceOutboundRuleOperations.list
+  name: list
+  signature: 'list(resource_group: str, ws_name: str, **kwargs) -> Dict[str, azure.ai.ml.entities._workspace.networking.OutboundRule]'
+  parameters:
+  - name: resource_group
+    isRequired: true
+  - name: ws_name
+    isRequired: true
+- uid: azure.ai.ml.operations.WorkspaceOutboundRuleOperations.remove
+  name: remove
+  signature: 'remove(resource_group: str, ws_name: str, outbound_rule_name: str, **kwargs)
+    -> azure.core.polling._poller.LROPoller'
+  parameters:
+  - name: resource_group
+    isRequired: true
+  - name: ws_name
+    isRequired: true
+  - name: outbound_rule_name
+    isRequired: true
+- uid: azure.ai.ml.operations.WorkspaceOutboundRuleOperations.show
+  name: show
+  signature: 'show(resource_group: str, ws_name: str, outbound_rule_name: str, **kwargs)
+    -> azure.ai.ml.entities._workspace.networking.OutboundRule'
+  parameters:
+  - name: resource_group
+    isRequired: true
+  - name: ws_name
+    isRequired: true
+  - name: outbound_rule_name
+    isRequired: true

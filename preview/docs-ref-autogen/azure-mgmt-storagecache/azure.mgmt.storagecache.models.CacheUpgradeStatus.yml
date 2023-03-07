@@ -10,7 +10,7 @@ summary: 'Properties describing the software upgrade state of the Cache.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: CacheUpgradeStatus(**kwargs)
+  syntax: 'CacheUpgradeStatus(**kwargs: Any)'
 variables:
 - description: 'Version string of the firmware currently installed on this
 

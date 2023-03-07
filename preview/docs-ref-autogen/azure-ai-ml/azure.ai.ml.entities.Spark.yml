@@ -14,17 +14,16 @@ summary: 'Base class for spark node, used for spark component version consumptio
   create from builder function: spark.'
 constructor:
   syntax: 'Spark(*, component: Union[str, azure.ai.ml.entities._component.spark_component.SparkComponent],
-    identity: Optional[Union[Dict[str, str], azure.ai.ml.entities._job.identity.ManagedIdentity,
-    azure.ai.ml.entities._job.identity.AmlToken, azure.ai.ml.entities._job.identity.UserIdentity]]
+    identity: Optional[Union[Dict[str, str], azure.ai.ml.entities._credentials.ManagedIdentityConfiguration,
+    azure.ai.ml.entities._credentials.AmlTokenConfiguration, azure.ai.ml.entities._credentials.UserIdentityConfiguration]]
     = None, driver_cores: Optional[int] = None, driver_memory: Optional[str] = None,
     executor_cores: Optional[int] = None, executor_memory: Optional[str] = None, executor_instances:
     Optional[int] = None, dynamic_allocation_enabled: Optional[bool] = None, dynamic_allocation_min_executors:
     Optional[int] = None, dynamic_allocation_max_executors: Optional[int] = None,
-    conf: Optional[Dict[str, str]] = None, inputs: Optional[Dict[str, Union[azure.ai.ml.entities._job.pipeline._io.PipelineInput,
-    azure.ai.ml.entities._job.pipeline._io.NodeOutput, azure.ai.ml.entities._inputs_outputs.input.Input,
-    str, bool, int, float, enum.Enum]]] = None, outputs: Optional[Dict[str, Union[str,
-    azure.ai.ml.entities._inputs_outputs.output.Output]]] = None, compute: Optional[str]
-    = None, resources: Optional[Union[Dict, azure.ai.ml.entities._job.spark_resource_configuration.SparkResourceConfiguration]]
+    conf: Optional[Dict[str, str]] = None, inputs: Optional[Dict[str, Union[azure.ai.ml.entities._job.pipeline._io.base.NodeOutput,
+    azure.ai.ml.entities._inputs_outputs.input.Input, str, bool, int, float, enum.Enum]]]
+    = None, outputs: Optional[Dict[str, Union[str, azure.ai.ml.entities._inputs_outputs.output.Output]]]
+    = None, compute: Optional[str] = None, resources: Optional[Union[Dict, azure.ai.ml.entities._job.spark_resource_configuration.SparkResourceConfiguration]]
     = None, entry: Optional[Union[Dict[str, str], azure.ai.ml.entities._job.spark_job_entry.SparkJobEntry]]
     = None, py_files: Optional[List[str]] = None, jars: Optional[List[str]] = None,
     files: Optional[List[str]] = None, archives: Optional[List[str]] = None, args:
@@ -66,8 +65,7 @@ constructor:
     description: Identity that spark job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:Dict,azure.ai.ml.entities.ManagedIdentityConfiguration,azure.ai.ml.entities.AmlTokenConfiguration,azure.ai.ml.entities.UserIdentityConfiguration>]
   - name: driver_cores
     description: Number of cores to use for the driver process, only in cluster mode.
     isRequired: true

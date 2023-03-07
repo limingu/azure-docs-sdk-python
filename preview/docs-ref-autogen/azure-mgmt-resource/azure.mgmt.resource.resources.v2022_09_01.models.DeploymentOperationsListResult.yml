@@ -11,7 +11,7 @@ summary: 'List of deployment operations.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'DeploymentOperationsListResult(*, value: Optional[List[_models.DeploymentOperation]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: An array of deployment operations.
   name: value

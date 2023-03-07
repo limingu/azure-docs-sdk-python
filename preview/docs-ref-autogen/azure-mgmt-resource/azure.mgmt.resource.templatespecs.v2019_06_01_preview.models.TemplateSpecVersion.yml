@@ -16,7 +16,7 @@ constructor:
   syntax: 'TemplateSpecVersion(*, location: str, tags: Optional[Dict[str, str]] =
     None, artifacts: Optional[List[_models.TemplateSpecArtifact]] = None, description:
     Optional[str] = None, template: Optional[collections.abc.MutableMapping[str, Any]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: String Id used to locate any resource on Azure.
   name: id

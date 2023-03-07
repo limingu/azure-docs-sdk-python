@@ -9,7 +9,7 @@ summary: PrivateLinkAssociationProperties.
 constructor:
   syntax: 'PrivateLinkAssociationProperties(*, private_link: Optional[str] = None,
     public_network_access: Optional[Union[str, _models.PublicNetworkAccessOptions]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The rmpl Resource ID.
   name: private_link

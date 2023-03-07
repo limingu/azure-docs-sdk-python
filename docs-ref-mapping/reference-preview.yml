@@ -12,7 +12,7 @@
         href: ~/docs-ref-services/preview/mgmt-advisor-readme.md
         children:
         - azure-mgmt-advisor
-  - name: Agrifood
+  - name: AgriFood
     href: ~/docs-ref-services/preview/agrifood.md
     landingPageType: Service
     items:
@@ -108,6 +108,14 @@
         href: ~/docs-ref-services/preview/mgmt-authorization-readme.md
         children:
         - azure-mgmt-authorization
+  - name: Auto Suggest
+    href: ~/docs-ref-services/preview/auto-suggest.md
+    landingPageType: Service
+    items:
+    - name: Auto Suggest
+      href: ~/docs-ref-services/preview/cognitiveservices-search-autosuggest-readme.md
+      children:
+      - azure-cognitiveservices-search-autosuggest
   - name: Automanage
     href: ~/docs-ref-services/preview/automanage.md
     landingPageType: Service
@@ -282,10 +290,42 @@
       href: ~/docs-ref-services/preview/ai-translation-document-readme.md
       children:
       - azure-ai-translation-document
+    - name: Anomaly Detector (deprecated)
+      href: ~/docs-ref-services/preview/cognitiveservices-anomalydetector-readme.md
+      children:
+      - azure-cognitiveservices-anomalydetector
+    - name: Question Answering
+      href: ~/docs-ref-services/preview/cognitiveservices-knowledge-qnamaker-readme.md
+      children:
+      - azure-cognitiveservices-knowledge-qnamaker
+    - name: LUIS
+      href: ~/docs-ref-services/preview/cognitiveservices-language-luis-readme.md
+      children:
+      - azure-cognitiveservices-language-luis
+    - name: Spell Check
+      href: ~/docs-ref-services/preview/cognitiveservices-language-spellcheck-readme.md
+      children:
+      - azure-cognitiveservices-language-spellcheck
     - name: Text Analytics (deprecated)
       href: ~/docs-ref-services/preview/cognitiveservices-language-textanalytics-readme.md
       children:
       - azure-cognitiveservices-language-textanalytics
+    - name: Personalizer
+      href: ~/docs-ref-services/preview/cognitiveservices-personalizer-readme.md
+      children:
+      - azure-cognitiveservices-personalizer
+    - name: Computer Vision
+      href: ~/docs-ref-services/preview/cognitiveservices-vision-computervision-readme.md
+      children:
+      - azure-cognitiveservices-vision-computervision
+    - name: Content Moderator
+      href: ~/docs-ref-services/preview/cognitiveservices-vision-contentmoderator-readme.md
+      children:
+      - azure-cognitiveservices-vision-contentmoderator
+    - name: Custom Vision
+      href: ~/docs-ref-services/preview/cognitiveservices-vision-customvision-readme.md
+      children:
+      - azure-cognitiveservices-vision-customvision
     - name: Face
       href: ~/docs-ref-services/preview/cognitiveservices-vision-face-readme.md
       children:
@@ -398,6 +438,20 @@
       href: ~/docs-ref-services/preview/containerregistry-readme.md
       children:
       - azure-containerregistry
+    - name: Management
+      landingPageType: Service
+      children:
+      - azure-mgmt-containerregistry
+  - name: Container Service
+    href: ~/docs-ref-services/preview/container-service.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Container Service
+        href: ~/docs-ref-services/preview/mgmt-containerservice-readme.md
+        children:
+        - azure-mgmt-containerservice
   - name: Content Delivery Network
     href: ~/docs-ref-services/preview/content-delivery-network.md
     landingPageType: Service
@@ -432,6 +486,14 @@
         href: ~/docs-ref-services/preview/mgmt-costmanagement-readme.md
         children:
         - azure-mgmt-costmanagement
+  - name: Custom Image Search
+    href: ~/docs-ref-services/preview/custom-image-search.md
+    landingPageType: Service
+    items:
+    - name: Custom Image Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-customimagesearch-readme.md
+      children:
+      - azure-cognitiveservices-search-customimagesearch
   - name: Custom Providers
     href: ~/docs-ref-services/preview/custom-providers.md
     landingPageType: Service
@@ -442,6 +504,14 @@
         href: ~/docs-ref-services/preview/mgmt-customproviders-readme.md
         children:
         - azure-mgmt-customproviders
+  - name: Custom Search
+    href: ~/docs-ref-services/preview/custom-search.md
+    landingPageType: Service
+    items:
+    - name: Custom Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-customsearch-readme.md
+      children:
+      - azure-cognitiveservices-search-customsearch
   - name: Data Box
     href: ~/docs-ref-services/preview/data-box.md
     landingPageType: Service
@@ -532,6 +602,14 @@
         href: ~/docs-ref-services/preview/mgmt-datadog-readme.md
         children:
         - azure-mgmt-datadog
+  - name: Defender Easm
+    href: ~/docs-ref-services/preview/defender-easm.md
+    landingPageType: Service
+    items:
+    - name: Defender EASM
+      href: ~/docs-ref-services/preview/defender-easm-readme.md
+      children:
+      - azure-defender-easm
   - name: Deployment Manager
     href: ~/docs-ref-services/preview/deployment-manager.md
     landingPageType: Service
@@ -656,6 +734,14 @@
         href: ~/docs-ref-services/preview/mgmt-elasticsan-readme.md
         children:
         - azure-mgmt-elasticsan
+  - name: Entity Search
+    href: ~/docs-ref-services/preview/entity-search.md
+    landingPageType: Service
+    items:
+    - name: Entity Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-entitysearch-readme.md
+      children:
+      - azure-cognitiveservices-search-entitysearch
   - name: Event Grid
     href: ~/docs-ref-services/preview/event-grid.md
     landingPageType: Service
@@ -830,6 +916,14 @@
         href: ~/docs-ref-services/preview/mgmt-imagebuilder-readme.md
         children:
         - azure-mgmt-imagebuilder
+  - name: Image Search
+    href: ~/docs-ref-services/preview/image-search.md
+    landingPageType: Service
+    items:
+    - name: Image Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-imagesearch-readme.md
+      children:
+      - azure-cognitiveservices-search-imagesearch
   - name: IoT
     href: ~/docs-ref-services/preview/iot.md
     landingPageType: Service
@@ -1128,6 +1222,14 @@
         href: ~/docs-ref-services/preview/mgmt-networkfunction-readme.md
         children:
         - azure-mgmt-networkfunction
+  - name: News Search
+    href: ~/docs-ref-services/preview/news-search.md
+    landingPageType: Service
+    items:
+    - name: News Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-newssearch-readme.md
+      children:
+      - azure-cognitiveservices-search-newssearch
   - name: Nginx
     href: ~/docs-ref-services/preview/nginx.md
     landingPageType: Service
@@ -1674,6 +1776,22 @@
       href: ~/docs-ref-services/preview/media-videoanalyzer-edge-readme.md
       children:
       - azure-media-videoanalyzer-edge
+  - name: Video Search
+    href: ~/docs-ref-services/preview/video-search.md
+    landingPageType: Service
+    items:
+    - name: Video Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-videosearch-readme.md
+      children:
+      - azure-cognitiveservices-search-videosearch
+  - name: Visual Search
+    href: ~/docs-ref-services/preview/visual-search.md
+    landingPageType: Service
+    items:
+    - name: Visual Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-visualsearch-readme.md
+      children:
+      - azure-cognitiveservices-search-visualsearch
   - name: VMware Solution
     href: ~/docs-ref-services/preview/vmware-solution.md
     landingPageType: Service
@@ -1718,6 +1836,14 @@
         href: ~/docs-ref-services/preview/mgmt-webpubsub-readme.md
         children:
         - azure-mgmt-webpubsub
+  - name: Web Search
+    href: ~/docs-ref-services/preview/web-search.md
+    landingPageType: Service
+    items:
+    - name: Web Search
+      href: ~/docs-ref-services/preview/cognitiveservices-search-websearch-readme.md
+      children:
+      - azure-cognitiveservices-search-websearch
   - name: Workload Monitor
     href: ~/docs-ref-services/preview/workload-monitor.md
     landingPageType: Service

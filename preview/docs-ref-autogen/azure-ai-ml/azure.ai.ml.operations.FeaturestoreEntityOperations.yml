@@ -1,0 +1,137 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.operations.FeaturestoreEntityOperations
+name: FeaturestoreEntityOperations
+fullName: azure.ai.ml.operations.FeaturestoreEntityOperations
+module: azure.ai.ml.operations
+inheritances:
+- azure.ai.ml._scope_dependent_operations._ScopeDependentOperations
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'FeaturestoreEntityOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
+    operation_config: azure.ai.ml._scope_dependent_operations.OperationConfig, service_client:
+    azure.ai.ml._restclient.v2023_02_01_preview._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
+    **kwargs: Dict)'
+methods:
+- uid: azure.ai.ml.operations.FeaturestoreEntityOperations.archive
+  name: archive
+  summary: Archive a FeaturestoreEntity asset.
+  signature: 'archive(*, name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
+  parameters:
+  - name: name
+    description: Name of FeaturestoreEntity asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of FeaturestoreEntity asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: label
+    description: Label of the FeaturestoreEntity asset. (mutually exclusive with version)
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: None
+- uid: azure.ai.ml.operations.FeaturestoreEntityOperations.begin_create_or_update
+  name: begin_create_or_update
+  summary: Create or update FeaturestoreEntity
+  signature: 'begin_create_or_update(featurestore_entity: azure.ai.ml.entities._featurestore_entity.featurestore_entity.FeaturestoreEntity)
+    -> azure.core.polling._poller.LROPoller[azure.ai.ml.entities._featurestore_entity.featurestore_entity.FeaturestoreEntity]'
+  parameters:
+  - name: featurestore_entity
+    description: FeaturestoreEntity definition.
+    isRequired: true
+    types:
+    - <xref:azure.ai.ml.entities.FeaturestoreEntity>
+  return:
+    description: An instance of LROPoller that returns a FeaturestoreEntity.
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.ai.ml.entities.FeaturestoreEntity>]
+- uid: azure.ai.ml.operations.FeaturestoreEntityOperations.get
+  name: get
+  summary: Get the specified FeaturestoreEntity asset.
+  signature: 'get(name: str, version: Optional[str] = None, label: Optional[str] =
+    None) -> azure.ai.ml.entities._featurestore_entity.featurestore_entity.FeaturestoreEntity'
+  parameters:
+  - name: name
+    description: Name of FeaturestoreEntity asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of FeaturestoreEntity asset.
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: label
+    description: Label of the FeaturestoreEntity asset. (mutually exclusive with version)
+    defaultValue: None
+    types:
+    - <xref:str>
+  return:
+    description: FeaturestoreEntity asset object.
+    types:
+    - <xref:azure.ai.ml.entities.FeaturestoreEntity>
+  exceptions:
+  - type: azure.ai.ml.exceptions.ValidationException
+    description: 'Raised if FeaturestoreEntity cannot be successfully
+
+      identified and retrieved. Details will be provided in the error message.'
+- uid: azure.ai.ml.operations.FeaturestoreEntityOperations.list
+  name: list
+  summary: 'List the FeaturestoreEntity assets of the workspace.
+
+
+    Default: ACTIVE_ONLY.
+
+    :type list_view_type: Optional[ListViewType]
+
+    :return: An iterator like instance of FeaturestoreEntity objects
+
+    :rtype: ~azure.core.paging.ItemPaged[FeaturestoreEntity]'
+  signature: 'list(*, name: Optional[str] = None, list_view_type: azure.ai.ml._restclient.v2023_02_01_preview.models._azure_machine_learning_workspaces_enums.ListViewType
+    = <ListViewType.ACTIVE_ONLY: ''ActiveOnly''>) -> azure.core.paging.ItemPaged[azure.ai.ml.entities._featurestore_entity.featurestore_entity.FeaturestoreEntity]'
+  parameters:
+  - name: name
+    description: Name of a specific FeaturestoreEntity asset, optional.
+    isRequired: true
+    types:
+    - <xref:Optional>[<xref:str>]
+  - name: list_view_type
+    description: View type for including/excluding (for example) archived FeaturestoreEntity
+      assets.
+    isRequired: true
+- uid: azure.ai.ml.operations.FeaturestoreEntityOperations.restore
+  name: restore
+  summary: Restore an archived FeaturestoreEntity asset.
+  signature: 'restore(*, name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
+  parameters:
+  - name: name
+    description: Name of FeaturestoreEntity asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of FeaturestoreEntity asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: label
+    description: Label of the FeaturestoreEntity asset. (mutually exclusive with version)
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: None

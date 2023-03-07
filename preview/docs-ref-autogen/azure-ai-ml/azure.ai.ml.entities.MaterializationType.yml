@@ -1,0 +1,23 @@
+### YamlMime:PythonEnum
+uid: azure.ai.ml.entities.MaterializationType
+name: MaterializationType
+fullName: azure.ai.ml.entities.MaterializationType
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  An enumeration.'
+module: azure.ai.ml.entities
+constructor:
+  syntax: MaterializationType(value)
+inheritances:
+- enum.Enum
+fields:
+- name: BackfillMaterialization
+  uid: azure.ai.ml.entities.MaterializationType.BackfillMaterialization
+- name: RecurrentMaterialization
+  uid: azure.ai.ml.entities.MaterializationType.RecurrentMaterialization

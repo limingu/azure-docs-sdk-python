@@ -12,9 +12,11 @@ constructor:
   syntax: 'CommandJob(*, inputs: Optional[Dict[str, Union[int, str, float, bool, azure.ai.ml.entities._inputs_outputs.input.Input]]]
     = None, outputs: Optional[Dict[str, azure.ai.ml.entities._inputs_outputs.output.Output]]
     = None, limits: Optional[azure.ai.ml.entities._job.job_limits.CommandJobLimits]
-    = None, identity: Optional[Union[azure.ai.ml.entities._job.identity.ManagedIdentity,
-    azure.ai.ml.entities._job.identity.AmlToken, azure.ai.ml.entities._job.identity.UserIdentity]]
-    = None, services: Optional[Dict[str, azure.ai.ml.entities._job.job_service.JobService]]
+    = None, identity: Optional[Union[azure.ai.ml.entities._credentials.ManagedIdentityConfiguration,
+    azure.ai.ml.entities._credentials.AmlTokenConfiguration, azure.ai.ml.entities._credentials.UserIdentityConfiguration]]
+    = None, services: Optional[Dict[str, Union[azure.ai.ml.entities._job.job_service.JobService,
+    azure.ai.ml.entities._job.job_service.JupyterLabJobService, azure.ai.ml.entities._job.job_service.SshJobService,
+    azure.ai.ml.entities._job.job_service.TensorBoardJobService, azure.ai.ml.entities._job.job_service.VsCodeJobService]]]
     = None, **kwargs)'
   parameters:
   - name: name
@@ -100,8 +102,7 @@ constructor:
     description: Identity that training job will use while running on compute.
     isRequired: true
     types:
-    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentity>, <xref:azure.ai.ml.AmlToken>,
-      <xref:azure.ai.ml.UserIdentity>]
+    - <xref:Union>[<xref:azure.ai.ml.ManagedIdentityConfiguration,azure.ai.ml.AmlTokenConfiguration,azure.ai.ml.UserIdentityConfiguration>]
   - name: limits
     description: Command Job limit.
     isRequired: true

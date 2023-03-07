@@ -11,7 +11,7 @@ summary: 'Subscription feature registration details.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'SubscriptionFeatureRegistration(*, properties: Optional[_models.SubscriptionFeatureRegistrationProperties]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: Azure resource Id.
   name: id

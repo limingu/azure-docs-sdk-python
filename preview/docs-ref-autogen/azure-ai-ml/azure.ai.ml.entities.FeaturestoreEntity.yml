@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.FeaturestoreEntity
+name: FeaturestoreEntity
+fullName: azure.ai.ml.entities.FeaturestoreEntity
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._assets.asset.Asset
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'FeaturestoreEntity(*, name: str, version: str, index_columns: List[azure.ai.ml.entities._featurestore_entity.data_column.DataColumn],
+    description: Optional[str] = None, tags: Optional[Dict] = None, properties: Optional[Dict]
+    = None, **kwargs)'

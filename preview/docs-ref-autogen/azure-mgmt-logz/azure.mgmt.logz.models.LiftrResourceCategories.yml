@@ -2,7 +2,7 @@
 uid: azure.mgmt.logz.models.LiftrResourceCategories
 name: LiftrResourceCategories
 fullName: azure.mgmt.logz.models.LiftrResourceCategories
-summary: An enumeration.
+summary: LiftrResourceCategories.
 module: azure.mgmt.logz.models
 constructor:
   syntax: LiftrResourceCategories(value)

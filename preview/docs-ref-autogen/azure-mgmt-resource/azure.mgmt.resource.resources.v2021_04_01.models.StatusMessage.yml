@@ -8,7 +8,7 @@ inheritances:
 summary: Operation status message object.
 constructor:
   syntax: 'StatusMessage(*, status: Optional[str] = None, error: Optional[_models.ErrorResponse]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: Status of the deployment operation.
   name: status

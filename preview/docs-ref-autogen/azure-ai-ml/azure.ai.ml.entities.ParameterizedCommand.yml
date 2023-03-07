@@ -5,9 +5,8 @@ fullName: azure.ai.ml.entities.ParameterizedCommand
 module: azure.ai.ml.entities
 inheritances:
 - builtins.object
-summary: 'Command component that contains the training command and supporting
-
-  parameters for the command.'
+summary: Command component that contains the training command and supporting parameters
+  for the command.
 constructor:
   syntax: 'ParameterizedCommand(command: str = '''', resources: Optional[Union[dict,
     azure.ai.ml.entities._job.job_resource_configuration.JobResourceConfiguration]]

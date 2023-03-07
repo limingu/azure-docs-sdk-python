@@ -13,7 +13,7 @@ constructor:
   syntax: 'WhatIfChange(*, resource_id: str, change_type: Union[str, _models.ChangeType],
     unsupported_reason: Optional[str] = None, before: Optional[collections.abc.MutableMapping[str,
     Any]] = None, after: Optional[collections.abc.MutableMapping[str, Any]] = None,
-    delta: Optional[List[_models.WhatIfPropertyChange]] = None, **kwargs: Any)'
+    delta: Optional[List[_models.WhatIfPropertyChange]] = None, **kwargs)'
 variables:
 - description: Resource ID. Required.
   name: resource_id

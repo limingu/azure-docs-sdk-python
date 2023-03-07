@@ -8,7 +8,7 @@ inheritances:
 summary: Wrapper resource for tags patch API request only.
 constructor:
   syntax: 'TagsPatchResource(*, operation: Optional[Union[str, _models.TagsPatchOperation]]
-    = None, properties: Optional[_models.Tags] = None, **kwargs: Any)'
+    = None, properties: Optional[_models.Tags] = None, **kwargs)'
 variables:
 - description: 'The operation type for the patch API. Known values are: "Replace",
     "Merge",

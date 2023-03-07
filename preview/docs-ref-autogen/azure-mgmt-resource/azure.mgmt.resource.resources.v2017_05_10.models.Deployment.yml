@@ -10,7 +10,7 @@ summary: 'Deployment operation parameters.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'Deployment(*, properties: _models.DeploymentProperties, **kwargs: Any)'
+  syntax: 'Deployment(*, properties: _models.DeploymentProperties, **kwargs)'
 variables:
 - description: The deployment properties. Required.
   name: properties

@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.FeatureStoreSettings
+name: FeatureStoreSettings
+fullName: azure.ai.ml.entities.FeatureStoreSettings
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._mixins.RestTranslatableMixin
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'FeatureStoreSettings(*, compute_runtime: Optional[azure.ai.ml.entities._workspace.compute_runtime.ComputeRuntime]
+    = None, offline_store_connection_name: Optional[str] = None)'

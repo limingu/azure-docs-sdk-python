@@ -13,7 +13,7 @@ constructor:
   syntax: 'PolicyDefinition(*, name: Optional[str] = None, policy_type: Optional[Union[str,
     _models.PolicyType]] = None, display_name: Optional[str] = None, description:
     Optional[str] = None, policy_rule: Optional[collections.abc.MutableMapping[str,
-    Any]] = None, **kwargs: Any)'
+    Any]] = None, **kwargs)'
 variables:
 - description: The ID of the policy definition.
   name: id

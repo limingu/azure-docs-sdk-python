@@ -1,0 +1,35 @@
+### YamlMime:PythonEnum
+uid: azure.ai.ml.entities.DataColumnType
+name: DataColumnType
+fullName: azure.ai.ml.entities.DataColumnType
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  An enumeration.'
+module: azure.ai.ml.entities
+constructor:
+  syntax: DataColumnType(value)
+inheritances:
+- enum.Enum
+fields:
+- name: binary
+  uid: azure.ai.ml.entities.DataColumnType.binary
+- name: boolean
+  uid: azure.ai.ml.entities.DataColumnType.boolean
+- name: datetime
+  uid: azure.ai.ml.entities.DataColumnType.datetime
+- name: double
+  uid: azure.ai.ml.entities.DataColumnType.double
+- name: float
+  uid: azure.ai.ml.entities.DataColumnType.float
+- name: integer
+  uid: azure.ai.ml.entities.DataColumnType.integer
+- name: long
+  uid: azure.ai.ml.entities.DataColumnType.long
+- name: string
+  uid: azure.ai.ml.entities.DataColumnType.string

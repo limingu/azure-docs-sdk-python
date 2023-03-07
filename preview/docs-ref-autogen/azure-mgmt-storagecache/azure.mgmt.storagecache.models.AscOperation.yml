@@ -10,7 +10,7 @@ constructor:
   syntax: 'AscOperation(*, id: Optional[str] = None, name: Optional[str] = None, start_time:
     Optional[str] = None, end_time: Optional[str] = None, status: Optional[str] =
     None, error: Optional[_models.ErrorResponse] = None, output: Optional[Dict[str,
-    collections.abc.MutableMapping[str, Any]]] = None, **kwargs)'
+    collections.abc.MutableMapping[str, Any]]] = None, **kwargs: Any)'
 variables:
 - description: The operation Id.
   name: id

@@ -11,7 +11,7 @@ summary: 'List of resource groups.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ResourceListResult(*, next_link: str, value: Optional[List[_models.GenericResourceExpanded]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The list of resources.
   name: value

@@ -11,7 +11,7 @@ constructor:
     Optional[List[str]] = None, aliases: Optional[List[_models.Alias]] = None, api_versions:
     Optional[List[str]] = None, zone_mappings: Optional[List[_models.ZoneMapping]]
     = None, capabilities: Optional[str] = None, properties: Optional[Dict[str, str]]
-    = None, **kwargs: Any)'
+    = None, **kwargs)'
 variables:
 - description: The resource type.
   name: resource_type

@@ -8,7 +8,7 @@ inheritances:
 summary: The list of locks.
 constructor:
   syntax: 'ManagementLockListResult(*, value: Optional[List[_models.ManagementLockObject]]
-    = None, next_link: Optional[str] = None, **kwargs: Any)'
+    = None, next_link: Optional[str] = None, **kwargs)'
 variables:
 - description: The list of locks.
   name: value

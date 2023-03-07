@@ -14,7 +14,7 @@ summary: 'The resource link properties.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ResourceLinkProperties(*, target_id: str, notes: Optional[str] = None,
-    **kwargs: Any)'
+    **kwargs)'
 variables:
 - description: The fully qualified ID of the source resource in the link.
   name: source_id

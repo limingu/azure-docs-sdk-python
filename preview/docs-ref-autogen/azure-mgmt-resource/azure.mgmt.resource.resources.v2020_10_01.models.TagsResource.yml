@@ -13,7 +13,7 @@ summary: 'Wrapper resource for tags API requests and responses.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'TagsResource(*, properties: _models.Tags, **kwargs: Any)'
+  syntax: 'TagsResource(*, properties: _models.Tags, **kwargs)'
 variables:
 - description: The ID of the tags wrapper resource.
   name: id

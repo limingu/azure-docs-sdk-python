@@ -13,16 +13,15 @@ summary: '> [!NOTE]
   >
 
 
-  Azure ML workspace connection provides a secure way to store
+  Azure ML workspace connection provides a secure way to store authentication and
+  configuration information needed
 
-  authentication and configuration information needed to connect and interact
-
-  with the external resources.'
+  to connect and interact with the external resources.'
 constructor:
   syntax: 'WorkspaceConnection(*, target: str, type: str, credentials: Union[azure.ai.ml.entities._credentials.PatTokenConfiguration,
     azure.ai.ml.entities._credentials.SasTokenConfiguration, azure.ai.ml.entities._credentials.UsernamePasswordConfiguration,
     azure.ai.ml.entities._credentials.ManagedIdentityConfiguration, azure.ai.ml.entities._credentials.ServicePrincipalConfiguration],
-    metadata: Dict[str, Any] = None, **kwargs)'
+    metadata: Optional[Dict[str, Any]] = None, **kwargs)'
   parameters:
   - name: name
     description: Name of the workspace connection.
@@ -94,9 +93,8 @@ attributes:
     - <xref:str>
 - uid: azure.ai.ml.entities.WorkspaceConnection.type
   name: type
-  summary: 'Type of the workspace connection, supported are ''git'', ''python_feed''
-
-    and ''container_registry''.'
+  summary: Type of the workspace connection, supported are 'git', 'python_feed' and
+    'container_registry'.
   return:
     description: Type of the job.
     types:

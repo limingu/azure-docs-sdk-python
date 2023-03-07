@@ -1,0 +1,137 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.operations.FeaturesetOperations
+name: FeaturesetOperations
+fullName: azure.ai.ml.operations.FeaturesetOperations
+module: azure.ai.ml.operations
+inheritances:
+- azure.ai.ml._scope_dependent_operations._ScopeDependentOperations
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'FeaturesetOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
+    operation_config: azure.ai.ml._scope_dependent_operations.OperationConfig, service_client:
+    azure.ai.ml._restclient.v2023_02_01_preview._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
+    **kwargs: Dict)'
+methods:
+- uid: azure.ai.ml.operations.FeaturesetOperations.archive
+  name: archive
+  summary: Archive a Featureset asset.
+  signature: 'archive(*, name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
+  parameters:
+  - name: name
+    description: Name of Featureset asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of Featureset asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: label
+    description: Label of the Featureset asset. (mutually exclusive with version)
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: None
+- uid: azure.ai.ml.operations.FeaturesetOperations.begin_create_or_update
+  name: begin_create_or_update
+  summary: Create or update Featureset
+  signature: 'begin_create_or_update(featureset: azure.ai.ml.entities._assets._artifacts.featureset.Featureset)
+    -> azure.core.polling._poller.LROPoller[azure.ai.ml.entities._assets._artifacts.featureset.Featureset]'
+  parameters:
+  - name: featureset
+    description: Featureset definition.
+    isRequired: true
+    types:
+    - <xref:azure.ai.ml.entities.Featureset>
+  return:
+    description: An instance of LROPoller that returns a Featureset.
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.ai.ml.entities.Featureset>]
+- uid: azure.ai.ml.operations.FeaturesetOperations.get
+  name: get
+  summary: Get the specified featureset asset.
+  signature: 'get(*, name: str, version: Optional[str] = None, label: Optional[str]
+    = None) -> azure.ai.ml.entities._assets._artifacts.featureset.Featureset'
+  parameters:
+  - name: name
+    description: Name of featureset asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of featureset asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: label
+    description: Label of the featureset asset. (mutually exclusive with version)
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: Featureset asset object.
+    types:
+    - <xref:azure.ai.ml.entities.Featureset>
+  exceptions:
+  - type: azure.ai.ml.exceptions.ValidationException
+    description: 'Raised if Featureset cannot be successfully
+
+      identified and retrieved. Details will be provided in the error message.'
+- uid: azure.ai.ml.operations.FeaturesetOperations.list
+  name: list
+  summary: 'List the featureset assets of the workspace.
+
+
+    Default: ACTIVE_ONLY.
+
+    :type list_view_type: Optional[ListViewType]
+
+    :return: An iterator like instance of Featureset objects
+
+    :rtype: ~azure.core.paging.ItemPaged[Featureset]'
+  signature: 'list(*, name: Optional[str] = None, list_view_type: azure.ai.ml._restclient.v2023_02_01_preview.models._azure_machine_learning_workspaces_enums.ListViewType
+    = <ListViewType.ACTIVE_ONLY: ''ActiveOnly''>) -> azure.core.paging.ItemPaged[azure.ai.ml.entities._assets._artifacts.featureset.Featureset]'
+  parameters:
+  - name: name
+    description: Name of a specific featureset asset, optional.
+    isRequired: true
+    types:
+    - <xref:Optional>[<xref:str>]
+  - name: list_view_type
+    description: View type for including/excluding (for example) archived featureset
+      assets.
+    isRequired: true
+- uid: azure.ai.ml.operations.FeaturesetOperations.restore
+  name: restore
+  summary: Restore an archived Featureset asset.
+  signature: 'restore(*, name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
+  parameters:
+  - name: name
+    description: Name of Featureset asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of Featureset asset.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: label
+    description: Label of the Featureset asset. (mutually exclusive with version)
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: None

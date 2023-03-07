@@ -12,7 +12,7 @@ summary: 'The policy definition reference.
 constructor:
   syntax: 'PolicyDefinitionReference(*, policy_definition_id: str, parameters: Optional[Dict[str,
     _models.ParameterValuesValue]] = None, policy_definition_reference_id: Optional[str]
-    = None, group_names: Optional[List[str]] = None, **kwargs: Any)'
+    = None, group_names: Optional[List[str]] = None, **kwargs)'
 variables:
 - description: The ID of the policy definition or policy set definition. Required.
   name: policy_definition_id

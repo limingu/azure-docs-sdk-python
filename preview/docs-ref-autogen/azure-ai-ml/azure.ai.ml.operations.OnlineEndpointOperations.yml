@@ -73,7 +73,8 @@ methods:
 - uid: azure.ai.ml.operations.OnlineEndpointOperations.begin_delete
   name: begin_delete
   summary: Delete an Online Endpoint.
-  signature: 'begin_delete(name: str = None, *, local: bool = False) -> azure.core.polling._poller.LROPoller[None]'
+  signature: 'begin_delete(name: Optional[str] = None, *, local: bool = False) ->
+    azure.core.polling._poller.LROPoller[None]'
   parameters:
   - name: name
     description: Name of the endpoint.
@@ -140,8 +141,8 @@ methods:
 - uid: azure.ai.ml.operations.OnlineEndpointOperations.get_keys
   name: get_keys
   summary: Get the auth credentials.
-  signature: 'get_keys(name: str) -> Union[azure.ai.ml._restclient.v2022_02_01_preview.models._models_py3.EndpointAuthKeys,
-    azure.ai.ml._restclient.v2022_02_01_preview.models._models_py3.EndpointAuthToken]'
+  signature: 'get_keys(name: str) -> Union[azure.ai.ml.entities._endpoint.online_endpoint.EndpointAuthKeys,
+    azure.ai.ml.entities._endpoint.online_endpoint.EndpointAuthToken]'
   parameters:
   - name: name
     description: The endpoint name
@@ -152,12 +153,12 @@ methods:
     description: Depending on the auth mode in the endpoint, returns either keys or
       token
     types:
-    - <xref:Union>[<xref:EndpointAuthKeys>, <xref:EndpointAuthToken>]
+    - <xref:Union>[<xref:azure.ai.ml.entities.EndpointAuthKeys>, <xref:azure.ai.ml.entities.EndpointAuthToken>]
 - uid: azure.ai.ml.operations.OnlineEndpointOperations.invoke
   name: invoke
   summary: Invokes the endpoint with the provided payload.
-  signature: 'invoke(endpoint_name: str, *, request_file: str = None, deployment_name:
-    str = None, input_data: Union[str, azure.ai.ml.entities._assets._artifacts.data.Data]
+  signature: 'invoke(endpoint_name: str, *, request_file: Optional[str] = None, deployment_name:
+    Optional[str] = None, input_data: Optional[Union[str, azure.ai.ml.entities._assets._artifacts.data.Data]]
     = None, params_override=None, local: bool = False, **kwargs) -> str'
   parameters:
   - name: endpoint_name

@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.ai.ml.entities.FeatureStore
+name: FeatureStore
+fullName: azure.ai.ml.entities.FeatureStore
+module: azure.ai.ml.entities
+inheritances:
+- azure.ai.ml.entities._workspace.workspace.Workspace
+summary: '> [!NOTE]
+
+  > This is an experimental class, and may change at any time. Please see [https://aka.ms/azuremlexperimental](https://aka.ms/azuremlexperimental)
+  for more information.
+
+  >
+
+
+  >'
+constructor:
+  syntax: 'FeatureStore(*, name: str, compute_runtime: Optional[azure.ai.ml.entities._workspace.compute_runtime.ComputeRuntime]
+    = None, offline_store: Optional[azure.ai.ml.entities._feature_store.materialization_store.MaterializationStore]
+    = None, materialization_identity: Optional[azure.ai.ml.entities._credentials.ManagedIdentityConfiguration]
+    = None, description: Optional[str] = None, tags: Optional[Dict[str, str]] = None,
+    display_name: Optional[str] = None, location: Optional[str] = None, resource_group:
+    Optional[str] = None, hbi_workspace: bool = False, storage_account: Optional[str]
+    = None, container_registry: Optional[str] = None, key_vault: Optional[str] = None,
+    application_insights: Optional[str] = None, customer_managed_key: Optional[azure.ai.ml.entities._workspace.customer_managed_key.CustomerManagedKey]
+    = None, image_build_compute: Optional[str] = None, public_network_access: Optional[str]
+    = None, identity: Optional[azure.ai.ml.entities._credentials.IdentityConfiguration]
+    = None, primary_user_assigned_identity: Optional[str] = None, **kwargs)'

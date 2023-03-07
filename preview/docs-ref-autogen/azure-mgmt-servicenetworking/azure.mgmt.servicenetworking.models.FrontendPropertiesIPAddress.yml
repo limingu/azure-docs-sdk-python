@@ -10,7 +10,7 @@ summary: 'Frontend IP Address.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'FrontendPropertiesIPAddress(*, id: str, **kwargs)'
+  syntax: 'FrontendPropertiesIPAddress(*, id: str, **kwargs: Any)'
 variables:
 - description: IP Address. Required.
   name: id

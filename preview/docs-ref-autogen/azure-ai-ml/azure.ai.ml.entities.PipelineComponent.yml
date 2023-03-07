@@ -5,9 +5,7 @@ fullName: azure.ai.ml.entities.PipelineComponent
 module: azure.ai.ml.entities
 inheritances:
 - azure.ai.ml.entities._component.component.Component
-summary: 'Pipeline component, currently used to store components in a
-
-  azure.ai.ml.dsl.pipeline.'
+summary: Pipeline component, currently used to store components in a azure.ai.ml.dsl.pipeline.
 constructor:
   syntax: 'PipelineComponent(*, name: Optional[str] = None, version: Optional[str]
     = None, description: Optional[str] = None, tags: Optional[Dict] = None, display_name:
@@ -53,6 +51,4 @@ constructor:
 attributes:
 - uid: azure.ai.ml.entities.PipelineComponent.jobs
   name: jobs
-  summary: 'Return a dictionary from component variable name to component
-
-    object.'
+  summary: Return a dictionary from component variable name to component object.

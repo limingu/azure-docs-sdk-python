@@ -8,11 +8,10 @@ inheritances:
 summary: 'OnlineDeploymentOperations.
 
 
-  You should not instantiate this class directly. Instead, you should
+  You should not instantiate this class directly. Instead, you should create an MLClient
+  instance that instantiates it
 
-  create an MLClient instance that instantiates it for you and
-
-  attaches it as an attribute.'
+  for you and attaches it as an attribute.'
 constructor:
   syntax: 'OnlineDeploymentOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
     operation_config: azure.ai.ml._scope_dependent_operations.OperationConfig, service_client_02_2022_preview:
@@ -97,11 +96,11 @@ methods:
       VSCode debug is only supported for local endpoints.'
   - type: azure.ai.ml.exceptions.VSCodeCommandNotFound
     description: Raised if VSCode instance cannot be instantiated.
-- uid: azure.ai.ml.operations.OnlineDeploymentOperations.delete
-  name: delete
+- uid: azure.ai.ml.operations.OnlineDeploymentOperations.begin_delete
+  name: begin_delete
   summary: Delete a deployment.
-  signature: 'delete(name: str, endpoint_name: str, *, local: Optional[bool] = False)
-    -> azure.core.polling._poller.LROPoller[None]'
+  signature: 'begin_delete(name: str, endpoint_name: str, *, local: Optional[bool]
+    = False) -> azure.core.polling._poller.LROPoller[None]'
   parameters:
   - name: name
     description: The name of the deployment

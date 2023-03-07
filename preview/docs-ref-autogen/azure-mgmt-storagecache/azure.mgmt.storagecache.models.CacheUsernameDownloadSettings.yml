@@ -16,7 +16,7 @@ constructor:
     = None, ldap_base_dn: Optional[str] = None, encrypt_ldap_connection: Optional[bool]
     = None, require_valid_certificate: Optional[bool] = None, auto_download_certificate:
     Optional[bool] = None, ca_certificate_uri: Optional[str] = None, credentials:
-    Optional[_models.CacheUsernameDownloadSettingsCredentials] = None, **kwargs)'
+    Optional[_models.CacheUsernameDownloadSettingsCredentials] = None, **kwargs: Any)'
 variables:
 - description: Whether or not Extended Groups is enabled.
   name: extended_groups

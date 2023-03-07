@@ -8,11 +8,10 @@ inheritances:
 summary: 'WorkspaceConnectionsOperations.
 
 
-  You should not instantiate this class directly. Instead, you should
+  You should not instantiate this class directly. Instead, you should create an MLClient
+  instance that instantiates it
 
-  create an MLClient instance that instantiates it for you and
-
-  attaches it as an attribute.'
+  for you and attaches it as an attribute.'
 constructor:
   syntax: 'WorkspaceConnectionsOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
     operation_config: azure.ai.ml._scope_dependent_operations.OperationConfig, service_client:

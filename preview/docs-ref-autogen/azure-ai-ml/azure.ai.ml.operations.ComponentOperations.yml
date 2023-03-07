@@ -16,7 +16,7 @@ summary: 'ComponentOperations.
 constructor:
   syntax: 'ComponentOperations(operation_scope: azure.ai.ml._scope_dependent_operations.OperationScope,
     operation_config: azure.ai.ml._scope_dependent_operations.OperationConfig, service_client:
-    Union[azure.ai.ml._restclient.v2022_05_01._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
+    Union[azure.ai.ml._restclient.v2022_10_01._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces,
     azure.ai.ml._restclient.v2021_10_01_dataplanepreview._azure_machine_learning_workspaces.AzureMachineLearningWorkspaces],
     all_operations: azure.ai.ml._scope_dependent_operations.OperationsContainer, **kwargs:
     Dict)'
@@ -29,7 +29,8 @@ methods:
 - uid: azure.ai.ml.operations.ComponentOperations.archive
   name: archive
   summary: Archive a component.
-  signature: 'archive(name: str, version: str = None, label: str = None) -> None'
+  signature: 'archive(name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: name
     description: Name of the component.
@@ -38,12 +39,12 @@ methods:
     - <xref:str>
   - name: version
     description: Version of the component.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: label
     description: Label of the component. (mutually exclusive with version)
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
 - uid: azure.ai.ml.operations.ComponentOperations.create_or_update
@@ -64,7 +65,7 @@ methods:
     - <xref:Union>[<xref:azure.ai.ml.entities.Component>, <xref:types.FunctionType>]
   - name: version
     description: The component version to override.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: skip_validation
@@ -110,12 +111,12 @@ methods:
     - <xref:str>
   - name: version
     description: Version of the component.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
   - name: label
     description: Label of the component. (mutually exclusive with version)
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
   return:
@@ -130,12 +131,12 @@ methods:
 - uid: azure.ai.ml.operations.ComponentOperations.list
   name: list
   summary: List specific component or components of the workspace.
-  signature: 'list(name: Optional[str] = None, *, list_view_type: azure.ai.ml._restclient.v2022_05_01.models._azure_machine_learning_workspaces_enums.ListViewType
+  signature: 'list(name: Optional[str] = None, *, list_view_type: azure.ai.ml._restclient.v2022_10_01.models._azure_machine_learning_workspaces_enums.ListViewType
     = <ListViewType.ACTIVE_ONLY: ''ActiveOnly''>) -> Iterable[azure.ai.ml.entities._component.component.Component]'
   parameters:
   - name: name
     description: Component name, if not set, list all components of the workspace
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
   - name: list_view_type
@@ -152,7 +153,8 @@ methods:
 - uid: azure.ai.ml.operations.ComponentOperations.restore
   name: restore
   summary: Restore an archived component.
-  signature: 'restore(name: str, version: str = None, label: str = None) -> None'
+  signature: 'restore(name: str, version: Optional[str] = None, label: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: name
     description: Name of the component.
@@ -161,12 +163,12 @@ methods:
     - <xref:str>
   - name: version
     description: Version of the component.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: label
     description: Label of the component. (mutually exclusive with version)
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
 - uid: azure.ai.ml.operations.ComponentOperations.validate

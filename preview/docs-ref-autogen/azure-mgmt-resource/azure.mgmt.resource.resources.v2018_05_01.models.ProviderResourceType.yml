@@ -10,7 +10,7 @@ constructor:
   syntax: 'ProviderResourceType(*, resource_type: Optional[str] = None, locations:
     Optional[List[str]] = None, aliases: Optional[List[_models.AliasType]] = None,
     api_versions: Optional[List[str]] = None, zone_mappings: Optional[List[_models.ZoneMapping]]
-    = None, properties: Optional[Dict[str, str]] = None, **kwargs: Any)'
+    = None, properties: Optional[Dict[str, str]] = None, **kwargs)'
 variables:
 - description: The resource type.
   name: resource_type
