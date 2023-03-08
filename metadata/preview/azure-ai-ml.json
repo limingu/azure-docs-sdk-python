@@ -1,7 +1,7 @@
 {
   "Name": "azure-ai-ml",
-  "Version": "1.5.0a20230308003",
-  "DevVersion": "1.5.0a20230308003",
+  "Version": "1.5.0a20230308004",
+  "DevVersion": "1.5.0a20230308004",
   "DirectoryPath": "sdk/ml/azure-ai-ml",
   "ServiceDirectory": "ml",
   "ReadMePath": "sdk/ml/azure-ai-ml/README.md",
