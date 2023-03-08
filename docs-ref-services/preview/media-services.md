@@ -3,13 +3,13 @@ title: Azure Media Services SDK for Python
 description: Reference for Azure Media Services SDK for Python
 author: lmazuel
 ms.author: lmazuel
-ms.data: 03/07/2023
+ms.data: 03/08/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: mediaservices
 ms.prod: azure
-keywords: Azure, python, SDK, API, Media Services
 manager: douge
+keywords: Azure, python, SDK, API, Media Services
 ms.date: 07/10/2017
 ms.technology: azure
 ---
